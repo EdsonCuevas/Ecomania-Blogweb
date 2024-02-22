@@ -9,11 +9,6 @@
 
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-
-      
-
-    </style>
     <!-- Custom styles for this template -->
     <link href="assets/css/headers.css" rel="stylesheet">
   </head>
