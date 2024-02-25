@@ -7,8 +7,8 @@
     <meta name="description" content="">
     <title>Admin - Ecomania</title>
 
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-icons.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
