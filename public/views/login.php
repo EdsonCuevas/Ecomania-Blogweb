@@ -1,4 +1,4 @@
-!doctype html>
+<!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="../assets/js/color-modes.js"></script>
 
@@ -30,16 +30,6 @@
       </symbol>
     </svg>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
       <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
         <li>
           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
@@ -68,7 +58,7 @@
     
 <main class="form-signin w-100 m-auto">
   <form method="post">
-    <img class="mb-4 shadow rounded-circle" src="assets/imgs/icon.png" alt="" width="70" height="67" style="object-fit: cover">
+    <img class="mb-4 shadow rounded-circle" src="../assets/imgs/icon.png" alt="" width="70" height="67" style="object-fit: cover">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">
