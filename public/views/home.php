@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <title>Home - Ecomania</title>
 
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
@@ -88,13 +88,13 @@
         }
       </style>
 
-    <link href="assets/css/headers.css" rel="stylesheet">
+    <link href="../assets/css/headers.css" rel="stylesheet">
   </head>
   <body>
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="assets/imgs/icon.png" alt="" width="100" height="62" style="padding-left: 30px; object-fit: cover;";">
+          <img src="../assets/imgs/icon.png" alt="" width="100" height="62" style="padding-left: 30px; object-fit: cover;";">
         </a>
       </div>
 
@@ -132,7 +132,7 @@
         </footer>
       </div>
  
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>
