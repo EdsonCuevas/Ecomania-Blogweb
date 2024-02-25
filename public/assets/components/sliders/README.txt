@@ -25,9 +25,9 @@ The directory structure of this package:
         ism-2.2.min.js
       image/
         slides/
-          park-737228_1280.jpg
-          woodland-656969_1280.jpg
-          tree-701692_1280.jpg
+          flower-729514_1280.jpg
+          beautiful-701678_1280.jpg
+          summer-192179_1280.jpg
 
 For a working example, open example.html in your web browser or
 follow the instructions below to integrate the slider into your
@@ -49,14 +49,22 @@ Step by step instructions
 <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-radios="false" id="my-slider">
   <ol>
     <li>
-      <img src="ism/image/slides/park-737228_1280.jpg">
+      <img src="ism/image/slides/flower-729514_1280.jpg">
     </li>
     <li>
-      <img src="ism/image/slides/woodland-656969_1280.jpg">
-      <div class="ism-caption ism-caption-0">My slide caption text</div>
+      <img src="ism/image/slides/beautiful-701678_1280.jpg">
     </li>
     <li>
-      <img src="ism/image/slides/tree-701692_1280.jpg">
+      <img src="ism/image/slides/summer-192179_1280.jpg">
+    </li>
+    <li>
+      <img src="ism/image/slides/flower-729514_1280.jpg">
+    </li>
+    <li>
+      <img src="ism/image/slides/beautiful-701678_1280.jpg">
+    </li>
+    <li>
+      <img src="ism/image/slides/summer-192179_1280.jpg">
     </li>
   </ol>
 </div>

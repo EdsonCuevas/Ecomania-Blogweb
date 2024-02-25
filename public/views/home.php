@@ -85,13 +85,15 @@
   
         .bd-mode-toggle .dropdown-menu .active .bi {
           display: block !important;
+          
         }
+
       </style>
 
     <link href="../assets/css/headers.css" rel="stylesheet">
   </head>
   <body>
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
           <img src="../assets/imgs/icon.png" alt="" width="100" height="62" style="padding-left: 30px; object-fit: cover;";">
@@ -110,6 +112,36 @@
         <button type="button" class="btn btn-outline-primary me-2">Login</button>
       </div>
     </header>
+
+    <!-- slider -->
+    <link rel="stylesheet" href="../assets/components/sliders/ism/css/my-slider.css"/>
+    <script src="../assets/components/sliders/ism/js/ism-2.2.min.js"></script>
+
+    <div class='container'>
+
+    <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-radios="false" id="my-slider">
+      <ol>
+        <li>
+          <img src="../assets/components/sliders/ism/image/slides/flower-729514_1280.jpg">
+        </li>
+        <li>
+          <img src="../assets/components/sliders/ism/image/slides/beautiful-701678_1280.jpg">
+        </li>
+        <li>
+          <img src="../assets/components/sliders/ism/image/slides/summer-192179_1280.jpg">
+        </li>
+        <li>
+          <img src="../assets/components/sliders/ism/image/slides/flower-729514_1280.jpg">
+        </li>
+        <li>
+          <img src="../assets/components/sliders/ism/image/slides/beautiful-701678_1280.jpg">
+        </li>
+        <li>
+          <img src="../assets/components/sliders/ism/image/slides/summer-192179_1280.jpg">
+        </li>
+      </ol>
+    </div>
+    <!-- end slider -->
 
     <main class="p-2">
         <h1>Content</h1>
