@@ -236,9 +236,7 @@
 
     <hr class="featurette-divider">
 
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
+  </div>
 
 
   <!-- FOOTER -->
