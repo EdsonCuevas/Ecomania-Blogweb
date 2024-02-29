@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
+  <head><script src="<?=ROOT?>/../assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <title>Login - Ecomania</title>
 
-    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=ROOT?>/../public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     
     <!-- Custom styles for this template -->
-    <link href="../assets/css/login/sign-in.css" rel="stylesheet">
+    <link href="<?=ROOT?>/../public/assets/css/login/sign-in.css" rel="stylesheet">
   </head>
   <body class="d-flex align-items-center py-4 bg-body-tertiary">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -58,7 +58,9 @@
     
 <main class="form-signin w-100 m-auto">
   <form method="post">
-    <img class="mb-4 shadow rounded-circle" src="../assets/imgs/icon.png" alt="" width="70" height="67" style="object-fit: cover">
+    <a href="<?=ROOT?>/home">
+    <img class="mb-4 shadow rounded-circle" src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="70" height="67" style="object-fit: cover">
+    </a>
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">
@@ -80,7 +82,6 @@
     <p class="mt-5 mb-3 text-body-secondary">&copy; <?= date("Y")?></p>
   </form>
 </main>
-<script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>
