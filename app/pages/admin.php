@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
+  <head><script src="../public/assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <title>Admin - Ecomania</title>
 
-    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="../public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/assets/css/bootstrap-icons.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -240,7 +240,6 @@
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
             <span>Other</span>
             <a class="link-secondary" href="#" aria-label="Add a new report">
-              <svg class="bi"><use xlink:href="#plus-circle"/></svg>
             </a>
           </h6>
           <ul class="nav flex-column mb-auto">
@@ -257,13 +256,11 @@
           <ul class="nav flex-column mb-auto">
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#gear-wide-connected"/></svg>
                 Settings
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#door-closed"/></svg>
                 Sign out
               </a>
             </li>
@@ -281,7 +278,6 @@
             <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
           </div>
           <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1">
-            <svg class="bi"><use xlink:href="#calendar3"/></svg>
             This week
           </button>
         </div>
@@ -290,8 +286,8 @@
     </main>
   </div>
 </div>
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../public/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<script src="assets/js/dashboard.js"></script>
+<script src="../public/assets/js/dashboard.js"></script>
 </body>
 </html>
