@@ -36,6 +36,13 @@ function authenticate($row){
     $_SESSION['USER'] = $row;
 }
 
+function logged_in(){
+    if(!empty($_SESSION['USER']))
+        return true;
+    
+    return false;
+}
+
 //create_tables();
 function create_tables(){
 
