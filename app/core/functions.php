@@ -51,8 +51,8 @@ function create_tables(){
     $query = "create table if not exists posts(
 
         id int primary key auto_increment,
-        user_id int primary key auto_increment,
-        category_id int primary key auto_increment,
+        user_id int,
+        category_id int,
         title varchar(100) not null,
         content text null,
         image varchar(1024) null,
