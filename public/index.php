@@ -1,6 +1,8 @@
 <?php
 
-define('ROOT', 'http://localhost/ecomania-blogweb/public');
+session_start();
+
+require "../app/core/init.php";
 
 $url = $_GET['url'] ?? 'home';
 $url = explode("/", $url);
