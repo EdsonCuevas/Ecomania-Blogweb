@@ -230,7 +230,7 @@
         <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="<?=ROOT?>/admin">
                 <i class="bi bi-speedometer2"></i>
                 Dashboard
               </a>
@@ -244,7 +244,7 @@
           </h6>
           <ul class="nav flex-column mb-auto">
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <a class="nav-link d-flex align-items-center gap-2" href="<?=ROOT?>">
                 <i class="bi bi-house"></i>
                 Front end
               </a>
@@ -260,7 +260,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <a class="nav-link d-flex align-items-center gap-2" href="<?=ROOT?>/logout">
                 Sign out
               </a>
             </li>
