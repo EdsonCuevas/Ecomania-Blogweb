@@ -24,6 +24,14 @@ function redirect($page){
     die;
 }
 
+function old_value($key){
+
+    if(!empty($_POST[$key]))
+        return $_POST[$key];
+
+    return "";
+}
+
 function authenticate($row){
     $_SESSION['USER'] = $row;
 }
