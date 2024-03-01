@@ -18,6 +18,16 @@ function query(string $query, array $data = []){
 
 }
 
+function redirect($page){
+
+    header('Location: '.$page);
+    die;
+}
+
+function authenticate($row){
+    $_SESSION['USER'] = $row;
+}
+
 //create_tables();
 function create_tables(){
 

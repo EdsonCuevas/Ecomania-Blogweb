@@ -13,15 +13,15 @@
       $data = [];
       if(password_verify($_POST['password'], $row[0]['password'])){
         //access
-        authenticate($row);
+        authenticate($row[0]);
         redirect('admin');
 
       } else {
-        $errors['email'] = "wrong email or password"
+        $errors['email'] = "wrong email or password";
       }
 
     } else {
-      $errors['email'] = "wrong email or password"
+      $errors['email'] = "wrong email or password";
     }
   }
 
@@ -90,6 +90,10 @@
     <img class="mb-4 shadow rounded-circle" src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="70" height="67" style="object-fit: cover">
     </a>
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <?php if (!empty($errors['email'])):?>
+      <div class="alert alert-danger"><?=$errors['email']?></div>
+    <?php endif;?>
 
     <div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
