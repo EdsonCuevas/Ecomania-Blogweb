@@ -115,10 +115,6 @@
       </div>
     </header>
 
-    <!-- slider -->
-
-    <!-- end slider -->
-
     <main>
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
