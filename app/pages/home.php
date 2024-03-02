@@ -102,9 +102,8 @@
       </div>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2">News</a></li>
-        <li><a href="#" class="nav-link px-2">FAQs</a></li>
+        <li><a href="<?=ROOT?>/home" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="<?=ROOT?>/news" class="nav-link px-2">News</a></li>
         <li><a href="#" class="nav-link px-2">About</a></li>
       </ul>
 
@@ -114,10 +113,6 @@
         </a>
       </div>
     </header>
-
-    <!-- slider -->
-
-    <!-- end slider -->
 
     <main>
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
