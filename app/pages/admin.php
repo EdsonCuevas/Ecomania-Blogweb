@@ -236,18 +236,7 @@
                 Dashboard
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" aria-current="page" href="<?=ROOT?>/admin/users">
-                <i class="bi bi-person"></i>
-                Users
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" aria-current="page" href="<?=ROOT?>/admin/categories">
-                <i class="bi bi-tags"></i>
-                Categories
-              </a>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2" aria-current="page" href="<?=ROOT?>/admin/posts">
                 <i class="bi bi-file-earmark-post"></i>
@@ -302,7 +291,22 @@
           </button>
         </div>
       </div>
-        content area <?=$url[1]?>
+      <?php
+
+        $section = $url[1] ?? 'dashboard';
+        
+        $filename = "../app/pages/admin/".$section.".php";
+        if(file_exists($filename)){
+
+          require_once $filename;
+
+        } else {
+
+          require_once "../app/pages/admin/404.php";
+
+        }
+
+      ?>
     </main>
   </div>
 </div>
