@@ -234,7 +234,7 @@
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Energías renovables y la transición energética. <span class="text-body-secondary"></span></h2>
         <p class="lead"> En este apartado, exploraremos cómo el cambio hacia fuentes de energía limpias y sostenibles está transformando el panorama energético global. Las energías renovables, como la solar, eólica, hidroeléctrica, geotérmica y biomasa, representan una alternativa prometedora a los combustibles fósiles, ofreciendo una solución clave para abordar el cambio climático y garantizar un suministro energético seguro y accesible para todos.
-          En esta sección, examinaremos en profundidad las diferentes tecnologías y aplicaciones de las energías renovables, desde paneles solares en los tejados hasta parques eólicos en alta mar. Analizaremos cómo estas fuentes de energía pueden integrarse de manera eficiente en la red eléctrica y cómo están revolucionando sectores clave como el transporte, la industria y la construcción.
+          En esta sección, examinaremos en profundidad las diferentes tecnologías y aplicaciones de las energías renovables, desde paneles solares en los tejados hasta parques eólicos en alta mar. 
         </p>
       </div>
       <div class="col-md-5">
@@ -249,9 +249,26 @@
 
   <!-- FOOTER -->
   <footer class="container">
-    <p class="float-end"><a href="#">Volver a arriba</a></p>
-    <p>&copy; 2024 Universidad de Colima, Inc. Ecomania &middot; <a href="#">Privacidad</a> &middot; <a href="#">Terminos y condiciones</a></p>
-  </footer>
+    <div class="row">
+        <div class="col-lg-4">
+            <h5>Conócenos</h5>
+            <p><a href="#">Quiénes somos</a></p>
+            <p><a href="#">Noticias</a></p>
+        </div>
+        <div class="col-lg-4">
+            <h5>Términos y condiciones</h5>
+            <p><a href="#">Políticas de privacidad</a></p>
+            <p>&copy; 2024 Universidad de Colima, Inc. Ecomania</p>
+        </div>
+        <div class="col-lg-4">
+            <h5>Contactanos</h5>
+            <p>ucol@ucol.mx</p>
+            <p>Manzanillo, Colima</p>
+        </div>
+    </div>
+    <p class="float-end"><a href="#">Volver arriba</a></p>
+</footer>
+
     </main>
 
  
