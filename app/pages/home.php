@@ -104,7 +104,7 @@
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="<?=ROOT?>/home" class="nav-link px-2 link-secondary">Home</a></li>
         <li><a href="<?=ROOT?>/news" class="nav-link px-2">News</a></li>
-        <li><a href="#" class="nav-link px-2">About</a></li>
+        <li><a href="<?=ROOT?>/about" class="nav-link px-2">About</a></li>
       </ul>
 
       <div class="col-md-3 text-end" style="padding-right: 30px;">
@@ -236,7 +236,6 @@
   </div>
 
 
-  <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
     <p>&copy; 2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
