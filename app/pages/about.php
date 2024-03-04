@@ -105,9 +105,9 @@
         <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
       </symbol>
     </svg>
+    
 
-<div class="col-lg-8 mx-auto p-4">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
         <a href="home" class="d-inline-flex link-body-emphasis text-decoration-none">
           <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="100" height="62" style="padding-left: 30px; object-fit: cover;";">
@@ -116,8 +116,8 @@
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="<?=ROOT?>/home" class="nav-link px-2">Home</a></li>
-        <li><a href="#" class="nav-link px-2 link-secondary">News</a></li>
-        <li><a href="#" class="nav-link px-2">About</a></li>
+        <li><a href="<?=ROOT?>/news" class="nav-link px-2">News</a></li>
+        <li><a href="<?=ROOT?>/about" class="nav-link px-2 link-secondary">About</a></li>
       </ul>
 
       <div class="col-md-3 text-end" style="padding-right: 30px;">
@@ -127,12 +127,14 @@
       </div>
     </header>
 
+
   <main>
-    <h1 class="text-body-emphasis">Get started with Bootstrap</h1>
+    <div class="col-lg-8 mx-auto p-4 py-md-5">
+    <h1 class="text-body-emphasis">About us</h1>
     <p class="fs-5 col-md-8">Quickly and easily get started with Bootstrap's compiled, production-ready files with this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.</p>
 
     <div class="mb-5">
-      <a href="../examples/" class="btn btn-primary btn-lg px-4">Download examples</a>
+      <a href="" class="btn btn-primary btn-lg px-4">Example</a>
     </div>
 
     <hr class="col-3 col-md-2 mb-5">
@@ -207,8 +209,8 @@
       </div>
     </div>
   </main>
-  <footer class="pt-5 my-5 text-body-secondary border-top">
-    Created by the Bootstrap team &middot; &copy; 2024
+  <footer class="container">
+    <p>&copy; 2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
 </div>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

@@ -96,8 +96,8 @@
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="<?=ROOT?>/home" class="nav-link px-2">Home</a></li>
-        <li><a href="#" class="nav-link px-2 link-secondary">News</a></li>
-        <li><a href="#" class="nav-link px-2">About</a></li>
+        <li><a href="<?=ROOT?>/news" class="nav-link px-2 link-secondary">News</a></li>
+        <li><a href="<?=ROOT?>/about" class="nav-link px-2">About</a></li>
       </ul>
 
       <div class="col-md-3 text-end" style="padding-right: 30px;">
@@ -270,13 +270,10 @@
 
 </main>
 
-<footer class="text-body-secondary py-5">
-  <div class="container">
-    <p class="float-end mb-1">
-      <a href="#">Back to top</a>
-    </p>
-  </div>
-</footer>
+<footer class="container text-body-secondary py-3">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
 <script src="<?=ROOT?>/../public/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     </body>
