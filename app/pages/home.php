@@ -102,9 +102,10 @@
       </div>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="<?=ROOT?>/home" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="<?=ROOT?>/news" class="nav-link px-2">News</a></li>
-        <li><a href="<?=ROOT?>/about" class="nav-link px-2">About</a></li>
+        <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
+        <li><a href="#" class="nav-link px-2">Noticias</a></li>
+        <li><a href="#" class="nav-link px-2">Sobre Nosotros</a></li>
+        <li><a href="#" class="nav-link px-2">About</a></li>
       </ul>
 
       <div class="col-md-3 text-end" style="padding-right: 30px;">
@@ -113,6 +114,10 @@
         </a>
       </div>
     </header>
+
+    <!-- slider -->
+
+    <!-- end slider -->
 
     <main>
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
@@ -199,11 +204,13 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading fw-normal lh-1">¿Qué es ecomania? <span class="text-body-secondary"></span></h2>
+        <p class="lead">Ecomanía es un proyecto de blog web diseñado para abordar la problemática de la contaminación del clima y el cambio climático, centrándose en el Objetivo 13 de la Agenda 2030 de la ONU, "Acción por el clima". Este proyecto surge en respuesta a la urgente necesidad de concienciar y movilizar a la sociedad sobre este tema crucial.
+                        El objetivo principal de Ecomanía es proporcionar un medio digital accesible y efectivo para la difusión de información relevante sobre el cambio climático y la contaminación del clima. Este blog web estará dirigido a una amplia audiencia que incluye adultos, adultos mayores, jóvenes y niños, con el fin de promover la conciencia ambiental y la participación activa en la búsqueda de soluciones.
+          </p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/public/assets/imgs/1.jpg" alt="Calis nomas de esta vaina">
       </div>
     </div>
 
@@ -211,8 +218,10 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Gases de efecto invernadero <span class="text-body-secondary">(Gei).</span></h2>
+        <p class="lead">Los gases de efecto invernadero, como el dióxido de carbono (CO2), el metano (CH4) y el óxido nitroso (N2O), son responsables del calentamiento global y el cambio climático que estamos experimentando a nivel mundial.
+          En esta sección, analizaremos las causas y consecuencias del aumento de estos gases en la atmósfera, así como las diversas estrategias y tecnologías disponibles para reducir su emisión. Desde prácticas agrícolas sostenibles hasta innovaciones en energías renovables y políticas gubernamentales, exploraremos cómo individuos, comunidades, empresas y gobiernos pueden contribuir a mitigar este problema ambiental.
+        </p>
       </div>
       <div class="col-md-5 order-md-1">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
@@ -223,8 +232,10 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Energías renovables y la transición energética. <span class="text-body-secondary"></span></h2>
+        <p class="lead"> En este apartado, exploraremos cómo el cambio hacia fuentes de energía limpias y sostenibles está transformando el panorama energético global. Las energías renovables, como la solar, eólica, hidroeléctrica, geotérmica y biomasa, representan una alternativa prometedora a los combustibles fósiles, ofreciendo una solución clave para abordar el cambio climático y garantizar un suministro energético seguro y accesible para todos.
+          En esta sección, examinaremos en profundidad las diferentes tecnologías y aplicaciones de las energías renovables, desde paneles solares en los tejados hasta parques eólicos en alta mar. 
+        </p>
       </div>
       <div class="col-md-5">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
@@ -236,10 +247,28 @@
   </div>
 
 
+  <!-- FOOTER -->
   <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
+    <div class="row">
+        <div class="col-lg-4">
+            <h5>Conócenos</h5>
+            <p><a href="#">Quiénes somos</a></p>
+            <p><a href="#">Noticias</a></p>
+        </div>
+        <div class="col-lg-4">
+            <h5>Términos y condiciones</h5>
+            <p><a href="#">Políticas de privacidad</a></p>
+            <p>&copy; 2024 Universidad de Colima, Inc. Ecomania</p>
+        </div>
+        <div class="col-lg-4">
+            <h5>Contactanos</h5>
+            <p>ucol@ucol.mx</p>
+            <p>Manzanillo, Colima</p>
+        </div>
+    </div>
+    <p class="float-end"><a href="#">Volver arriba</a></p>
+</footer>
+
     </main>
 
  
