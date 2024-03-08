@@ -1,3 +1,10 @@
+<?php
+
+if(!logged_in()){
+  redirect('login');
+}
+?>
+
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="../public/assets/js/color-modes.js"></script>
