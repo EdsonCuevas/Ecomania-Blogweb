@@ -102,10 +102,9 @@
       </div>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
-        <li><a href="#" class="nav-link px-2">Noticias</a></li>
-        <li><a href="#" class="nav-link px-2">Sobre Nosotros</a></li>
-        <li><a href="#" class="nav-link px-2">About</a></li>
+        <li><a href="<?=ROOT?>/home" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="<?=ROOT?>/news" class="nav-link px-2">News</a></li>
+        <li><a href="<?=ROOT?>/about" class="nav-link px-2">About</a></li>
       </ul>
 
       <div class="col-md-3 text-end" style="padding-right: 30px;">
@@ -115,10 +114,6 @@
       </div>
     </header>
 
-    <!-- slider -->
-
-    <!-- end slider -->
-
     <main>
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -127,7 +122,8 @@
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active"> 
+        <img src="<?=ROOT?>/../public/assets/imgs/6.jpeg" alt="" width="100%" height="100%">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
         <div class="container">
           <div class="carousel-caption text-start">
@@ -138,6 +134,7 @@
         </div>
       </div>
       <div class="carousel-item">
+        <img src="<?=ROOT?>/../public/assets/imgs/3.jpg" alt="" width="100%" height="100%">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
         <div class="container">
           <div class="carousel-caption">
@@ -148,6 +145,7 @@
         </div>
       </div>
       <div class="carousel-item">
+        <img src="<?=ROOT?>/../public/assets/imgs/7.jpg" alt="" width="100%" height="100%">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
         <div class="container">
           <div class="carousel-caption text-end">
@@ -178,19 +176,28 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <!-- Reemplazar el rectángulo con la etiqueta image -->
+        <image href="<?=ROOT?>/../public/assets/imgs/g4.gif" width="100%" height="100%" />
+        </svg>
+
         <h2 class="fw-normal">Heading</h2>
         <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <!-- Reemplazar el rectángulo con la etiqueta image -->
+        <image href="<?=ROOT?>/../public/assets/imgs/g1.gif" width="100%" height="100%" />
+        </svg>        <h2 class="fw-normal">Recycling inMéxico</h2>
+        <p>Data presented by Forbes shows that 68% of companies in México use recycled materials.</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <!-- Reemplazar el rectángulo con la etiqueta image -->
+        <image href="<?=ROOT?>/../public/assets/imgs/g3.gif" width="100%" height="100%" />
+        </svg>
         <h2 class="fw-normal">Heading</h2>
         <p>And lastly this, the third column of representative placeholder content.</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
@@ -204,13 +211,12 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">¿Qué es ecomania? <span class="text-body-secondary"></span></h2>
-        <p class="lead">Ecomanía es un proyecto de blog web diseñado para abordar la problemática de la contaminación del clima y el cambio climático, centrándose en el Objetivo 13 de la Agenda 2030 de la ONU, "Acción por el clima". Este proyecto surge en respuesta a la urgente necesidad de concienciar y movilizar a la sociedad sobre este tema crucial.
-                        El objetivo principal de Ecomanía es proporcionar un medio digital accesible y efectivo para la difusión de información relevante sobre el cambio climático y la contaminación del clima. Este blog web estará dirigido a una amplia audiencia que incluye adultos, adultos mayores, jóvenes y niños, con el fin de promover la conciencia ambiental y la participación activa en la búsqueda de soluciones.
-          </p>
+        <h2 class="featurette-heading fw-normal lh-1"> What is Ecomania? <span class="text-body-secondary">A simple school project?.</span></h2>
+        <p class="lead">A page to show the most relevant and truthful information about actions to care for the environment.</p>
       </div>
       <div class="col-md-5">
-      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/public/assets/imgs/1.jpg" alt="Calis nomas de esta vaina">
+      <img src="<?=ROOT?>/../public/assets/imgs/8.jpg" alt="" width="100%" height="100%">
+
       </div>
     </div>
 
@@ -218,10 +224,8 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Gases de efecto invernadero <span class="text-body-secondary">(Gei).</span></h2>
-        <p class="lead">Los gases de efecto invernadero, como el dióxido de carbono (CO2), el metano (CH4) y el óxido nitroso (N2O), son responsables del calentamiento global y el cambio climático que estamos experimentando a nivel mundial.
-          En esta sección, analizaremos las causas y consecuencias del aumento de estos gases en la atmósfera, así como las diversas estrategias y tecnologías disponibles para reducir su emisión. Desde prácticas agrícolas sostenibles hasta innovaciones en energías renovables y políticas gubernamentales, exploraremos cómo individuos, comunidades, empresas y gobiernos pueden contribuir a mitigar este problema ambiental.
-        </p>
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
       </div>
       <div class="col-md-5 order-md-1">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
@@ -232,10 +236,8 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Energías renovables y la transición energética. <span class="text-body-secondary"></span></h2>
-        <p class="lead"> En este apartado, exploraremos cómo el cambio hacia fuentes de energía limpias y sostenibles está transformando el panorama energético global. Las energías renovables, como la solar, eólica, hidroeléctrica, geotérmica y biomasa, representan una alternativa prometedora a los combustibles fósiles, ofreciendo una solución clave para abordar el cambio climático y garantizar un suministro energético seguro y accesible para todos.
-          En esta sección, examinaremos en profundidad las diferentes tecnologías y aplicaciones de las energías renovables, desde paneles solares en los tejados hasta parques eólicos en alta mar. 
-        </p>
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
       </div>
       <div class="col-md-5">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
@@ -247,28 +249,10 @@
   </div>
 
 
-  <!-- FOOTER -->
   <footer class="container">
-    <div class="row">
-        <div class="col-lg-4">
-            <h5>Conócenos</h5>
-            <p><a href="#">Quiénes somos</a></p>
-            <p><a href="#">Noticias</a></p>
-        </div>
-        <div class="col-lg-4">
-            <h5>Términos y condiciones</h5>
-            <p><a href="#">Políticas de privacidad</a></p>
-            <p>&copy; 2024 Universidad de Colima, Inc. Ecomania</p>
-        </div>
-        <div class="col-lg-4">
-            <h5>Contactanos</h5>
-            <p>ucol@ucol.mx</p>
-            <p>Manzanillo, Colima</p>
-        </div>
-    </div>
-    <p class="float-end"><a href="#">Volver arriba</a></p>
-</footer>
-
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
     </main>
 
  
