@@ -97,21 +97,17 @@
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
         <a href="home" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="100" height="62" style="padding-left: 30px; object-fit: cover;";">
+          <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="80" height="62" style="max-width: 100%; padding-left: 0px; @media(max-width: 768px) {padding-left: 30px;}">
         </a>
       </div>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
-        <li><a href="#" class="nav-link px-2">Noticias</a></li>
-        <li><a href="#" class="nav-link px-2">Sobre Nosotros</a></li>
-        <li><a href="#" class="nav-link px-2">About</a></li>
+        <li><a href="<?=ROOT?>/news" class="nav-link px-2">Noticias</a></li>
+        <li><a href="<?=ROOT?>/about" class="nav-link px-2">Nosotros</a></li>
       </ul>
 
       <div class="col-md-3 text-end" style="padding-right: 30px;">
-        <a href="<?=ROOT?>/login">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        </a>
       </div>
     </header>
 
