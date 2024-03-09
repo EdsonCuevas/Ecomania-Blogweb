@@ -107,110 +107,87 @@
     </svg>
     
 
-<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-      <div class="col-md-3 mb-2 mb-md-0">
-        <a href="home" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="100" height="62" style="padding-left: 30px; object-fit: cover;";">
-        </a>
-      </div>
+    <header class="d-flex flex-wrap justify-content-center py-3">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="55" height="50" style="object-fit: cover;">
+        <span class="fs-4">Ecomania</span>
+      </a>
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="<?=ROOT?>/home" class="nav-link px-2">Home</a></li>
-        <li><a href="<?=ROOT?>/news" class="nav-link px-2">News</a></li>
-        <li><a href="<?=ROOT?>/about" class="nav-link px-2 link-secondary">About</a></li>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="<?=ROOT?>/home" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="<?=ROOT?>/news#" class="nav-link">News</a></li>
+        <li class="nav-item"><a href="#" class="nav-link active">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
       </ul>
-
-      <div class="col-md-3 text-end" style="padding-right: 30px;">
-        <a href="<?=ROOT?>/login">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        </a>
-      </div>
     </header>
 
 
   <main>
-    <div class="col-lg-8 mx-auto p-4 py-md-5">
-    <h1 class="text-body-emphasis">About us</h1>
-    <p class="fs-5 col-md-8">Quickly and easily get started with Bootstrap's compiled, production-ready files with this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.</p>
+  <div class="col-lg-8 mx-auto">
 
-    <div class="mb-5">
-      <a href="" class="btn btn-primary btn-lg px-4">Example</a>
-    </div>
+  <hr class="featurette-divider">
 
-    <hr class="col-3 col-md-2 mb-5">
-
-    <div class="row g-5">
-      <div class="col-md-6">
-        <h2 class="text-body-emphasis">Starter projects</h2>
-        <p>Ready to go beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
-        <ul class="list-unstyled ps-0">
-          <li>
-            <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/icons-font" rel="noopener" target="_blank">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap npm starter
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/parcel" rel="noopener" target="_blank">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap Parcel starter
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/vite" rel="noopener" target="_blank">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap Vite starter
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/webpack" rel="noopener" target="_blank">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap Webpack starter
-            </a>
-          </li>
-        </ul>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1"> What is Ecomania? <span class="text-body-secondary">A simple school project?.</span></h2>
+        <p class="lead">We are a team united by the cause of climate action, our initiative is focused on addressing the challenges of climate change and actively contribute to Sustainable Development Goal number 13 of the ONU.</p>
       </div>
+      <div class="col-md-5">
+      <img src="<?=ROOT?>/../public/assets/imgs/8.jpg" alt="" width="100%" height="100%">
 
-      <div class="col-md-6">
-        <h2 class="text-body-emphasis">Guides</h2>
-        <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-        <ul class="list-unstyled ps-0">
-          <li>
-            <a class="icon-link mb-1" href="../getting-started/introduction/">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap quick start guide
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="../getting-started/webpack/">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap Webpack guide
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="../getting-started/parcel/">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap Parcel guide
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="../getting-started/vite/">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap Vite guide
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="../getting-started/contribute/">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Contributing to Bootstrap
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+        <p class="lead">Ecomania is born through the review of the problems of humanity to promote environmental awareness and lead meaningful actions to mitigate the impacts of climate change that may be irreversible if urgent action is not taken, that is why greater will is needed to curb the temperature rise, we believe in the power of collaboration and community mobilization to generate a positive and sustainable change in our environment. We will continue to face the challenges of climate change with determination and creativity, inspiring others to join us in this crucial mission to protect our planet for generations to come.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+  </div>
+  </div>
+      
+      
   </main>
   <footer class="container">
-    <p>&copy; 2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <div class="row">
+        <div class="col-lg-4">
+            <h5>Conócenos</h5>
+            <p><a href="#">Quiénes somos</a></p>
+            <p><a href="#">Noticias</a></p>
+        </div>
+        <div class="col-lg-4">
+            <h5>Términos y condiciones</h5>
+            <p><a href="#">Políticas de privacidad</a></p>
+            <p>&copy; 2024 Universidad de Colima, Inc. Ecomania</p>
+        </div>
+        <div class="col-lg-4">
+            <h5>Contactanos</h5>
+            <p>ucol@ucol.mx</p>
+            <p>Manzanillo, Colima</p>
+        </div>
+    </div>
+    <p class="float-end"><a href="#">Volver arriba</a></p>
   </footer>
 </div>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
