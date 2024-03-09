@@ -107,8 +107,8 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Noticias</h1>
-        <p class="lead text-body-secondary">En este apartado, encontrarás las noticias más destacables del momento sobre uno de los desafíos más apremiantes que enfrenta nuestro planeta: el cambio climático. Centrando nuestra atención en el Objetivo 13 de la Agenda 2030 de la ONU, "Acción por el Clima", nos proponemos explorar cómo este fenómeno global, acelerado por actividades humanas como la quema de combustibles fósiles y la deforestación, está impactando de manera significativa a México y al mundo.</p>
+        <h1 class="fw-light">News</h1>
+        <p class="lead text-body-secondary">In this section, you will find current news highlights on one of the most pressing challenges facing our planet: climate change. Focusing our attention on Goal 13 of the UN's 2030 Agenda, "Climate Action," we aim to explore how this global phenomenon, accelerated by human activities such as the burning of fossil fuels and deforestation, is significantly impacting Mexico and the world.</p>
         <p>
           <a href="#" class="btn btn-primary my-2">Main call to action</a>
           <a href="#" class="btn btn-secondary my-2">Secondary action</a>
