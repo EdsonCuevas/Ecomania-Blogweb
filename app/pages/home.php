@@ -94,26 +94,20 @@
     <link href="<?=ROOT?>/../public/assets/css/carousel.css" rel="stylesheet">
   </head>
   <body style="padding: 0;">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-      <div class="col-md-3 mb-2 mb-md-0">
-        <a href="home" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="80" height="62" style="max-width: 100%; padding-left: 0px; @media(max-width: 768px) {padding-left: 30px;}">
-        </a>
-      </div>
+  <header class="d-flex flex-wrap justify-content-center py-3">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="60" height="50" style="object-fit: cover;">
+        <span class="fs-4">Ecomania</span>
+      </a>
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
-        <li><a href="<?=ROOT?>/news" class="nav-link px-2">Noticias</a></li>
-        <li><a href="<?=ROOT?>/about" class="nav-link px-2">Nosotros</a></li>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
       </ul>
-
-      <div class="col-md-3 text-end" style="padding-right: 30px;">
-      </div>
     </header>
-
-    <!-- slider -->
-
-    <!-- end slider -->
 
     <main>
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
