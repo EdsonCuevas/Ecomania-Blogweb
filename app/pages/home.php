@@ -96,7 +96,7 @@
   <body style="padding: 0;">
   <header class="d-flex flex-wrap justify-content-center py-3">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="60" height="50" style="object-fit: cover;">
+        <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="55" height="50" style="object-fit: cover;">
         <span class="fs-4">Ecomania</span>
       </a>
 
