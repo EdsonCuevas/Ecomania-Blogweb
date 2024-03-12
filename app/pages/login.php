@@ -59,6 +59,10 @@
           background-size: cover;
       }
 
+      .logo {
+        text-align: center;
+      }
+
       .fondo{
           width: 420px;
           padding: 30px 40px;
@@ -179,6 +183,13 @@
 <body>
     <div class="fondo"> <!-- Contenedor principal de la página -->
         <form action="" method="post"> <!-- Formulario de inicio de sesión -->
+
+            <div class="logo">
+                <a href="<?=ROOT?>/home" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="70" height="67">
+                </a>
+            </div>
+            
             <h1>Login</h1> <!-- Encabezado del formulario -->
 
             <?php if (!empty($errors['email'])):?>
