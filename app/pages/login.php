@@ -172,18 +172,22 @@
 
 <body>
     <div class="fondo"> <!-- Contenedor principal de la página -->
-        <form action=""> <!-- Formulario de inicio de sesión -->
+        <form action="" method="post"> <!-- Formulario de inicio de sesión -->
             <h1>Login</h1> <!-- Encabezado del formulario -->
+
+            <?php if (!empty($errors['email'])):?>
+              <p>Error email or pass<?=$errors['email']?></p>
+            <?php endif;?>
 
             <!-- Campo de entrada para el nombre de usuario -->
             <div class="input-box">
-                <input type="text" placeholder="Username" required> <!-- Campo obligatorio -->
+                <input type="text" value="<?=old_value('email')?>" name="email" placeholder="Username" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-user"></i> <!-- Icono de usuario de Boxicons -->
             </div>
 
             <!-- Campo de entrada para la contraseña -->
             <div class="input-box">
-                <input type="password" placeholder="Password" required> <!-- Campo obligatorio -->
+                <input type="password" value="<?=old_value('password')?>" name="password" placeholder="Password" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
             </div>
 
