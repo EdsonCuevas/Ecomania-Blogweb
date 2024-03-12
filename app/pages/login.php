@@ -17,11 +17,11 @@
         redirect('admin');
 
       } else {
-        $errors['email'] = "wrong email or password";
+        $errors['email'] = "Wrong email or password!";
       }
 
     } else {
-      $errors['email'] = "wrong email or password";
+      $errors['email'] = "Wrong email or password!";
     }
   }
 
@@ -165,6 +165,12 @@
 
       }
 
+      .errorAuth{
+        text-align: center;
+        color: red;
+        font-size: 20px;
+      }
+
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la visualización en dispositivos móviles -->
     <title>Login Ecomania</title> <!-- Título de la página -->
@@ -176,7 +182,8 @@
             <h1>Login</h1> <!-- Encabezado del formulario -->
 
             <?php if (!empty($errors['email'])):?>
-              <p>Error email or pass<?=$errors['email']?></p>
+              <br>
+              <p class="errorAuth"><?=$errors['email']?></p>
             <?php endif;?>
 
             <!-- Campo de entrada para el nombre de usuario -->
