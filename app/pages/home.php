@@ -13,18 +13,25 @@
     <link href="<?=ROOT?>/../public/assets/css/carousel.css" rel="stylesheet">
   </head>
   <body style="padding: 0;">
-  <header class="d-flex flex-wrap justify-content-center py-3">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="55" height="50" style="object-fit: cover;">
-        <span class="fs-4">Ecomania</span>
-      </a>
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="#" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="<?=ROOT?>/../public/assets/imgs/icon.png" width="40" height="32" role="img" alt="">
+        </a>
+      </div>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="<?=ROOT?>/news" class="nav-link">News</a></li>
-        <li class="nav-item"><a href="<?=ROOT?>/about" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-2">Features</a></li>
+        <li><a href="#" class="nav-link px-2">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2">About</a></li>
       </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+        <button type="button" class="btn btn-primary">Sign-up</button>
+      </div>
     </header>
 
     <main>
@@ -93,7 +100,6 @@
         <!-- Reemplazar el rectángulo con la etiqueta image -->
         <image href="<?=ROOT?>/../public/assets/imgs/g4.gif" width="100%" height="100%" />
         </svg>
-
         <h2 class="fw-normal">Heading</h2>
         <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
