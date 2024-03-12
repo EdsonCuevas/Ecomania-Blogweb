@@ -23,13 +23,13 @@
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2 link-success">News</a></li>
-        <li><a href="#" class="nav-link px-2 link-success">About</a></li>
-        <li><a href="#" class="nav-link px-2 link-success">Contact</a></li>
+        <li><a href="<?=ROOT?>/news" class="nav-link px-2 link-success">News</a></li>
+        <li><a href="<?=ROOT?>/about" class="nav-link px-2 link-success">About</a></li>
+        <li><a href="<?=ROOT?>/contact" class="nav-link px-2 link-success">Contact</a></li>
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-success me-2">Login</button>
+        <a href="<?=ROOT?>/login"><button type="button" class="btn btn-success me-2">Login</button></a>
       </div>
     </header>
 
