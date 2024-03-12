@@ -107,25 +107,28 @@
     </svg>
     
 
-    <header class="d-flex flex-wrap justify-content-center py-3">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="55" height="50" style="object-fit: cover;">
-        <span class="fs-4">Ecomania</span>
-      </a>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="70" height="67">
+        </a>
+      </div>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="<?=ROOT?>/home" class="nav-link" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="<?=ROOT?>/news#" class="nav-link">News</a></li>
-        <li class="nav-item"><a href="#" class="nav-link active">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="<?=ROOT?>/home" class="nav-link px-2 link-success">Home</a></li>
+        <li><a href="<?=ROOT?>/news" class="nav-link px-2 link-success">News</a></li>
+        <li><a href="#" class="nav-link px-2 link-secondary">About</a></li>
+        <li><a href="<?=ROOT?>/contact" class="nav-link px-2 link-success">Contact</a></li>
       </ul>
+
+      <div class="col-md-3 text-end">
+        <a href="<?=ROOT?>/login"><button type="button" class="btn btn-success me-2">Login</button></a>
+      </div>
     </header>
 
 
   <main>
-  <div class="col-lg-8 mx-auto">
-
-  <hr class="featurette-divider">
+  <div class="col-lg-8 mx-auto" style="padding: 10px;">
 
     <div class="row featurette">
       <div class="col-md-7">
