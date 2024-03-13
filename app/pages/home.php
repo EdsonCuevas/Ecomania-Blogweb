@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="<?=ROOT?>/../assets/js/color-modes.js"></script>
+  <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -122,8 +122,100 @@
 
   </div>
 
+<!--Box-COntent-->
+<div class="col-lg-8 mx-auto" style="padding: 10px; margin-top: 100px;">
 
-  <footer class="container">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1"> What is Ecomania? <span class="text-body-secondary">A simple school project?.</span></h2>
+      <p class="lead">We are a team united by the cause of climate action, our initiative is focused on addressing the challenges of climate change and actively contribute to Sustainable Development Goal number 13 of the ONU.</p>
+    </div>
+    <div class="col-md-5">
+    <img src="<?=ROOT?>/../public/assets/imgs/8.jpg" alt="" width="100%" height="100%">
+
+    </div>
+  </div>
+
+  <!---News---->
+
+  <div class="container" style="margin-top: 100px;">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="<?=ROOT?>/../public/assets/imgs/8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="<?=ROOT?>/../public/assets/imgs/8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="<?=ROOT?>/../public/assets/imgs/8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 100px;">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="<?=ROOT?>/../public/assets/imgs/8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="<?=ROOT?>/../public/assets/imgs/8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="<?=ROOT?>/../public/assets/imgs/8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+    </main>
+
+    <footer class="container" style="margin-top: 200px;">
     <div class="row">
         <div class="col-lg-4">
             <h5>Conócenos</h5>
@@ -141,10 +233,9 @@
             <p>Manzanillo, Colima</p>
         </div>
     </div>
-    <p class="float-end"><a href="#">Volver arriba</a></p>
+    <p class="float-end"><a href="">Volver arriba</a></p>
+    
   </footer>
-    </main>
-
  
     <script src="<?=ROOT?>/../public/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
