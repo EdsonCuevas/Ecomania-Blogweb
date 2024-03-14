@@ -29,7 +29,7 @@
       </ul>
 
       <div class="col-md-3 text-end">
-        <a href="<?=ROOT?>/login"><button type="button" class="btn btn-success me-2">Login</button></a>
+        <a href="<?=ROOT?>/admin"><button type="button" class="btn btn-success me-2">Admin</button></a>
       </div>
     </header>
 
@@ -233,7 +233,7 @@
             <p>Manzanillo, Colima</p>
         </div>
     </div>
-    <p class="float-end"><a href="">Volver arriba</a></p>
+    <p class="float-end"><a href="#">Volver arriba</a></p>
     
   </footer>
  
