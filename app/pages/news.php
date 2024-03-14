@@ -128,7 +128,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
-          <img src="<?=ROOT?>/../public/assets/imgs/GEI2.jpg" alt="" width="420" height="200" style="padding-left: 0px; object-fit: cover;";">
+          <img src="<?=ROOT?>/../public/assets/imgs/GEI2.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
               <p class="card-text">Este apartado destaca las noticias más impactantes sobre el cambio climático, resaltando el papel crucial de los gases de efecto invernadero en el calentamiento global.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -143,7 +143,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <img src="<?=ROOT?>/../public/assets/imgs/EnergiaRen.jpg" alt="" width="420" height="200" style="padding-left: 0px; object-fit: cover;";">
+          <img src="<?=ROOT?>/../public/assets/imgs/EnergiaRen.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
               <p class="card-text">En este apartado, examinaremos como las tendencias más recientes en energías renovables y la transición energética está allanando el camino hacia un futuro sostenible.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -158,7 +158,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <img src="<?=ROOT?>/../public/assets/imgs/biodiversidad.jpg" alt="" width="420" height="200" style="padding-left: 0px; object-fit: cover;";">
+          <img src="<?=ROOT?>/../public/assets/imgs/biodiversidad.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
               <p class="card-text">En este segmento, exploraremos relatos inspiradores sobre conservación de ecosistemas y protección de la biodiversidad. Desde iniciativas locales hasta esfuerzos globales.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -174,7 +174,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-          <img src="<?=ROOT?>/../public/assets/imgs/Agricultura-sostenible.jpg" alt="" width="420" height="200" style="padding-left: 0px; object-fit: cover;";">
+          <img src="<?=ROOT?>/../public/assets/imgs/Agricultura-sostenible.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
               <p class="card-text">En este espacio, nos centraremos en la agricultura y las prácticas agrícolas sostenibles, resaltando cómo las innovaciones y estrategias ecológicas están revolucionando la producción de alimentos.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -189,7 +189,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <img src="<?=ROOT?>/../public/assets/imgs/EAM.jpg" alt="" width="420" height="200" style="padding-left: 0px; object-fit: cover;";">
+          <img src="<?=ROOT?>/../public/assets/imgs/EAM.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
               <p class="card-text">En esta sección descubre cómo el conocimiento y la conciencia sobre temas medioambientales están capacitando a individuos y comunidades para tomar decisiones más responsables y comprometidas con el cuidado del planeta.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -204,7 +204,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <img src="<?=ROOT?>/../public/assets/imgs/politicas.jpg" alt="" width="420" height="200" style="padding-left: 0px; object-fit: cover;";">
+          <img src="<?=ROOT?>/../public/assets/imgs/politicas.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
               <p class="card-text">En este apartado, exploraremos el ámbito de la política y las regulaciones climáticas a nivel nacional e internacional. Descubre cómo los marcos legislativos y los acuerdos globales están estableciendo las bases para una acción climática efectiva.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -220,7 +220,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-          <img src="<?=ROOT?>/../public/assets/imgs/movilidad-urbana.png" alt="" width="420" height="200" style="padding-left: 0px; object-fit: cover;";">
+          <img src="<?=ROOT?>/../public/assets/imgs/movilidad-urbana.png" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
               <p class="card-text">
 En este apartado, exploraremos el tema del transporte sostenible y la movilidad urbana, destacando la necesidad de desplazamientos eficientes y respetuosos con el medio ambiente en entornos urbanos.</p>
@@ -236,7 +236,7 @@ En este apartado, exploraremos el tema del transporte sostenible y la movilidad 
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <img src="<?=ROOT?>/../public/assets/imgs/aguaSOS.jpg" alt="" width="420" height="200" style="padding-left: 0px; object-fit: cover;";">
+          <img src="<?=ROOT?>/../public/assets/imgs/aguaSOS.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
               <p class="card-text">En este apartado, nos adentraremos en la gestión sostenible de los recursos hídricos, un aspecto crucial para la supervivencia y bienestar de nuestro planeta.Veremos estrategias y tecnologías avanzadas para su conservación y uso eficiente.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -251,7 +251,7 @@ En este apartado, exploraremos el tema del transporte sostenible y la movilidad 
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <img src="<?=ROOT?>/../public/assets/imgs/justiciaCLIM.jpg" alt="" width="420" height="200" style="padding-left: 0px; object-fit: cover;";">
+          <img src="<?=ROOT?>/../public/assets/imgs/justiciaCLIM.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
               <p class="card-text">En este apartado, abordamos la justicia climática y la equidad en la lucha contra el cambio climático, asegurando soluciones inclusivas y equitativas para todas las comunidades, especialmente las más vulnerables.</p>
               <div class="d-flex justify-content-between align-items-center">
