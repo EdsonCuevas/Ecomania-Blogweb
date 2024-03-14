@@ -25,7 +25,7 @@
       </ul>
 
       <div class="col-md-3 text-end">
-        <a href="<?=ROOT?>/login"><button type="button" class="btn btn-success me-2">Login</button></a>
+        <a href="<?=ROOT?>/login"><button type="button" class="btn btn-success me-2">Admin</button></a>
       </div>
     </header>
 
@@ -38,7 +38,7 @@
         <h1 class="fw-light">News</h1>
         <p class="lead text-body-secondary">In this section, you will find current news highlights on one of the most pressing challenges facing our planet: climate change. Focusing our attention on Goal 13 of the UN's 2030 Agenda, "Climate Action," we aim to explore how this global phenomenon, accelerated by human activities such as the burning of fossil fuels and deforestation, is significantly impacting Mexico and the world.</p>
         <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-success my-2">Main call to action</a>
           <a href="#" class="btn btn-secondary my-2">Secondary action</a>
         </p>
       </div>
