@@ -37,7 +37,7 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1"> What is Ecomania? <span class="text-body-secondary">A simple school project?.</span></h2>
-        <p class="lead">Somos un equipo de estudiantes unidos por la causa de la acción climática. Nuestra iniciativa se centra en abordar los desafíos del cambio climático y contribuir activamente al Objetivo de Desarrollo Sostenible número 13 de la ONU, que pretende tomar medidas urgentes para combatir el cambio climático y sus impactos. A través de esfuerzos colaborativos y soluciones innovadoras, nos esforzamos por tener un impacto positivo en el medio ambiente e inspirar a otros a unirse a nosotros  </p>
+        <p class="lead">We are a team of students united in the cause of climate action. Our initiative is focused on addressing the challenges of climate change and actively contributing to the UN's Sustainable Development Goal 13, which aims to take urgent action to combat climate change and its impacts. Through collaborative efforts and innovative solutions, we strive to make a positive impact on the environment and inspire others to join us.</p>
       </div>
       <div class="col-md-5">
       <img src="<?=ROOT?>/../public/assets/imgs/8.jpg" alt="" width="100%" height="100%">
