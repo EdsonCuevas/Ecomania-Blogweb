@@ -133,7 +133,7 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1"> What is Ecomania? <span class="text-body-secondary">A simple school project?.</span></h2>
-        <p class="lead">We are a team united by the cause of climate action, our initiative is focused on addressing the challenges of climate change and actively contribute to Sustainable Development Goal number 13 of the ONU.</p>
+        <p class="lead">Somos un equipo de estudiantes unidos por la causa de la acción climática. Nuestra iniciativa se centra en abordar los desafíos del cambio climático y contribuir activamente al Objetivo de Desarrollo Sostenible número 13 de la ONU, que pretende tomar medidas urgentes para combatir el cambio climático y sus impactos. A través de esfuerzos colaborativos y soluciones innovadoras, nos esforzamos por tener un impacto positivo en el medio ambiente e inspirar a otros a unirse a nosotros  </p>
       </div>
       <div class="col-md-5">
       <img src="<?=ROOT?>/../public/assets/imgs/8.jpg" alt="" width="100%" height="100%">
@@ -141,27 +141,28 @@
       </div>
     </div>
 
-    <hr class="featurette-divider">
+  
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
+    <div class="row featurette" style="margin-top : 100px;">
+      <div class="col-md-7 order-md-2 ">
         <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
         <p class="lead">Ecomania is born through the review of the problems of humanity to promote environmental awareness and lead meaningful actions to mitigate the impacts of climate change that may be irreversible if urgent action is not taken, that is why greater will is needed to curb the temperature rise, we believe in the power of collaboration and community mobilization to generate a positive and sustainable change in our environment. We will continue to face the challenges of climate change with determination and creativity, inspiring others to join us in this crucial mission to protect our planet for generations to come.</p>
       </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      <div class="col-md-5 order-md-1 ">
+      <img src="<?=ROOT?>/../public/assets/imgs/REF.jpg" alt="" width="100%" height="100%">
       </div>
     </div>
 
-    <hr class="featurette-divider">
+    
 
-    <div class="row featurette">
+    <div class="row featurette" style="margin-top : 100px;">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        <h2 class="featurette-heading fw-normal lh-1">How can you help us. <span class="text-body-secondary">Share.</span></h2>
+        <p class="lead">We firmly believe in the importance of raising awareness about the environmental challenges facing our planet and the need to promote meaningful actions to address them. By sharing our articles, tips and resources with others, you are helping to amplify our message and inspire more people to join the cause of caring for the environment. Together, we can make a difference and work towards a more sustainable and healthy future for all. Thank you for your support and for being part of our movement for a better world!.</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      <img src="<?=ROOT?>/../public/assets/imgs/tierra.png" alt="" width="100%" height="100%">
+
       </div>
     </div>
 
