@@ -111,29 +111,6 @@
           font-size: 24px;
       }
 
-      .fondo .olvidar-recordar{
-          display: flex;
-          justify-content: space-between;
-          font-size: 14.5px;
-          margin: 20px 0 15px;
-      }
-
-      .olvidar-recordar label input{
-          accent-color: #fff;
-          text-decoration: none;
-          margin-right: 3px;
-      }
-
-      .olvidar-recordar a{
-          text-decoration: none;
-          color: #fff;
-          font-weight: 600;
-      }
-
-      .olvidar-recordar a:hover{
-          text-decoration: underline;
-      }
-
       .fondo .btn{
           width: 100%;
           height: 45px;
@@ -152,28 +129,29 @@
           opacity: 0.9;
       }
 
-      .register-link{
-          font-size: 14.5px;
-          text-align: center;
-          margin-top: 20px;
-      }
-
-      .register-link a{
-          text-decoration: none;
-          color: #fff;
-          font-weight: 600;
-      }
-
-      .register-link a:hover{
-          text-decoration: underline;
-
-      }
-
       .errorAuth{
         text-align: center;
         color: red;
         font-size: 20px;
       }
+
+        .arrow-left img{
+            transform: rotate(180deg);
+        }
+
+        .arrow-left a{
+            display: flex;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            align-items: center;
+            padding: 15px 30px;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(270deg,#407C5F,#028034);
+            cursor: pointer;
+        }
 
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la visualización en dispositivos móviles -->
@@ -181,6 +159,11 @@
 </head>
 
 <body>
+
+    <div class="arrow-left">
+        <a href="<?=ROOT?>/home"><img src="<?=ROOT?>/../public/assets/imgs/contact/arrow_icon.png" alt=""></a>
+    </div>
+
     <div class="fondo"> <!-- Contenedor principal de la página -->
         <form action="" method="post"> <!-- Formulario de inicio de sesión -->
 
@@ -209,22 +192,9 @@
                 <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
             </div>
 
-            <!-- Opción para recordar al usuario -->
-            <div class="olvidar-recordar">
-                <label><input type="checkbox">Remember Me</label> <!-- Casilla de verificación -->
-                <a href="#">Forgot Password</a> <!-- Enlace para restablecer la contraseña -->
-            </div>
-
             <!-- Botón de envío del formulario -->
             <button type="submit" class="btn">Login</button> <!-- Botón con clase "btn" para estilos personalizados -->
 
-            <!-- Enlace para registrar una cuenta -->
-            <div class="register-link">
-                <p>
-                Dont have an account? <!-- Mensaje de invitación para registrar una cuenta -->
-                    <a href="#">Register</a> <!-- Enlace para registrar -->
-                </p>
-            </div>
             
         </form>
     </div>

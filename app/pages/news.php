@@ -12,7 +12,7 @@
 
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
       <div class="col-md-3 mb-2 mb-md-0">
-        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+        <a href="<?=ROOT?>/home" class="d-inline-flex link-body-emphasis text-decoration-none">
           <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="70" height="67">
         </a>
       </div>
