@@ -1,1 +1,2 @@
-<h1>page not found</h1>
+<h1>Welcome!</h1>
+<p>This section is in development...</p>
