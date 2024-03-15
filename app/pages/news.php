@@ -53,7 +53,7 @@
           <div class="card shadow-sm">
           <img src="<?=ROOT?>/../public/assets/imgs/GEI2.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
-              <p class="card-text">Este apartado destaca las noticias más impactantes sobre el cambio climático, resaltando el papel crucial de los gases de efecto invernadero en el calentamiento global.</p>
+              <p class="card-text">This section highlights the most shocking news on climate change, highlighting the crucial role of greenhouse gases in global warming.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -68,7 +68,7 @@
           <div class="card shadow-sm">
           <img src="<?=ROOT?>/../public/assets/imgs/EnergiaRen.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
-              <p class="card-text">En este apartado, examinaremos como las tendencias más recientes en energías renovables y la transición energética está allanando el camino hacia un futuro sostenible.</p>
+              <p class="card-text">In this section, we will examine how the latest trends in renewable energy and the energy transition are paving the way for a sustainable future.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -83,7 +83,7 @@
           <div class="card shadow-sm">
           <img src="<?=ROOT?>/../public/assets/imgs/biodiversidad.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
-              <p class="card-text">En este segmento, exploraremos relatos inspiradores sobre conservación de ecosistemas y protección de la biodiversidad. Desde iniciativas locales hasta esfuerzos globales.</p>
+              <p class="card-text">In this segment, we will explore inspiring stories of ecosystem conservation and biodiversity protection. From local initiatives to global efforts.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -99,7 +99,7 @@
           <div class="card shadow-sm">
           <img src="<?=ROOT?>/../public/assets/imgs/Agricultura-sostenible.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
-              <p class="card-text">En este espacio, nos centraremos en la agricultura y las prácticas agrícolas sostenibles, resaltando cómo las innovaciones y estrategias ecológicas están revolucionando la producción de alimentos.</p>
+              <p class="card-text">In this space, we will focus on sustainable agriculture and farming practices, highlighting how ecological innovations and strategies are revolutionizing food production.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -114,7 +114,7 @@
           <div class="card shadow-sm">
           <img src="<?=ROOT?>/../public/assets/imgs/EAM.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
-              <p class="card-text">En esta sección descubre cómo el conocimiento y la conciencia sobre temas medioambientales están capacitando a individuos y comunidades para tomar decisiones más responsables y comprometidas con el cuidado del planeta.</p>
+              <p class="card-text">In this section, discover how knowledge and awareness of environmental issues are empowering individuals and communities to make more responsible and committed decisions about caring for the planet.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -129,7 +129,7 @@
           <div class="card shadow-sm">
           <img src="<?=ROOT?>/../public/assets/imgs/politicas.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
-              <p class="card-text">En este apartado, exploraremos el ámbito de la política y las regulaciones climáticas a nivel nacional e internacional. Descubre cómo los marcos legislativos y los acuerdos globales están estableciendo las bases para una acción climática efectiva.</p>
+              <p class="card-text">In this section, we will explore the scope of climate policy and regulations at the national and international levels. Find out how legislative frameworks and global agreements are laying the groundwork for effective climate action.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -146,7 +146,7 @@
           <img src="<?=ROOT?>/../public/assets/imgs/movilidad-urbana.png" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
               <p class="card-text">
-En este apartado, exploraremos el tema del transporte sostenible y la movilidad urbana, destacando la necesidad de desplazamientos eficientes y respetuosos con el medio ambiente en entornos urbanos.</p>
+              In this section, we will explore the topic of sustainable transport and urban mobility, highlighting the need for efficient and environmentally friendly travel in urban environments.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -161,7 +161,7 @@ En este apartado, exploraremos el tema del transporte sostenible y la movilidad 
           <div class="card shadow-sm">
           <img src="<?=ROOT?>/../public/assets/imgs/aguaSOS.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
-              <p class="card-text">En este apartado, nos adentraremos en la gestión sostenible de los recursos hídricos, un aspecto crucial para la supervivencia y bienestar de nuestro planeta.Veremos estrategias y tecnologías avanzadas para su conservación y uso eficiente.</p>
+              <p class="card-text">In this section, we will look at the sustainable management of water resources, a crucial aspect for the survival and wellbeing of our planet, and we will look at advanced strategies and technologies for their conservation and efficient use.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -176,7 +176,7 @@ En este apartado, exploraremos el tema del transporte sostenible y la movilidad 
           <div class="card shadow-sm">
           <img src="<?=ROOT?>/../public/assets/imgs/justiciaCLIM.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Your image description" />
             <div class="card-body">
-              <p class="card-text">En este apartado, abordamos la justicia climática y la equidad en la lucha contra el cambio climático, asegurando soluciones inclusivas y equitativas para todas las comunidades, especialmente las más vulnerables.</p>
+              <p class="card-text">In this section, we address climate justice and equity in the fight against climate change, ensuring inclusive and equitable solutions for all communities, especially the most vulnerable.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
