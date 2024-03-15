@@ -57,9 +57,8 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">10/03/2024</small>
               </div>
             </div>
           </div>
@@ -72,9 +71,8 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">10/03/2024</small>
               </div>
             </div>
           </div>
@@ -87,9 +85,8 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">10/03/2024</small>
               </div>
             </div>
           </div>
@@ -103,9 +100,8 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">10/03/2024</small>
               </div>
             </div>
           </div>
@@ -118,9 +114,8 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">10/03/2024</small>
               </div>
             </div>
           </div>
@@ -133,9 +128,8 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">10/03/2024</small>
               </div>
             </div>
           </div>
@@ -150,9 +144,8 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">10/03/2024</small>
               </div>
             </div>
           </div>
@@ -165,9 +158,8 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">10/03/2024</small>
               </div>
             </div>
           </div>
@@ -180,9 +172,8 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">10/03/2024</small>
               </div>
             </div>
           </div>
