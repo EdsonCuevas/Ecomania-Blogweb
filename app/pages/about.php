@@ -78,24 +78,24 @@
       
   </main>
   <footer class="container">
-    <div class="row">
+  <div class="row">
         <div class="col-lg-4">
-            <h5>Conócenos</h5>
-            <p><a href="#">Quiénes somos</a></p>
-            <p><a href="#">Noticias</a></p>
+            <h5>Get to know us</h5>
+            <p><a href="<?=ROOT?>/about">About us</a></p>
+            <p><a href="<?=ROOT?>/news">News</a></p>
         </div>
         <div class="col-lg-4">
-            <h5>Términos y condiciones</h5>
-            <p><a href="#">Políticas de privacidad</a></p>
+            <h5>Terms and Conditions</h5>
+            <p><a href="#">Privacy Policy</a></p>
             <p>&copy; 2024 Universidad de Colima, Inc. Ecomania</p>
         </div>
         <div class="col-lg-4">
-            <h5>Contactanos</h5>
-            <p>ucol@ucol.mx</p>
+            <h5>Contact us</h5>
+            <p>Ecomania2023@gmail.com</p>
             <p>Manzanillo, Colima</p>
         </div>
     </div>
-    <p class="float-end"><a href="#">Volver arriba</a></p>
+    <p class="float-end"><a href="#">Back to top</a></p>
   </footer>
 </div>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
