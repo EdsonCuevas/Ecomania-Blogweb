@@ -105,7 +105,7 @@
       <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
         <!-- Reemplazar el rectángulo con la etiqueta image -->
         <image href="<?=ROOT?>/../public/assets/imgs/g1.gif" width="100%" height="100%" />
-        </svg>        <h2 class="fw-normal">Recycling inMéxico</h2>
+        </svg>        <h2 class="fw-normal">Recycling in México</h2>
         <p>Data presented by Forbes shows that 68% of companies in México use recycled materials.</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
@@ -218,22 +218,22 @@
     <footer class="container" style="margin-top: 200px;">
     <div class="row">
         <div class="col-lg-4">
-            <h5>Conócenos</h5>
-            <p><a href="#">Quiénes somos</a></p>
-            <p><a href="#">Noticias</a></p>
+            <h5>Get to know us</h5>
+            <p><a href="<?=ROOT?>/about">About us</a></p>
+            <p><a href="<?=ROOT?>/news">News</a></p>
         </div>
         <div class="col-lg-4">
-            <h5>Términos y condiciones</h5>
-            <p><a href="#">Políticas de privacidad</a></p>
+            <h5>Terms and Conditions</h5>
+            <p><a href="#">Privacy Policy</a></p>
             <p>&copy; 2024 Universidad de Colima, Inc. Ecomania</p>
         </div>
         <div class="col-lg-4">
-            <h5>Contactanos</h5>
-            <p>ucol@ucol.mx</p>
+            <h5>Contact us</h5>
+            <p>Ecomania2023@gmail.com</p>
             <p>Manzanillo, Colima</p>
         </div>
     </div>
-    <p class="float-end"><a href="#">Volver arriba</a></p>
+    <p class="float-end"><a href="#">Back to top</a></p>
     
   </footer>
  
