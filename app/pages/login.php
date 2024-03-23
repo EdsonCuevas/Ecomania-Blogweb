@@ -222,7 +222,7 @@
 
             <!-- Campo de entrada para el nombre de usuario -->
             <div class="input-box">
-                <input type="email" value="<?=old_value('email')?>" name="email" placeholder="Username" required> <!-- Campo obligatorio -->
+                <input type="email" value="<?=old_value('email')?>" name="email" placeholder="Email" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-user"></i> <!-- Icono de usuario de Boxicons -->
             </div>
 
