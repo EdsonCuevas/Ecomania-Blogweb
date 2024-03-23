@@ -5,24 +5,6 @@
     //validate
     $errors = [];
 
-    $query = "select * from users where email = :email limit 1";
-    $row = query($query, ['email'=>$_POST['email']]);
-
-    if($row){
-
-      $data = [];
-      if(password_verify($_POST['password'], $row[0]['password'])){
-        //access
-        authenticate($row[0]);
-        redirect('admin');
-
-      } else {
-        $errors['email'] = "Wrong email or password!";
-      }
-
-    } else {
-      $errors['email'] = "Wrong email or password!";
-    }
   }
 
 ?>
@@ -190,7 +172,7 @@
                 </a>
             </div>
             
-            <h1>Login</h1> <!-- Encabezado del formulario -->
+            <h1>Register</h1> <!-- Encabezado del formulario -->
 
             <?php if (!empty($errors['email'])):?>
               <br>
@@ -199,32 +181,25 @@
 
             <!-- Campo de entrada para el nombre de usuario -->
             <div class="input-box">
-                <input type="email" value="<?=old_value('email')?>" name="email" placeholder="Username" required> <!-- Campo obligatorio -->
+                <input type="email" value="<?=old_value('email')?>" name="email" placeholder="Email" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-user"></i> <!-- Icono de usuario de Boxicons -->
             </div>
 
-            <!-- Campo de entrada para la contraseña -->
+            <!-- Campo de entrada para la primera contraseña -->
             <div class="input-box">
                 <input type="password" value="<?=old_value('password')?>" name="password" placeholder="Password" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
             </div>
 
-            <!-- Opción para recordar al usuario -->
-            <div class="olvidar-recordar">
-                <label><input type="checkbox">Remember Me</label> <!-- Casilla de verificación -->
-                <a href="#">Forgot Password</a> <!-- Enlace para restablecer la contraseña -->
+            <!-- Campo de entrada para la segunda contraseña -->
+            <div class="input-box">
+                <input type="password" value="<?=old_value('password')?>" name="password" placeholder="Confirm Password" required> <!-- Campo obligatorio -->
+                <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
             </div>
-
+            
             <!-- Botón de envío del formulario -->
-            <button type="submit" class="btn">Login</button> <!-- Botón con clase "btn" para estilos personalizados -->
+            <button type="submit" class="btn">Sign up</button> <!-- Botón con clase "btn" para estilos personalizados -->
 
-            <!-- Enlace para registrar una cuenta -->
-            <div class="register-link">
-                <p>
-                Dont have an account? <!-- Mensaje de invitación para registrar una cuenta -->
-                    <a href="<?=ROOT?>/signup">Register</a> <!-- Enlace para registrar -->
-                </p>
-            </div>
             
         </form>
     </div>
