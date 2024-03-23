@@ -285,6 +285,14 @@
             <!-- Botón de envío del formulario -->
             <button type="submit" class="btn">Sign up</button> <!-- Botón con clase "btn" para estilos personalizados -->
 
+            <!-- Enlace para registrar una cuenta -->
+            <div class="register-link">
+                <p>
+                Already have an account? <!-- Mensaje de invitación para registrar una cuenta -->
+                    <a href="<?=ROOT?>/login">Login</a> <!-- Enlace para registrar -->
+                </p>
+            </div>
+
             
         </form>
     </div>
