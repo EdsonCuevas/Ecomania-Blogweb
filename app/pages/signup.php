@@ -5,24 +5,57 @@
     //validate
     $errors = [];
 
-    $query = "select * from users where email = :email limit 1";
-    $row = query($query, ['email'=>$_POST['email']]);
+    if(empty($_POST['username'])){
 
-    if($row){
+        $errors['username'] = "A username is required";
 
-      $data = [];
-      if(password_verify($_POST['password'], $row[0]['password'])){
-        //access
-        authenticate($row[0]);
-        redirect('admin');
+    } else if(!preg_match("/^[a-zA-Z]+$/", $_POST['username'])){
 
-      } else {
-        $errors['email'] = "Wrong email or password!";
-      }
+        $errors['username'] = "Username can only have letters and no spaces";
 
-    } else {
-      $errors['email'] = "Wrong email or password!";
     }
+
+    $query = "select id from users where email = :email limit 1";
+    $email = query($query, ['email'=>$_POST['email']]);
+
+    if(empty($_POST['email'])){
+
+        $errors['email'] = "A email is required";
+
+    } else if($email){
+
+        $errors['email'] = "That email is already in use";
+
+    }
+
+    if(empty($_POST['password'])){
+
+        $errors['password'] = "A password is required";
+
+    } else if(strlen($_POST['password']) < 8){
+
+        $errors['password'] = "Password must be 8 chracter or more";
+
+    } else if($_POST['password'] !== $_POST['retype_password']){
+
+        $errors['password'] = "Passwords do not match";
+
+    }
+
+    if(empty($errors)){
+        //save to database
+        $data = [];
+        $data['username'] = $_POST['username'];
+        $data['email']    = $_POST['email'];
+        $data['role']     = "user";
+        $data['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+        $query = "insert into users (username,email,password,role) values (:username,:email,:password,:role)";
+        query($query, $data);
+
+        redirect('login');
+    }
+
   }
 
 ?>
@@ -201,7 +234,7 @@
 <body>
 
     <div class="arrow-left">
-        <a href="<?=ROOT?>/home"><img src="<?=ROOT?>/../public/assets/imgs/contact/arrow_icon.png" alt=""></a>
+        <a href="<?=ROOT?>/login"><img src="<?=ROOT?>/../public/assets/imgs/contact/arrow_icon.png" alt=""></a>
     </div>
 
     <div class="fondo"> <!-- Contenedor principal de la página -->
@@ -213,41 +246,53 @@
                 </a>
             </div>
             
-            <h1>Login</h1> <!-- Encabezado del formulario -->
+            <h1>Register</h1> <!-- Encabezado del formulario -->
 
-            <?php if (!empty($errors['email'])):?>
-              <br>
-              <p class="errorAuth"><?=$errors['email']?></p>
+            <?php if(!empty($errors['username'])):?>
+            <div class="errorAuth"><br><?=$errors['username']?></div>
             <?php endif;?>
 
             <!-- Campo de entrada para el nombre de usuario -->
             <div class="input-box">
-                <input type="email" value="<?=old_value('email')?>" name="email" placeholder="Email" required> <!-- Campo obligatorio -->
+                <input type="text" value="<?=old_value('username')?>" name="username" placeholder="Username" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-user"></i> <!-- Icono de usuario de Boxicons -->
             </div>
 
-            <!-- Campo de entrada para la contraseña -->
+            <!-- Campo de entrada para el email de usuario -->
+            <div class="input-box">
+                <input type="email" value="<?=old_value('email')?>" name="email" placeholder="Email" required> <!-- Campo obligatorio -->
+                <i class="bx bxs-user"></i> <!-- Icono de usuario de Boxicons -->
+            </div>
+            <?php if(!empty($errors['email'])):?>
+            <div class="errorAuth"><?=$errors['email']?></div>
+            <?php endif;?>
+
+            <!-- Campo de entrada para la primera contraseña -->
             <div class="input-box">
                 <input type="password" value="<?=old_value('password')?>" name="password" placeholder="Password" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
             </div>
+            <?php if(!empty($errors['password'])):?>
+            <div class="errorAuth"><?=$errors['password']?></div>
+            <?php endif;?>
 
-            <!-- Opción para recordar al usuario -->
-            <div class="olvidar-recordar">
-                <label><input type="checkbox">Remember Me</label> <!-- Casilla de verificación -->
-                <a href="#">Forgot Password</a> <!-- Enlace para restablecer la contraseña -->
+            <!-- Campo de entrada para la segunda contraseña -->
+            <div class="input-box">
+                <input type="password" value="<?=old_value('retype_password')?>" name="retype_password" placeholder="Confirm Password" required> <!-- Campo obligatorio -->
+                <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
             </div>
-
+            
             <!-- Botón de envío del formulario -->
-            <button type="submit" class="btn">Login</button> <!-- Botón con clase "btn" para estilos personalizados -->
+            <button type="submit" class="btn">Sign up</button> <!-- Botón con clase "btn" para estilos personalizados -->
 
             <!-- Enlace para registrar una cuenta -->
             <div class="register-link">
                 <p>
-                Dont have an account? <!-- Mensaje de invitación para registrar una cuenta -->
-                    <a href="<?=ROOT?>/signup">Register</a> <!-- Enlace para registrar -->
+                Already have an account? <!-- Mensaje de invitación para registrar una cuenta -->
+                    <a href="<?=ROOT?>/login">Login</a> <!-- Enlace para registrar -->
                 </p>
             </div>
+
             
         </form>
     </div>
