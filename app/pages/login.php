@@ -175,12 +175,35 @@
         font-size: 20px;
       }
 
+      .arrow-left img{
+            transform: rotate(180deg);
+        }
+
+        .arrow-left a{
+            display: flex;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            align-items: center;
+            padding: 15px 30px;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(270deg,#407C5F,#028034);
+            cursor: pointer;
+        }
+
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la visualización en dispositivos móviles -->
     <title>Login Ecomania</title> <!-- Título de la página -->
 </head>
 
 <body>
+
+    <div class="arrow-left">
+        <a href="<?=ROOT?>/home"><img src="<?=ROOT?>/../public/assets/imgs/contact/arrow_icon.png" alt=""></a>
+    </div>
+
     <div class="fondo"> <!-- Contenedor principal de la página -->
         <form action="" method="post"> <!-- Formulario de inicio de sesión -->
 
