@@ -5,6 +5,57 @@
     //validate
     $errors = [];
 
+    if(empty($_POST['username'])){
+
+        $errors['username'] = "A username is required";
+
+    } else if(preg_match("/^[a-zA-Z]+$/", $_POST['username'])){
+
+        $errors['username'] = "Username can only have letters and no spaces";
+
+    }
+
+    $query = "select id from users where email = :email limit 1";
+    $email = query($query, ['email'=>$_POST['email']]);
+
+    if(empty($_POST['email'])){
+
+        $errors['email'] = "A email is required";
+
+    } else if($email){
+
+        $errors['email'] = "That email is already in use";
+
+    }
+
+    if(empty($_POST['password'])){
+
+        $errors['password'] = "A password is required";
+
+    } else if(strlen($_POST['password']) < 8){
+
+        $errors['password'] = "Password must be 8 chracter or more";
+
+    } else if($_POST['password'] !== $_POST['retype_password']){
+
+        $errors['password'] = "Passwords do not match";
+
+    }
+
+    if(empty($errors)){
+        //save to database
+        $data = [];
+        $data['username'] = $_POST['username'];
+        $data['email']    = $_POST['email'];
+        $data['role']     = "user";
+        $data['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+        $query = "insert into users (username,email,password,role) values (:username,:email,:password,:role)";
+        query($query, $data);
+
+        redirect('<?=ROOT?>/login');
+    }
+
   }
 
 ?>
@@ -197,12 +248,18 @@
             
             <h1>Register</h1> <!-- Encabezado del formulario -->
 
-            <?php if (!empty($errors['email'])):?>
+            <?php if (!empty($errors)):?>
               <br>
-              <p class="errorAuth"><?=$errors['email']?></p>
+              <p>Please fix the errors below</p>
             <?php endif;?>
 
             <!-- Campo de entrada para el nombre de usuario -->
+            <div class="input-box">
+                <input type="text" value="<?=old_value('username')?>" name="username" placeholder="Username" required> <!-- Campo obligatorio -->
+                <i class="bx bxs-user"></i> <!-- Icono de usuario de Boxicons -->
+            </div>
+
+            <!-- Campo de entrada para el email de usuario -->
             <div class="input-box">
                 <input type="email" value="<?=old_value('email')?>" name="email" placeholder="Email" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-user"></i> <!-- Icono de usuario de Boxicons -->
@@ -216,7 +273,7 @@
 
             <!-- Campo de entrada para la segunda contraseña -->
             <div class="input-box">
-                <input type="password" value="<?=old_value('password')?>" name="password" placeholder="Confirm Password" required> <!-- Campo obligatorio -->
+                <input type="password" value="<?=old_value('retype_password')?>" name="retype_password" placeholder="Confirm Password" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
             </div>
             
