@@ -87,11 +87,27 @@ function create_tables(){
     $stm = $con->prepare($query);
     $stm->execute();
 
+    /** categories tables **/
+    $query = "create table if not exists categories(
+
+        id int primary key auto_increment,
+        category varchar(50) not null,
+        slug varchar(100) not null,
+        disabled tinyint default 0,
+
+        key slug (slug),
+        key category (category)
+
+    )";
+    $stm = $con->prepare($query);
+    $stm->execute();
+
     /** posts tables **/
     $query = "create table if not exists posts(
 
         id int primary key auto_increment,
         user_id int,
+        category_id int,
         title varchar(100) not null,
         content text null,
         image varchar(1024) null,
@@ -99,6 +115,7 @@ function create_tables(){
         slug varchar(100) not null,
 
         key user_id (user_id),
+        key category_id (category_id),
         key title (title),
         key slug (slug),
         key date (date)
