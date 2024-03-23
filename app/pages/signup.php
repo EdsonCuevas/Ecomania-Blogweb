@@ -248,9 +248,8 @@
             
             <h1>Register</h1> <!-- Encabezado del formulario -->
 
-            <?php if (!empty($errors)):?>
-              <br>
-              <p class="errorAuth">Please fix the errors below</p>
+            <?php if(!empty($errors['username'])):?>
+            <div class="errorAuth"><br><?=$errors['username']?></div>
             <?php endif;?>
 
             <!-- Campo de entrada para el nombre de usuario -->
@@ -258,9 +257,6 @@
                 <input type="text" value="<?=old_value('username')?>" name="username" placeholder="Username" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-user"></i> <!-- Icono de usuario de Boxicons -->
             </div>
-            <?php if(!empty($errors['username'])):?>
-            <div class="errorAuth"><?=$errors['username']?></div>
-            <?php endif;?>
 
             <!-- Campo de entrada para el email de usuario -->
             <div class="input-box">
