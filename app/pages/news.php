@@ -9,8 +9,9 @@
     <link href="<?=ROOT?>/../public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
+  <body style="padding: 0; background-color: rgb(237, 255, 236);">
 
-    <header class="p-3 mb-1">
+    <header class="p-3 mb-0 border-bottom">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="<?=ROOT?>/home" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
@@ -60,7 +61,7 @@
     </div>
   </section>
 
-  <div class="album py-5 bg-body-tertiary">
+  <div class="album py-5">
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
