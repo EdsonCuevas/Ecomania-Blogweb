@@ -22,7 +22,7 @@
         <?php foreach($rows as $row):?>
         <tr>
             <td><?=$row['id']?></td>
-            <td><?=$row['username']?></td>
+            <td><?=esc($row['username'])?></td>
             <td><?=$row['email']?></td>
             <td><?=$row['role']?></td>
             <td>Image</td>

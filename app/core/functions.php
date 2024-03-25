@@ -44,6 +44,10 @@ function str_to_url($url){
    return $url;
 }
 
+function esc($str){
+    return htmlspecialchars($str ?? '');
+}
+
 function authenticate($row){
     $_SESSION['USER'] = $row;
 }
