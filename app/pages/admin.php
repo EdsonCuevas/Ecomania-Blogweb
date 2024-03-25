@@ -1,8 +1,81 @@
 <?php
 
-if(!logged_in()){
-  redirect('login');
-}
+  if(!logged_in()){
+    redirect('login');
+  }
+
+  $section = $url[1] ?? 'dashboard';
+  $action  = $url[2] ?? 'view';
+  $id      = $url[3] ?? 0;
+
+  $filename = "../app/pages/admin/".$section.".php";
+
+  if(!file_exists($filename)){
+    $filename = "../app/pages/admin/404.php";
+  }
+
+  if(!empty($_POST)){
+
+    //add new user
+    if($action == 'add'){
+    
+      //validate
+      $errors = [];
+  
+      if(empty($_POST['username'])){
+  
+          $errors['username'] = "A username is required";
+  
+      } else if(!preg_match("/^[a-zA-Z]+$/", $_POST['username'])){
+  
+          $errors['username'] = "Username can only have letters and no spaces";
+  
+      }
+  
+      $query = "select id from users where email = :email limit 1";
+      $email = query($query, ['email'=>$_POST['email']]);
+  
+      if(empty($_POST['email'])){
+  
+          $errors['email'] = "A email is required";
+  
+      } else if($email){
+  
+          $errors['email'] = "That email is already in use";
+  
+      }
+  
+      if(empty($_POST['password'])){
+  
+          $errors['password'] = "A password is required";
+  
+      } else if(strlen($_POST['password']) < 8){
+  
+          $errors['password'] = "Password must be 8 chracter or more";
+  
+      } else if($_POST['password'] !== $_POST['retype_password']){
+  
+          $errors['password'] = "Passwords do not match";
+  
+      }
+  
+      if(empty($errors)){
+          //save to database
+          $data = [];
+          $data['username'] = $_POST['username'];
+          $data['email']    = $_POST['email'];
+          $data['role']     = "user";
+          $data['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
+  
+          $query = "insert into users (username,email,password,role) values (:username,:email,:password,:role)";
+          query($query, $data);
+  
+          redirect('admin/users');
+      }
+  
+    }
+  }
+
 ?>
 
 <!doctype html>
@@ -85,18 +158,7 @@ if(!logged_in()){
       </div>
       <?php
 
-        $section = $url[1] ?? 'dashboard';
-        
-        $filename = "../app/pages/admin/".$section.".php";
-        if(file_exists($filename)){
-
           require_once $filename;
-
-        } else {
-
-          require_once "../app/pages/admin/404.php";
-
-        }
 
       ?>
     </main>
