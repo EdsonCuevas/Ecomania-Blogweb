@@ -9,7 +9,7 @@
     <link href="<?=ROOT?>/../public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-  <body style="padding: 0; background-color: rgb(237, 255, 236);">
+  <body style="padding: 0; background-color: #D8F4CC;">
 
     <header class="p-3 mb-0 border-bottom">
     <div class="container">
