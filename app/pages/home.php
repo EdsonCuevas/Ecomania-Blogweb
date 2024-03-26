@@ -14,7 +14,7 @@
   <link href="<?=ROOT?>/../public/assets/css/carousel.css" rel="stylesheet">
 </head>
 
-<body style="padding: 0; background-color: rgb(231, 255, 230);">
+<body style="padding: 0; background-color: #D8F4CC;">
 
   <header class="p-3 mb-0 border-bottom">
     <div class="container">

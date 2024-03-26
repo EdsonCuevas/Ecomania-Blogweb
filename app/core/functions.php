@@ -18,18 +18,48 @@ function query(string $query, array $data = []){
 
 }
 
+function query_row(string $query, array $data = []){
+
+    $string = "mysql:hostname=".DBHOST.";dbname=". DBNAME;
+    $con = new PDO($string, DBUSER, DBPASS);
+
+    $stm = $con->prepare($query);
+    $stm->execute($data);
+    
+    $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+    if(is_array($result) && !empty($result)){
+        return $result[0];
+    }
+
+
+    return false;
+
+}
+
 function redirect($page){
 
-    header('Location: '.$page);
+    header('Location: '.ROOT. '/' . $page);
     die;
 }
 
-function old_value($key){
+function old_value($key, $default = ''){
 
-    if(!empty($_POST[$key]))
+    if(!empty($_POST[$key])){
         return $_POST[$key];
+    }
 
-    return "";
+    return $default;
+}
+
+function get_image($file){
+
+    $file = $file ?? '';
+    if(file_exists($file)){
+        
+        return ROOT.'/'.$file;
+
+    }
+    return ROOT.'/assets/imgs/no_image.png';
 }
 
 function str_to_url($url){
@@ -42,6 +72,10 @@ function str_to_url($url){
    $url = preg_replace('~[^-a-z0-9_]+~', '', $url);
    
    return $url;
+}
+
+function esc($str){
+    return htmlspecialchars($str ?? '');
 }
 
 function authenticate($row){
@@ -131,7 +165,7 @@ function insertAdmin(){
     
     $data = [];
     $data['username'] = 'admin';
-    $data['email'] = 'email@email.com';
+    $data['email'] = 'alfredo@email.com';
     $data['role'] = 'admin';
     $data['password'] = password_hash("alfredo123", PASSWORD_DEFAULT);
 
