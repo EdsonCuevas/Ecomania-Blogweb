@@ -50,6 +50,20 @@
                 <?php if (!empty($errors)): ?>
                     <div class="alert alert-danger">Please fix the errors below</div>
                 <?php endif; ?>
+
+                <div class="my-2">
+                    <label class="d-block">
+                        <img class="mx-auto d-block image-preview-edit" src="<?=get_image($row['image'])?>" style="cursor: pointer; width: 150px; height: 150px; object-fit: cover;">
+                        <input onchange="display_image_edit(this.files[0])" type="file" name="image" class="d-none">
+                    </label>
+
+                    <script>
+                        function display_image_edit(file){
+                            document.querySelector(".image-preview-edit").src = URL.createObjectURL(file);
+                        }
+                    </script>
+                </div>
+
                 <div class="form-floating">
                     <input value="<?= old_value('username', $row['username']) ?>" name="username" type="text" class="form-control mb-2" id="floatingInput" placeholder="Username">
                     <label for="floatingInput">Username</label>
@@ -158,7 +172,9 @@
                     <td><?=esc($row['username'])?></td>
                     <td><?=$row['email']?></td>
                     <td><?=$row['role']?></td>
-                    <td>Image</td>
+                    <td>
+                        <img src="<?=get_image($row['image'])?>" style="width: 100px; height: 100px; object-fit: cover;">
+                    </td>
                     <td><?=date("jS M, Y",strtotime($row['date']))?></td>
                     <td>
                         <a href="<?=ROOT?>/admin/users/edit/<?=$row['id']?>">

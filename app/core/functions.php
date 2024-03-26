@@ -51,6 +51,17 @@ function old_value($key, $default = ''){
     return $default;
 }
 
+function get_image($file){
+
+    $file = $file ?? '';
+    if(file_exists($file)){
+        
+        return ROOT.'/'.$file;
+
+    }
+    return ROOT.'/assets/imgs/no_image.png';
+}
+
 function str_to_url($url){
 
    $url = str_replace("'", "", $url);
