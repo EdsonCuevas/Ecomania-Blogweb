@@ -154,7 +154,7 @@ function insertAdmin(){
     
     $data = [];
     $data['username'] = 'admin';
-    $data['email'] = 'email@email.com';
+    $data['email'] = 'alfredo@email.com';
     $data['role'] = 'admin';
     $data['password'] = password_hash("alfredo123", PASSWORD_DEFAULT);
 

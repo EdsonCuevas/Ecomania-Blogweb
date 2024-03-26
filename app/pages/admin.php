@@ -147,6 +147,35 @@
     }
   
     }
+    else
+    if($action == 'delete'){
+
+      $query = "select * from users where id = :id limit 1";
+      $row = query_row($query, ['id'=>$id]);
+
+      if($_SERVER['REQUEST_METHOD'] == "POST"){
+
+        if($row){
+
+          //validate
+          $errors = [];
+      
+          if(empty($errors)){
+              //delete from database
+              $data = [];
+              $data['id'] = $id;
+
+              $query = "delete from users where id = :id limit 1";
+
+
+              query($query, $data);
+      
+              redirect('admin/users');
+          }
+      }
+    }
+  
+    }
 
 ?>
 

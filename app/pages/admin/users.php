@@ -90,6 +90,40 @@
 
 <?php elseif($action == 'delete'):?>
 
+    <div class="container">
+        <form method="post">
+            <div class="col-md-6 mx-auto">
+                <h1 class="h3 mb-3 fw-normal">Delete account</h1>
+                <?php if(!empty($row)):?>
+                <?php if (!empty($errors)): ?>
+                    <div class="alert alert-danger">Please fix the errors below</div>
+                <?php endif; ?>
+                <div class="form-floating">
+                    <div class="form-control mb-2"><?= old_value('username', $row['username']) ?></div>
+                    <?php if (!empty($errors['username'])): ?>
+                        <div class="text-danger"><?= $errors['username'] ?></div>
+                    <?php endif; ?>
+                </div>
+                <div class="form-floating">
+                <div class="form-control mb-2"><?= old_value('email', $row['email']) ?></div>
+                    <?php if (!empty($errors['email'])): ?>
+                        <div class="text-danger"><?= $errors['email'] ?></div>
+                    <?php endif; ?>
+                </div>
+                
+                <a href="<?=ROOT?>/admin/users">
+                    <button class="mt-4 btn btn-lg btn-primary" type="button">Back</button>
+                </a>
+                <button class="mt-4 btn btn-lg btn-danger float-end" type="submit">Delete</button>
+                <?php else: ?>
+
+                    <div class="alert alert-danger text-center">Record not found!</div>
+
+                <?php endif; ?>
+            </div>
+        </form>
+    </div>
+
 <?php else:?>
     <h4>Users</h4>
     <a href="<?=ROOT?>/admin/users/add">
