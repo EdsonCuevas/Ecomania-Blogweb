@@ -43,7 +43,7 @@
 <?php elseif($action == 'edit'):?>
 
     <div class="container">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             <div class="col-md-6 mx-auto">
                 <h1 class="h3 mb-3 fw-normal">Edit account</h1>
                 <?php if(!empty($row)):?>
