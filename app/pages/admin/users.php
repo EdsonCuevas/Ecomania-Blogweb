@@ -32,12 +32,62 @@
                     <input value="<?= old_value('retype_password') ?>" name="retype_password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Password</label>
                 </div>
-                <button class="mt-4 w-100 btn btn-lg btn-primary" type="submit">Create</button>
+                <a href="<?=ROOT?>/admin/users">
+                    <button class="mt-4 btn btn-lg btn-primary" type="button">Back</button>
+                </a>
+                <button class="mt-4 btn btn-lg btn-primary float-end" type="submit">Create</button>
             </div>
         </form>
     </div>
 
 <?php elseif($action == 'edit'):?>
+
+    <div class="container">
+        <form method="post">
+            <div class="col-md-6 mx-auto">
+                <h1 class="h3 mb-3 fw-normal">Edit account</h1>
+                <?php if(!empty($row)):?>
+                <?php if (!empty($errors)): ?>
+                    <div class="alert alert-danger">Please fix the errors below</div>
+                <?php endif; ?>
+                <div class="form-floating">
+                    <input value="<?= old_value('username', $row['username']) ?>" name="username" type="text" class="form-control mb-2" id="floatingInput" placeholder="Username">
+                    <label for="floatingInput">Username</label>
+                    <?php if (!empty($errors['username'])): ?>
+                        <div class="text-danger"><?= $errors['username'] ?></div>
+                    <?php endif; ?>
+                </div>
+                <div class="form-floating">
+                    <input value="<?= old_value('email', $row['email']) ?>" name="email" type="email" class="form-control" id="floatingInput" placeholder="Email addres">
+                    <label for="floatingInput">Email</label>
+                    <?php if (!empty($errors['email'])): ?>
+                        <div class="text-danger"><?= $errors['email'] ?></div>
+                    <?php endif; ?>
+                </div>
+                <div class="form-floating">
+                    <input value="<?= old_value('password') ?>" name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password (Leave empty to keep old one)</label>
+                    <?php if (!empty($errors['password'])): ?>
+                        <div class="text-danger"><?= $errors['password'] ?></div>
+                    <?php endif; ?>
+                </div>
+                <div class="form-floating">
+                    <input value="<?= old_value('retype_password') ?>" name="retype_password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <a href="<?=ROOT?>/admin/users">
+                    <button class="mt-4 btn btn-lg btn-primary" type="button">Back</button>
+                </a>
+                <button class="mt-4 btn btn-lg btn-primary float-end" type="submit">Save</button>
+                <?php else: ?>
+
+                    <div class="alert alert-danger text-center">Record not found!</div>
+
+                <?php endif; ?>
+            </div>
+        </form>
+    </div>
+
 <?php elseif($action == 'delete'):?>
 
 <?php else:?>

@@ -18,18 +18,37 @@ function query(string $query, array $data = []){
 
 }
 
+function query_row(string $query, array $data = []){
+
+    $string = "mysql:hostname=".DBHOST.";dbname=". DBNAME;
+    $con = new PDO($string, DBUSER, DBPASS);
+
+    $stm = $con->prepare($query);
+    $stm->execute($data);
+    
+    $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+    if(is_array($result) && !empty($result)){
+        return $result[0];
+    }
+
+
+    return false;
+
+}
+
 function redirect($page){
 
-    header('Location: '.$page);
+    header('Location: '.ROOT. '/' . $page);
     die;
 }
 
-function old_value($key){
+function old_value($key, $default = ''){
 
-    if(!empty($_POST[$key]))
+    if(!empty($_POST[$key])){
         return $_POST[$key];
+    }
 
-    return "";
+    return $default;
 }
 
 function str_to_url($url){
