@@ -159,8 +159,10 @@
             </tr>
 
             <?php
+                $limit = 10;
+                $offset = ($PAGE['page_number'] - 1) * $limit;
 
-                $query = "select * from users order by id desc";
+                $query = "select * from users order by id desc limit $limit offset $offset";
                 $rows = query($query);
 
             ?>
@@ -188,6 +190,18 @@
                 <?php endforeach;?>
             <?php endif;?>
         </table>
+
+        <div class="col-md-12 mb-4">
+            <a href="<?=$PAGE['first_link']?>">
+            <button class="btn btn-primary">First Page</button>
+            </a>
+            <a href="<?=$PAGE['prev_link']?>">
+            <button class="btn btn-primary">Prev Page</button>
+            </a>
+            <a href="<?=$PAGE['next_link']?>">
+            <button class="btn btn-primary float-end">Next Page</button>
+            </a>
+        </div>
     </div>
 
 <?php endif;?>
