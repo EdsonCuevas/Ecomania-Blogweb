@@ -217,16 +217,3 @@ function create_tables(){
     $stm->execute();
 
 }
-
-//insertAdmin();
-function insertAdmin(){
-    
-    $data = [];
-    $data['username'] = 'admin';
-    $data['email'] = 'alfredo@email.com';
-    $data['role'] = 'admin';
-    $data['password'] = password_hash("alfredo123", PASSWORD_DEFAULT);
-
-    $query = "insert into users (username,email,password,role) values (:username,:email,:password,:role)";
-    query($query, $data);
-}
