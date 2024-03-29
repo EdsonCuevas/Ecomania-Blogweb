@@ -7,6 +7,25 @@
                 <?php if (!empty($errors)): ?>
                     <div class="alert alert-danger">Please fix the errors below</div>
                 <?php endif; ?>
+
+                <div class="my-2">
+                    <label class="d-block">
+                        <img class="mx-auto d-block image-preview-edit" src="<?=get_image('')?>" style="cursor: pointer;width: 150px;height: 150px;object-fit: cover;">
+                        <input onchange="display_image_edit(this.files[0])" type="file" name="image" class="d-none">
+                    </label>
+                    <?php if(!empty($errors['image'])):?>
+                    <div class="text-danger"><?=$errors['image']?></div>
+                    <?php endif;?>
+
+                    <script>
+                        
+                        function display_image_edit(file)
+                        {
+                            document.querySelector(".image-preview-edit").src = URL.createObjectURL(file);
+                        }
+                    </script>
+                </div>
+
                 <div class="form-floating">
                     <input value="<?= old_value('username') ?>" name="username" type="text" class="form-control mb-2" id="floatingInput" placeholder="Username">
                     <label for="floatingInput">Username</label>
@@ -21,6 +40,18 @@
                         <div class="text-danger"><?= $errors['email'] ?></div>
                     <?php endif; ?>
                 </div>
+
+                <div class="form-floating my-3">
+                    <select name="role" class="form-select">
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <label for="floatingInput">Role</label>
+                    <?php if (!empty($errors['role'])): ?>
+                        <div class="text-danger"><?= $errors['role'] ?></div>
+                    <?php endif; ?>
+                </div>
+
                 <div class="form-floating">
                     <input value="<?= old_value('password') ?>" name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Password</label>
@@ -78,6 +109,18 @@
                         <div class="text-danger"><?= $errors['email'] ?></div>
                     <?php endif; ?>
                 </div>
+
+                <div class="form-floating my-3">
+                    <select name="role" class="form-select">
+                        <option <?= old_select('role', 'user', $row['role']) ?> value="user">User</option>
+                        <option <?= old_select('role', 'admin', $row['role']) ?> value="admin">Admin</option>
+                    </select>
+                    <label for="floatingInput">Role</label>
+                    <?php if (!empty($errors['role'])): ?>
+                        <div class="text-danger"><?= $errors['role'] ?></div>
+                    <?php endif; ?>
+                </div>
+
                 <div class="form-floating">
                     <input value="<?= old_value('password') ?>" name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Password (Leave empty to keep old one)</label>
