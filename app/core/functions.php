@@ -51,6 +51,21 @@ function old_value($key, $default = ''){
     return $default;
 }
 
+function old_select($key, $value, $default = ''){
+
+    if(!empty($_POST[$key]) && $_POST[$key] == $value){
+        return " selected ";
+    }
+
+    if($default == $value){
+        return " selected ";
+    }
+
+    return "";
+}
+
+
+
 function get_image($file){
 
     $file = $file ?? '';
@@ -201,17 +216,4 @@ function create_tables(){
     $stm = $con->prepare($query);
     $stm->execute();
 
-}
-
-//insertAdmin();
-function insertAdmin(){
-    
-    $data = [];
-    $data['username'] = 'admin';
-    $data['email'] = 'alfredo@email.com';
-    $data['role'] = 'admin';
-    $data['password'] = password_hash("alfredo123", PASSWORD_DEFAULT);
-
-    $query = "insert into users (username,email,password,role) values (:username,:email,:password,:role)";
-    query($query, $data);
 }

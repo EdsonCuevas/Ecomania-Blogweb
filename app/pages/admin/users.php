@@ -40,6 +40,18 @@
                         <div class="text-danger"><?= $errors['email'] ?></div>
                     <?php endif; ?>
                 </div>
+
+                <div class="form-floating my-3">
+                    <select name="role" class="form-select">
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <label for="floatingInput">Role</label>
+                    <?php if (!empty($errors['role'])): ?>
+                        <div class="text-danger"><?= $errors['role'] ?></div>
+                    <?php endif; ?>
+                </div>
+
                 <div class="form-floating">
                     <input value="<?= old_value('password') ?>" name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Password</label>
@@ -97,6 +109,18 @@
                         <div class="text-danger"><?= $errors['email'] ?></div>
                     <?php endif; ?>
                 </div>
+
+                <div class="form-floating my-3">
+                    <select name="role" class="form-select">
+                        <option <?= old_select('role', 'user', $row['role']) ?> value="user">User</option>
+                        <option <?= old_select('role', 'admin', $row['role']) ?> value="admin">Admin</option>
+                    </select>
+                    <label for="floatingInput">Role</label>
+                    <?php if (!empty($errors['role'])): ?>
+                        <div class="text-danger"><?= $errors['role'] ?></div>
+                    <?php endif; ?>
+                </div>
+
                 <div class="form-floating">
                     <input value="<?= old_value('password') ?>" name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Password (Leave empty to keep old one)</label>
