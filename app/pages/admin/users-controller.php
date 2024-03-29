@@ -43,20 +43,52 @@
             $errors['password'] = "Passwords do not match";
     
         }
+
+        //validate image
+        $allowed = ['image/jpeg','image/png','image/webp'];
+        if(!empty($_FILES['image']['name']))
+        {
+          $destination = "";
+          if(!in_array($_FILES['image']['type'], $allowed))
+          {
+            $errors['image'] = "Image format not supported";
+          }else
+          {
+            $folder = "uploads/";
+            if(!file_exists($folder))
+            {
+              mkdir($folder, 0777, true);
+            }
+
+            $destination = $folder . time() . $_FILES['image']['name'];
+            move_uploaded_file($_FILES['image']['tmp_name'], $destination);
+          
+          }
+
+        }
     
-        if(empty($errors)){
+        if(empty($errors))
+          {
             //save to database
             $data = [];
             $data['username'] = $_POST['username'];
             $data['email']    = $_POST['email'];
             $data['role']     = "user";
             $data['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    
+
             $query = "insert into users (username,email,password,role) values (:username,:email,:password,:role)";
+            
+            if(!empty($destination))
+            {
+              $data['image']     = $destination;
+              $query = "insert into users (username,email,password,role,image) values (:username,:email,:password,:role,:image)";
+            }
+
             query($query, $data);
-    
+
             redirect('admin/users');
-        }
+
+          }
       }
   
     }else
@@ -135,7 +167,7 @@
               $data = [];
               $data['username'] = $_POST['username'];
               $data['email']    = $_POST['email'];
-              $data['role']     = $_POST['role'];
+              $data['role']     = $row['role'];
               $data['id']       = $id;
 
               $password_str     = "";
