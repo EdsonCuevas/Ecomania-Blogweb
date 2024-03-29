@@ -74,7 +74,7 @@
             $data = [];
             $data['username'] = $_POST['username'];
             $data['email']    = $_POST['email'];
-            $data['role']     = "user";
+            $data['role']     = $_POST['role'];
             $data['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
             $query = "insert into users (username,email,password,role) values (:username,:email,:password,:role)";
@@ -169,7 +169,7 @@
               $data = [];
               $data['username'] = $_POST['username'];
               $data['email']    = $_POST['email'];
-              $data['role']     = $row['role'];
+              $data['role']     = $_POST['role'];
               $data['id']       = $id;
 
               $password_str     = "";
@@ -220,7 +220,10 @@
 
 
               query($query, $data);
-      
+
+              if(file_exists($row['image']))
+                unlink($row['image']);
+
               redirect('admin/users');
           }
       }
