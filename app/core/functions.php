@@ -97,6 +97,16 @@ function authenticate($row){
     $_SESSION['USER'] = $row;
 }
 
+function user($key = ''){
+    if(empty($key))
+        return $_SESSION['USER'];
+
+    if(!empty($_SESSION['USER'][$key]))
+        return $_SESSION['USER'][$key];
+
+    return '';
+}
+
 function logged_in(){
     if(!empty($_SESSION['USER']))
         return true;
@@ -147,7 +157,7 @@ function get_pagination_vars()
 	return $result;
 }
 
-create_tables();
+//create_tables();
 function create_tables(){
 
     $string = "mysql:hostname=".DBHOST.";";
