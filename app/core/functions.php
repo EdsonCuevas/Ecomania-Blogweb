@@ -147,7 +147,7 @@ function get_pagination_vars()
 	return $result;
 }
 
-create_tables();
+//create_tables();
 function create_tables(){
 
     $string = "mysql:hostname=".DBHOST.";";
