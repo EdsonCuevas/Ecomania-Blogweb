@@ -17,7 +17,7 @@
     
         }
     
-        $query = "select id from users where email = :email limit 1";
+        $query = "select id from posts where email = :email limit 1";
         $email = query($query, ['email'=>$_POST['email']]);
     
         if(empty($_POST['email'])){
@@ -76,17 +76,17 @@
             $data['role']     = $_POST['role'];
             $data['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-            $query = "insert into users (username,email,password,role) values (:username,:email,:password,:role)";
+            $query = "insert into posts (username,email,password,role) values (:username,:email,:password,:role)";
             
             if(!empty($destination))
             {
               $data['image']     = $destination;
-              $query = "insert into users (username,email,password,role,image) values (:username,:email,:password,:role,:image)";
+              $query = "insert into posts (username,email,password,role,image) values (:username,:email,:password,:role,:image)";
             }
 
             query($query, $data);
 
-            redirect('admin/users');
+            redirect('admin/posts');
 
           }
       }
@@ -94,7 +94,7 @@
     }else
     if($action == 'edit'){
 
-      $query = "select * from users where id = :id limit 1";
+      $query = "select * from posts where id = :id limit 1";
       $row = query_row($query, ['id'=>$id]);
 
       if(!empty($_POST)){
@@ -114,7 +114,7 @@
       
           }
       
-          $query = "select id from users where email = :email && id != :id limit 1";
+          $query = "select id from posts where email = :email && id != :id limit 1";
           $email = query($query, ['email'=>$_POST['email'],'id'=>$id]);
       
           if(empty($_POST['email'])){
@@ -186,11 +186,11 @@
                   $data['image']       = $destination;
                 }
               
-                $query = "update users set username = :username, email = :email, $password_str $image_str role = :role where id = :id limit 1";
+                $query = "update posts set username = :username, email = :email, $password_str $image_str role = :role where id = :id limit 1";
 
 
               query($query, $data);
-              redirect('admin/users');
+              redirect('admin/posts');
 
             }
       }
@@ -200,7 +200,7 @@
     else
     if($action == 'delete'){
 
-      $query = "select * from users where id = :id limit 1";
+      $query = "select * from posts where id = :id limit 1";
       $row = query_row($query, ['id'=>$id]);
 
       if($_SERVER['REQUEST_METHOD'] == "POST"){
@@ -215,7 +215,7 @@
               $data = [];
               $data['id'] = $id;
 
-              $query = "delete from users where id = :id limit 1";
+              $query = "delete from posts where id = :id limit 1";
 
 
               query($query, $data);
@@ -223,7 +223,7 @@
               if(file_exists($row['image']))
                 unlink($row['image']);
 
-              redirect('admin/users');
+              redirect('admin/posts');
           }
       }
     }
