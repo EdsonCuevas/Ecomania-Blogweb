@@ -1,7 +1,7 @@
 <?php if($action == 'add'):?>
 
 <div class="container">
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         <div class="col-md-6 mx-auto">
             <h1 class="h3 mb-3 fw-normal">Create post</h1>
             <?php if (!empty($errors)): ?>
@@ -42,7 +42,7 @@
             </div>
 
             <div class="form-floating my-3">
-                <select name="category" class="form-select">
+                <select name="category_id" class="form-select">
 
                     <?php
 
@@ -53,7 +53,7 @@
                     <option value="">--Select--</option>
                     <?php if(!empty($categories)):?>
                         <?php foreach($categories as $cat):?>
-                            <option value="<?=$cat['id']?>"><?=$cat['category']?></option>
+                            <option <?= old_select('category_id',$cat['id']) ?> value="<?=$cat['id']?>"><?=$cat['category']?></option>
                         <?php endforeach; ?>
                     <?php endif; ?>
 

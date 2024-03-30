@@ -13,9 +13,9 @@
     
         }
     
-        if(empty($_POST['category'])){
+        if(empty($_POST['category_id'])){
     
-            $errors['category'] = "A category is required";
+            $errors['category_id'] = "A category is required";
     
         }
     
@@ -42,6 +42,15 @@
 
         } else {
             $errors['image'] = "A featured image is required";
+        }
+
+        $slug = str_to_url($_POST['title']);
+
+        $query = "select id from posts where slug = :slug limit 1";
+        $slug_row = query($query, ['slug' => $slug]);
+
+        if ($slug_row) {
+            $slug .= rand(1000, 9999);
         }
     
         if(empty($errors))
