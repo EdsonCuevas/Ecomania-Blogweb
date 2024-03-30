@@ -1,7 +1,7 @@
 <?php if($action == 'add'):?>
 
 <div class="container">
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         <div class="col-md-6 mx-auto">
             <h1 class="h3 mb-3 fw-normal">Create post</h1>
             <?php if (!empty($errors)): ?>
@@ -42,7 +42,7 @@
             </div>
 
             <div class="form-floating my-3">
-                <select name="category" class="form-select">
+                <select name="category_id" class="form-select">
 
                     <?php
 
@@ -53,7 +53,7 @@
                     <option value="">--Select--</option>
                     <?php if(!empty($categories)):?>
                         <?php foreach($categories as $cat):?>
-                            <option value="<?=$cat['id']?>"><?=$cat['category']?></option>
+                            <option <?= old_select('category_id',$cat['id']) ?> value="<?=$cat['id']?>"><?=$cat['category']?></option>
                         <?php endforeach; ?>
                     <?php endif; ?>
 
@@ -97,42 +97,43 @@
             </div>
 
             <div class="form-floating">
-                <input value="<?= old_value('username', $row['username']) ?>" name="username" type="text" class="form-control mb-2" id="floatingInput" placeholder="Username">
-                <label for="floatingInput">Username</label>
-                <?php if (!empty($errors['username'])): ?>
-                    <div class="text-danger"><?= $errors['username'] ?></div>
+                <input value="<?= old_value('title', $row['title']) ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Username">
+                <label for="floatingInput">Title</label>
+                <?php if (!empty($errors['title'])): ?>
+                    <div class="text-danger"><?= $errors['title'] ?></div>
                 <?php endif; ?>
             </div>
-            <div class="form-floating">
-                <input value="<?= old_value('email', $row['email']) ?>" name="email" type="email" class="form-control" id="floatingInput" placeholder="Email addres">
-                <label for="floatingInput">Email</label>
-                <?php if (!empty($errors['email'])): ?>
-                    <div class="text-danger"><?= $errors['email'] ?></div>
+
+            <div class="">
+                <textarea rows="8" id="floatingInput" name="content" placeholder="Post content" type="text" class="form-control"><?= old_value('content',$row['content']) ?></textarea>
+                <?php if (!empty($errors['content'])): ?>
+                    <div class="text-danger"><?= $errors['content'] ?></div>
                 <?php endif; ?>
             </div>
 
             <div class="form-floating my-3">
-                <select name="role" class="form-select">
-                    <option <?= old_select('role', 'user', $row['role']) ?> value="user">User</option>
-                    <option <?= old_select('role', 'admin', $row['role']) ?> value="admin">Admin</option>
+                <select name="category_id" class="form-select">
+
+                    <?php
+
+                        $query = "select * from categories order by id desc";
+                        $categories = query($query);
+
+                    ?>
+                    <option value="">--Select--</option>
+                    <?php if(!empty($categories)):?>
+                        <?php foreach($categories as $cat):?>
+                            <option <?= old_select('category_id',$cat['id'],$row['category_id']) ?> value="<?=$cat['id']?>"><?=$cat['category']?></option>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+
                 </select>
-                <label for="floatingInput">Role</label>
-                <?php if (!empty($errors['role'])): ?>
-                    <div class="text-danger"><?= $errors['role'] ?></div>
+                <label for="floatingInput">Category</label>
+                <?php if (!empty($errors['category'])): ?>
+                    <div class="text-danger"><?= $errors['category'] ?></div>
                 <?php endif; ?>
             </div>
 
-            <div class="form-floating">
-                <input value="<?= old_value('password') ?>" name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password (Leave empty to keep old one)</label>
-                <?php if (!empty($errors['password'])): ?>
-                    <div class="text-danger"><?= $errors['password'] ?></div>
-                <?php endif; ?>
-            </div>
-            <div class="form-floating">
-                <input value="<?= old_value('retype_password') ?>" name="retype_password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
             <a href="<?=ROOT?>/admin/posts">
                 <button class="mt-4 btn btn-lg btn-primary" type="button">Back</button>
             </a>
@@ -157,15 +158,15 @@
                 <div class="alert alert-danger">Please fix the errors below</div>
             <?php endif; ?>
             <div class="form-floating">
-                <div class="form-control mb-2"><?= old_value('username', $row['username']) ?></div>
-                <?php if (!empty($errors['username'])): ?>
-                    <div class="text-danger"><?= $errors['username'] ?></div>
+                <div class="form-control mb-2"><?= old_value('title', $row['title']) ?></div>
+                <?php if (!empty($errors['title'])): ?>
+                    <div class="text-danger"><?= $errors['title'] ?></div>
                 <?php endif; ?>
             </div>
             <div class="form-floating">
-            <div class="form-control mb-2"><?= old_value('email', $row['email']) ?></div>
-                <?php if (!empty($errors['email'])): ?>
-                    <div class="text-danger"><?= $errors['email'] ?></div>
+            <div class="form-control mb-2"><?= old_value('slug', $row['slug']) ?></div>
+                <?php if (!empty($errors['slug'])): ?>
+                    <div class="text-danger"><?= $errors['slug'] ?></div>
                 <?php endif; ?>
             </div>
             
