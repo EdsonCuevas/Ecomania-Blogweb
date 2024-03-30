@@ -7,43 +7,18 @@
         //validate
         $errors = [];
     
-        if(empty($_POST['username'])){
+        if(empty($_POST['title'])){
     
-            $errors['username'] = "A username is required";
-    
-        } else if(!preg_match("/^[a-zA-Z]+$/", $_POST['username'])){
-    
-            $errors['username'] = "Username can only have letters and no spaces";
+            $errors['title'] = "A title is required";
     
         }
     
-        $query = "select id from posts where email = :email limit 1";
-        $email = query($query, ['email'=>$_POST['email']]);
+        if(empty($_POST['category'])){
     
-        if(empty($_POST['email'])){
-    
-            $errors['email'] = "A email is required";
-    
-        } else if($email){
-    
-            $errors['email'] = "That email is already in use";
+            $errors['category'] = "A category is required";
     
         }
     
-        if(empty($_POST['password'])){
-    
-            $errors['password'] = "A password is required";
-    
-        } else if(strlen($_POST['password']) < 8){
-    
-            $errors['password'] = "Password must be 8 chracter or more";
-    
-        } else if($_POST['password'] !== $_POST['retype_password']){
-    
-            $errors['password'] = "Passwords do not match";
-    
-        }
-
         //validate image
         $allowed = ['image/jpeg','image/png','image/webp'];
         if(!empty($_FILES['image']['name']))
@@ -65,23 +40,27 @@
           
           }
 
+        } else {
+            $errors['image'] = "A featured image is required";
         }
     
         if(empty($errors))
           {
             //save to database
             $data = [];
-            $data['username'] = $_POST['username'];
-            $data['email']    = $_POST['email'];
-            $data['role']     = $_POST['role'];
-            $data['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
+            $data['title']      = $_POST['title'];
+            $data['content']    = $_POST['content'];
+            $data['category_id']= $_POST['category_id'];
+            $data['slug']       = $slug;
+            $data['user_id']    = user('id');
+            
 
-            $query = "insert into posts (username,email,password,role) values (:username,:email,:password,:role)";
+            $query = "insert into posts (title,content,slug,category_id,user_id) values (:title,:content,:slug,:category_id,:user_id)";
             
             if(!empty($destination))
             {
               $data['image']     = $destination;
-              $query = "insert into posts (username,email,password,role,image) values (:username,:email,:password,:role,:image)";
+              $query = "insert into posts (title,content,slug,category_id,user_id,image) values (:title,:content,:slug,:category_id,:user_id,:image)";
             }
 
             query($query, $data);
