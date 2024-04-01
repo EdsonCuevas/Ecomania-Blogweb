@@ -175,7 +175,7 @@
 
           <?php
 
-            $query = "select * from posts order by id desc limit 6";
+            $query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id order by id desc limit 6";
             $rows = query($query);
             if($rows){
 
