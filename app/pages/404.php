@@ -1,1 +1,5 @@
-<h1>page not found</h1>
+<?php include '../app/pages/includes/header.php'; ?>
+
+<center class="alert"><h1>Page not found</h1></center>
+
+<?php include '../app/pages/includes/footer.php'; ?>
