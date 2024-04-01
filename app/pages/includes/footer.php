@@ -1,4 +1,4 @@
-<footer class="container" style="margin-top: 200px;">
+<footer class="container" style="margin-top: 100px;">
     <div class="row">
         <div class="col-lg-4">
         <h5>Get to know us</h5>
