@@ -24,14 +24,17 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="<?=ROOT?>/home" class="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="<?=ROOT?>/news" class="nav-link px-2 link-body-emphasis">News</a></li>
-          <li><a href="<?=ROOT?>/about" class="nav-link px-2 link-body-emphasis">About</a></li>
+          <li><a href="<?=ROOT?>/home" class="nav-link px-2 <?=$url[0] =='home' ? 'link-secondary':'link-body-emphasis'?>">Home</a></li>
+          <li><a href="<?=ROOT?>/news" class="nav-link px-2 <?=$url[0] =='news' ? 'link-secondary':'link-body-emphasis'?>">News</a></li>
+          <li><a href="<?=ROOT?>/about" class="nav-link px-2 <?=$url[0] =='about' ? 'link-secondary':'link-body-emphasis'?>">About</a></li>
           <li><a href="<?=ROOT?>/contact" class="nav-link px-2 link-body-emphasis">Contact</a></li>
         </ul>
 
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        <form action="<?=ROOT?>/search" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <div class="input-group">
+            <input value="<?=$_GET['find'] ?? ''?>" name="find" type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            <button class="btn btn-success">Find</button>
+          </div>
         </form>
 
         <div class="dropdown text-end">
