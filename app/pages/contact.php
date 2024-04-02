@@ -16,11 +16,12 @@
         <div class="col-12 col-lg-6">
             <div class="bg-white border rounded shadow-sm overflow-hidden">
 
-            <form action="#!">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <input type="hidden" name="access_key" value="e0230737-e106-4974-9f36-9af4a2f965b1">
                 <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                 <div class="col-12">
                     <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+                    <input type="text" class="form-control" name="name" value="" required>
                 </div>
                 <div class="col-12">
                     <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
@@ -30,12 +31,12 @@
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                         </svg>
                     </span>
-                    <input type="email" class="form-control" id="email" name="email" value="" required>
+                    <input type="email" class="form-control" name="email" value="" required>
                     </div>
                 </div>
                 <div class="col-12">
                     <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                    <textarea class="form-control" name="message" rows="3" required></textarea>
                 </div>
                 <div class="col-12">
                     <div class="d-grid">
