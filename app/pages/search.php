@@ -4,7 +4,8 @@
 
   <div class="container" style="">
     
-        <div class="row">
+        <div class="row justify-content-center">
+            <center><h1>News</h1></center>
 
           <?php
 
@@ -15,12 +16,13 @@
 
             if($find){
 
-                $query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id order by id desc limit $limit offset $offset";
-                $rows = query($query);
+                $find = "%$find%";
+                $query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id where posts.title like :find order by id desc limit $limit offset $offset";
+                $rows = query($query,['find'=>$find]);
 
             }
 
-            if($rows){
+            if(!empty($rows)){
 
               foreach($rows as $row){
                 include '../app/pages/includes/post-card.php';

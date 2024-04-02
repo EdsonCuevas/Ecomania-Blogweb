@@ -32,7 +32,7 @@
 
         <form action="<?=ROOT?>/search" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
           <div class="input-group">
-            <input name="find" type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            <input value="<?=$_GET['find'] ?? ''?>" name="find" type="search" class="form-control" placeholder="Search..." aria-label="Search">
             <button class="btn btn-success">Find</button>
           </div>
         </form>
