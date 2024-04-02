@@ -30,8 +30,11 @@
           <li><a href="<?=ROOT?>/contact" class="nav-link px-2 link-body-emphasis">Contact</a></li>
         </ul>
 
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        <form action="<?=ROOT?>/search" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <div class="input-group">
+            <input name="find" type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            <button class="btn btn-success">Find</button>
+          </div>
         </form>
 
         <div class="dropdown text-end">
