@@ -233,11 +233,12 @@
 
 <body>
 
-    <div class="arrow-left">
-        <a href="<?=ROOT?>/login"><img src="<?=ROOT?>/../public/assets/imgs/contact/arrow_icon.png" alt=""></a>
-    </div>
-
     <div class="fondo"> <!-- Contenedor principal de la página -->
+
+        <div class="arrow-left">
+            <a href="<?=ROOT?>/login"><img src="<?=ROOT?>/../public/assets/imgs/contact/arrow_icon.png" alt=""></a>
+        </div>
+
         <form action="" method="post"> <!-- Formulario de inicio de sesión -->
 
             <div class="logo">
