@@ -14,7 +14,7 @@
       if(password_verify($_POST['password'], $row[0]['password'])){
         //access
         authenticate($row[0]);
-        redirect('admin');
+        redirect('home');
 
       } else {
         $errors['email'] = "Wrong email or password!";
