@@ -37,21 +37,31 @@
           </div>
         </form>
 
+        <?php if(!logged_in()):?>
+          <div>
+            <a href="<?=ROOT?>/login">
+              <img src="<?=ROOT?>/../public/assets/imgs/user-icon.png" style="" width="36" height="36" class="rounded-circle">
+            </a>
+          </div>
+        <?php endif;?>
+
+        <?php if(logged_in()):?>
         <div class="dropdown text-end">
           <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
             aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            <img src="<?=get_image(user('image'))?>" style="object-fit: cover;" width="36" height="36" class="rounded-circle">
           </a>
-          <ul class="dropdown-menu text-small" style="">
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="">Hi, <?=user('username')?></a></li>
             <li><a class="dropdown-item" href="<?=ROOT?>/admin">Admin</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
             <li><a class="dropdown-item" href="<?=ROOT?>/logout">Sign out</a></li>
           </ul>
         </div>
+        <?php endif;?>
+
       </div>
     </div>
   </header>
