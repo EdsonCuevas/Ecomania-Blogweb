@@ -1,0 +1,61 @@
+.btn,
+button {
+	width: 35%;
+	text-align: center;
+	padding: 0.75rem 0;
+	border: 0;
+	background: var(--clr-primary-1);
+	color: var(--clr-light);
+	cursor: pointer;
+	opacity: 1;
+	transition: 100ms ease-in-out;
+	&:hover {
+		opacity: 0.7;
+	}
+	&.normal {
+		border-radius: 0.3rem;
+		padding: 1rem 1.3rem;
+		margin: 1rem 0rem;
+		color: var(--clr-primary-5);
+		background: var(--clr-primary-1);
+		font-size: 1rem;
+		border: 2px solid transparent;
+		width: auto;
+		display: inline-block;
+		line-height: 1;
+		position: relative;
+		svg {
+			height: 1rem;
+			width: auto;
+			position: relative;
+			top: 2px;
+		}
+		&:hover {
+			text-decoration: none;
+			opacity: 0.9;
+		}
+	}
+	&.outline {
+		border-radius: 0.3rem;
+		padding: 1rem 1.3rem;
+		margin: 1rem 0rem;
+		color: var(--clr-primary-1);
+		background: transparent;
+		border: 2px solid var(--clr-primary-1);
+		font-size: 1rem;
+		width: auto;
+		display: inline-block;
+		line-height: 1;
+		position: relative;
+		text-decoration: none;
+		svg {
+			height: 1rem;
+			width: auto;
+			position: relative;
+			top: 3px;
+		}
+	}
+	&.small {
+		scale: 0.8;
+	}
+}

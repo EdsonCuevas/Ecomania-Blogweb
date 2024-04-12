@@ -1,3 +1,3 @@
 <?php
 
-define('ROOT', 'http://localhost/Ecomania-Blogweb/public');
+define('ROOT', 'http://localhost/eco2/public');

@@ -1,0 +1,17 @@
+footer.site_footer {
+	background-image: url("/assets/img/graphic-18.svg");
+	background-repeat: repeat-x;
+	background-size: fit;
+	background-position: left bottom -5px;
+	background-color: var(--clr-light);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.site_footer_inner {
+		margin: 5rem 0 16rem 0;
+		text-align: center;
+		* {
+			text-align: center;
+		}
+	}
+}

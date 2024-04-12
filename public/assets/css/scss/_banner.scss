@@ -1,0 +1,9 @@
+.banner {
+	background-color: var(--clr-primary-6);
+	border-radius: 0.5rem 1rem 0.5rem 1rem;
+	border: 0.125rem dashed var(--clr-primary-9);
+	padding: 1rem;
+	&.center {
+		text-align: center;
+	}
+}

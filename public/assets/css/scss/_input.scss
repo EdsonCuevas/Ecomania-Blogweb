@@ -1,0 +1,44 @@
+.input-group {
+	padding: 2px;
+	margin-top: 2.5rem;
+	border-radius: 0.5rem;
+	background: var(--clr-primary-1);
+}
+
+input[type="text"].websiteInput {
+	border-radius: 0.4rem 0 0 0.4rem;
+	width: 65%;
+	padding: 0.75rem 0.5rem;
+	border: 0;
+	background-color: var(--clr-primary-7);
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.nbr-val {
+	display: none !important;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 1.5rem;
+	padding: 0.75rem 0.5rem;
+}
+label {
+	display: block;
+	font-weight: bold;
+	span {
+		color: var(--clr-primary-3);
+	}
+}
+
+form > footer {
+	display: flex;
+	justify-content: space-between;
+	.message {
+		padding: 0.5rem 0;
+	}
+}
