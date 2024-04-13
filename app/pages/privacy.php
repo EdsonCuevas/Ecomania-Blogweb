@@ -6,6 +6,7 @@
     <title>Ecomania | Privacy & Terms</title>
     <link rel="stylesheet" href="./assets/css/gridder.css">
     <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="shortcut icon" href="<?=ROOT?>/../public/assets/imgs/icon.png">
 
     <meta name="theme-color " content="#ffffff ">
 </head>
