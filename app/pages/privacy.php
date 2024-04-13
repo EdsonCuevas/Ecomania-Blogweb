@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Ecomania | Privacy Policy</title>
+    <title>Ecomania | Privacy & Terms</title>
     <link rel="stylesheet" href="./assets/css/gridder.css">
     <link rel="stylesheet" href="./assets/css/app.css">
 
@@ -28,7 +28,7 @@
 	<div class="container ">
 		<div class="row ">
 			<div class="tiny-12 tiny-center">
-				<h1>Privacy Policy</h1>
+				<h1>Privacy & Terms</h1>
 			</div>
 		</div>
 	</div>

@@ -4,7 +4,7 @@
             Designed, built, and maintained by <a href="https://github.com/EdsonCuevas" target="_blank">Edson</a> © 2024.<br>
             <br>
         </p>
-        <p><a href="<?=ROOT?>/contact">Contact</a> | <a href="<?=ROOT?>/news">News</a> | <a href="<?=ROOT?>/privacy">Privacy Policy</a> | <a href="<?=ROOT?>/about">About</a></p>
+        <p><a href="<?=ROOT?>/contact">Contact</a> | <a href="<?=ROOT?>/news">News</a> | <a href="<?=ROOT?>/privacy">Privacy & Terms</a> | <a href="<?=ROOT?>/about">About</a></p>
         <div id="co2Badge"></div>
         <script src="/assets/js/badge.js"></script>
         <script>
