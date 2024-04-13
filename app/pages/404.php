@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Ecomania | News</title>
+    <title>Ecomania | Page not found</title>
     <link rel="stylesheet" href="./assets/css/gridder.css">
     <link rel="stylesheet" href="./assets/css/app.css">
 
@@ -28,8 +28,8 @@
 	<div class="container ">
 		<div class="row ">
 			<div class="tiny-12 tiny-center">
-				<h1>News</h1>
-				<p style="font-size:1.35rem;">The latest in climate tech and insightful articles on the state of climate change.</p>
+				<h1>Error 404</h1>
+				<p style="font-size:1.35rem;">The page you are looking for does not exist.</p>
 			</div>
 		</div>
 	</div>
@@ -42,27 +42,7 @@
 <main>
 	<section id="articles ">
 		<div class="container ">
-			<div class="row">
-
-			<?php
-
-			$limit = 10;
-			$offset = ($PAGE['page_number'] - 1) * $limit;
-
-			$query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id order by id desc limit $limit offset $offset";
-			$rows = query($query);
-			if($rows){
-
-			foreach($rows as $row){
-				include '../app/pages/includes/post-card.php';
-			}
-
-			}else {
-			echo "No items found!";
-			}
-
-			?>
-				
+			<div class="row">   
 				
 
 
