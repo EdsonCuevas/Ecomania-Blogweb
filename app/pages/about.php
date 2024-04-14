@@ -7,6 +7,7 @@
 
 	<link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/gridder.css">
     <link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/app.css">
+	<link rel="shortcut icon" href="<?=ROOT?>/../public/assets/imgs/icon.png">
 
     <meta name="theme-color " content="#ffffff ">
 </head>

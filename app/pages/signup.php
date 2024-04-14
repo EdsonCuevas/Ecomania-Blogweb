@@ -67,6 +67,7 @@
 
     <!-- Importación de estilos de Boxicons para iconos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="<?=ROOT?>/../public/assets/imgs/icon.png">
 
     <!-- Importación de estilos personalizados desde un archivo externo -->
 
@@ -228,7 +229,7 @@
 
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la visualización en dispositivos móviles -->
-    <title>Login Ecomania</title> <!-- Título de la página -->
+    <title>Ecomania | Signup</title> <!-- Título de la página -->
 </head>
 
 <body>
