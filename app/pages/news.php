@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Ecomania | News</title>
-    <link rel="stylesheet" href="./assets/css/gridder.css">
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="<?=ROOT?>/../assets/css/gridder.css">
+    <link rel="stylesheet" href="<?=ROOT?>/../assets/css/app.css">
 	<link rel="shortcut icon" href="<?=ROOT?>/../public/assets/imgs/icon.png">
 
-    <meta name="theme-color " content="#ffffff ">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
