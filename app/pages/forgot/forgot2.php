@@ -4,7 +4,7 @@ $error = array();
 
 require "mail.php";
 
-	if(!$con = mysqli_connect("localhost","root","","forgot_db")){
+	if(!$con = mysqli_connect("localhost","root","","ecomania_db")){
 
 		die("could not connect");
 	}

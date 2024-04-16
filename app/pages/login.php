@@ -236,7 +236,7 @@
             <!-- Opción para recordar al usuario -->
             <div class="olvidar-recordar">
                 <label><input type="checkbox">Remember Me</label> <!-- Casilla de verificación -->
-                <a href="#">Forgot Password</a> <!-- Enlace para restablecer la contraseña -->
+                <a href="<?=ROOT?>/forgot">Forgot Password</a> <!-- Enlace para restablecer la contraseña -->
             </div>
 
             <!-- Botón de envío del formulario -->
