@@ -226,6 +226,23 @@ function create_tables(){
     $stm = $con->prepare($query);
     $stm->execute();
 
+    /** codes tables **/
+    $query = "create table if not exists codes(
+
+        id int primary key auto_increment,
+        email varchar(100) not null,
+        code varchar(5) not null,
+        expire int not null,
+
+        key email (email),
+        key code (code),
+        key expire (expire)
+
+    )";
+    $stm = $con->prepare($query);
+    $stm->execute();
+    
+
 }
 
 function resize_image($filename, $max_size = 1000)
