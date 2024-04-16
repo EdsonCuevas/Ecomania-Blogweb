@@ -22,14 +22,14 @@ require "forgot/mail.php";
 				$email = $_POST['email'];
 				//validate email
 				if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
-					$error[] = "Por favor ingresa un correo válido";
+					$error[] = "Please enter a valid email";
 				}elseif(!valid_email($email)){
-					$error[] = "El correo no se ha encontrado o es incorrecto";
+					$error[] = "The email was not found";
 				}else{
 
 					$_SESSION['forgot']['email'] = $email;
 					send_email($email);
-					header("Location: forgot.php?mode=enter_code");
+					header("Location: forgot?mode=enter_code");
 					die;
 				}
 				break;
@@ -39,10 +39,10 @@ require "forgot/mail.php";
 				$code = $_POST['code'];
 				$result = is_code_correct($code);
 
-				if($result == "the code is correct"){
+				if($result == "The code is correct"){
 
 					$_SESSION['forgot']['code'] = $code;
-					header("Location: forgot.php?mode=enter_password");
+					header("Location: forgot?mode=enter_password");
 					die;
 				}else{
 					$error[] = $result;
@@ -57,7 +57,7 @@ require "forgot/mail.php";
 				if($password !== $password2){
 					$error[] = "Passwords do not match";
 				}elseif(!isset($_SESSION['forgot']['email']) || !isset($_SESSION['forgot']['code'])){
-					header("Location: forgot.php");
+					header("Location: forgot");
 					die;
 				}else{
 					
@@ -66,7 +66,7 @@ require "forgot/mail.php";
 						unset($_SESSION['forgot']);
 					}
 
-					header("Location: login.php");
+					header("Location: login");
 					die;
 				}
 				break;
@@ -89,7 +89,7 @@ require "forgot/mail.php";
 		mysqli_query($con,$query);
 
 		//send email here
-		send_mail($email,'Restablecer tu contrasenia',"Tú código de recuperación es: " . $code);
+		send_mail($email,'Reset Your Password',"Your recovery code is: " . $code);
 	}
 	
 	function save_password($password){
@@ -137,16 +137,16 @@ require "forgot/mail.php";
 				$row = mysqli_fetch_assoc($result);
 				if($row['expire'] > $expire){
 
-					return "the code is correct";
+					return "The code is correct";
 				}else{
-					return "the code is expired";
+					return "The code is expired";
 				}
 			}else{
-				return "the code is incorrect";
+				return "The code is incorrect";
 			}
 		}
 
-		return "the code is incorrect";
+		return "The code is incorrect";
 	}
 
 	
@@ -327,17 +327,20 @@ require "forgot/mail.php";
 
 <body>
 
-    <div class="arrow-left">
-        <a href="<?=ROOT?>/home"><img src="<?=ROOT?>/../public/assets/imgs/contact/arrow_icon.png" alt=""></a>
-    </div>
-
-    <div class="fondo"> <!-- Contenedor principal de la página -->
+     <!-- Contenedor principal de la página -->
     <?php 
 
         switch ($mode) {
             case 'enter_email':
                 ?>
-                    <form action="forgot.php?mode=enter_email" method="post"> <!-- Formulario de inicio de sesión -->
+
+                    <div class="arrow-left">
+                        <a href="<?=ROOT?>/login"><img src="<?=ROOT?>/../public/assets/imgs/contact/arrow_icon.png" alt=""></a>
+                    </div>
+
+                    <div class="fondo">
+                    
+                    <form method="post" action="forgot?mode=enter_email"> <!-- Formulario de inicio de sesión -->
                         <div class="logo">
                             <a href="<?=ROOT?>/home" class="d-inline-flex link-body-emphasis text-decoration-none">
                             <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="70" height="67">
@@ -346,10 +349,16 @@ require "forgot/mail.php";
 
                         <h1>Forgot Password</h1> <!-- Encabezado del formulario -->
 
-                        <?php if (!empty($errors['email'])):?>
                         <br>
-                        <p class="errorAuth"><?=$errors['email']?></p>
-                        <?php endif;?>
+                        <center><h4>Enter your email below</h4></center>
+
+                        <p class="errorAuth">
+                        <?php
+                            foreach($error as $err){
+                                echo "<br>" . $err;
+                            }
+                        ?>
+                        </p>
 
                         <!-- Campo de entrada para el nombre de usuario -->
                         <div class="input-box">
@@ -366,56 +375,89 @@ require "forgot/mail.php";
                 break;
 
             case 'enter_code':
-                // code...
                 ?>
-                    <form method="post" action="forgot.php?mode=enter_code"> 
-                        <h1>Forgot Password</h1>
-                        <h3>Enter your the code sent to your email</h3>
-                        <span style="font-size: 12px;color:red;">
-                        <?php 
-                            foreach ($error as $err) {
-                                // code...
-                                echo $err . "<br>";
+                    <div class="arrow-left">
+                        <a href="<?=ROOT?>/forgot"><img src="<?=ROOT?>/../public/assets/imgs/contact/arrow_icon.png" alt=""></a>
+                    </div>
+
+                    <div class="fondo">
+
+                    <form method="post" action="forgot?mode=enter_code"> <!-- Formulario de inicio de sesión -->
+                        <div class="logo">
+                            <a href="<?=ROOT?>/home" class="d-inline-flex link-body-emphasis text-decoration-none">
+                            <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="70" height="67">
+                            </a>
+                        </div>
+
+                        <h1>Forgot Password</h1> <!-- Encabezado del formulario -->
+
+                        <br>
+                        <center><h4>Enter your code sent to your email</h4></center>
+                        <!-- Campo de entrada para el nombre de usuario -->
+
+                        <p class="errorAuth">
+                        <?php
+                            foreach($error as $err){
+                                echo "<br>" . $err;
                             }
                         ?>
-                        </span>
 
-                        <input class="textbox" type="text" name="code" placeholder="12345"><br>
-                        <br style="clear: both;">
-                        <input type="submit" value="Next" style="float: right;">
-                        <a href="forgot.php">
-                            <input type="button" value="Start Over">
-                        </a>
-                        <br><br>
-                        <div><a href="login.php">Login</a></div>
+                        <div class="input-box">
+                            <input type="text" name="code" placeholder="Code" required> <!-- Campo obligatorio -->
+                            <i class="bx bxs-lock-alt"></i> <!-- Icono de usuario de Boxicons -->
+                        </div>
+
+
+                        <!-- Botón de envío del formulario -->
+                        <button type="submit" class="btn">Send Code</button> <!-- Botón con clase "btn" para estilos personalizados -->
+
                     </form>
                 <?php
                 break;
 
             case 'enter_password':
-                // code...
                 ?>
-                    <form method="post" action="forgot.php?mode=enter_password"> 
-                        <h1>Forgot Password</h1>
-                        <h3>Enter your new password</h3>
-                        <span style="font-size: 12px;color:red;">
-                        <?php 
-                            foreach ($error as $err) {
-                                // code...
-                                echo $err . "<br>";
+
+                    <div class="arrow-left">
+                        <a href="<?=ROOT?>/forgot"><img src="<?=ROOT?>/../public/assets/imgs/contact/arrow_icon.png" alt=""></a>
+                    </div>
+
+                    <div class="fondo">
+
+                    <form method="post" action="forgot?mode=enter_password"> <!-- Formulario de inicio de sesión -->
+                        <div class="logo">
+                            <a href="<?=ROOT?>/home" class="d-inline-flex link-body-emphasis text-decoration-none">
+                            <img src="<?=ROOT?>/../public/assets/imgs/icon.png" alt="" width="70" height="67">
+                            </a>
+                        </div>
+
+                        <h1>Forgot Password</h1> <!-- Encabezado del formulario -->
+
+                        <br>
+                        <center><h4>Enter your new password</h4></center>
+
+                        <p class="errorAuth">
+                        <?php
+                            foreach($error as $err){
+                                echo "<br>" . $err;
                             }
                         ?>
-                        </span>
 
-                        <input class="textbox" type="text" name="password" placeholder="Password"><br>
-                        <input class="textbox" type="text" name="password2" placeholder="Retype Password"><br>
-                        <br style="clear: both;">
-                        <input type="submit" value="Next" style="float: right;">
-                        <a href="forgot.php">
-                            <input type="button" value="Start Over">
-                        </a>
-                        <br><br>
-                        <div><a href="login.php">Login</a></div>
+                        <!-- Campo de entrada para el nombre de usuario -->
+                        <div class="input-box">
+                            <input type="password" name="password" placeholder="Password" required> <!-- Campo obligatorio -->
+                            <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
+                        </div>
+
+                        <div class="input-box">
+                            <input type="password" name="password2" placeholder="Retype Password" required> <!-- Campo obligatorio -->
+                            <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
+                        </div>
+
+
+                        <!-- Botón de envío del formulario -->
+                        <button type="submit" class="btn">Save</button> <!-- Botón con clase "btn" para estilos personalizados -->
+
                     </form>
                 <?php
                 break;
