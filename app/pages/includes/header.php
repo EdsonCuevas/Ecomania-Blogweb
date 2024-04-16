@@ -22,7 +22,7 @@
     @media screen and (min-width: 1024px) {
         .user {
             top: 10px;
-            left: 10px;
+            left: 15px;
         }
     }
 </style>
@@ -46,7 +46,7 @@
                 <?php if(logged_in()):?>
                 <a href="<?=ROOT?>/admin" class="user">
                     <img src="<?=get_image(user('image'))?>"
-                        style="object-fit: cover; border-radius:30px; position: relative; top: 15px; left: 10px;"
+                        style="object-fit: cover; border-radius:30px; position: relative; top: 15px; left: 15px;"
                         width="42" height="42">
                 </a>
                 <?php endif;?>
