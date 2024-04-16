@@ -41,8 +41,8 @@
 </svg>
 
 <main>
-	<section id="articles ">
-		<div class="container ">
+	<section id="articles">
+		<div class="container">
 			<div class="row">
 
 			<?php
@@ -51,10 +51,10 @@
 
             if($slug){
                 $query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id where posts.slug = :slug limit 1";
-			    $row = query($query, ['slug'=>$slug]);
+			    $row = query_row($query, ['slug'=>$slug]);
             }
 			
-			if($row){ ?>
+			if(!empty($row)){ ?>
 
 				<link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/post-styles.css">
 
