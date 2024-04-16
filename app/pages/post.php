@@ -58,7 +58,7 @@
 
 				<link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/post-styles.css">
 
-                <div class="card">
+                <div class="card" style="width: 300px; margin: 0 auto;">
                     <a href="<?=ROOT?>/post/<?=$row['slug']?>">
                         <img src="<?=get_image($row['image'])?>" class="card-img-top" width="200" height="250"
                             style="object-fit:cover;">
