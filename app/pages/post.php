@@ -56,31 +56,25 @@
 			
 			if(!empty($row)){ ?>
 
-				<link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/post-styles.css">
+				<link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/post-styles2.css">
 
-                <div class="card" style="width: 300px; margin: 0 auto;">
-                    <a href="<?=ROOT?>/post/<?=$row['slug']?>">
-                        <img src="<?=get_image($row['image'])?>" class="card-img-top" width="200" height="250"
-                            style="object-fit:cover;">
-                    </a>
+                <div class="card" style="margin: 0 auto;">
+                    <img src="<?=get_image($row['image'])?>" class="card-img-top">
                     <div class="card-content">
                         <p style="color: black;">
                             <?=esc($row['category'] ?? 'Unknown')?>
                         </p>
-                        <a href="<?=ROOT?>/post/<?=$row['slug']?>">
-                            <h2 style="margin: 0px;">
-                                <?=esc($row['title'])?>
-                            </h2>
-                        </a>
+                        <h2 style="margin: 0px;">
+                            <?=esc($row['title'])?>
+                        </h2>
 
                         <p>
-                            <?=esc(substr($row['content'], 0, 200))?>
+                            <?=nl2br(esc($row['content']))?>
                         </p>
 
                         <p>
                             <?=date("jS M, Y",strtotime($row['date']))?>
                         </p>
-                        <a href="<?=ROOT?>/post" class="btn normal">Read more</a>
                     </div>
                 </div>
 
