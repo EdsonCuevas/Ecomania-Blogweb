@@ -44,6 +44,14 @@
 				<h1>
                     <?=esc($row['title'])?>
                 </h1>
+                <p style="color: black;">
+                    Category: 
+                    <?=esc($row['category'] ?? 'Unknown')?>
+                </p>
+                <p style="color: black;">
+                    Date release:
+                    <?=date("jS M, Y",strtotime($row['date']))?>
+                </p>
 			</div>
 		</div>
 	</div>
@@ -66,18 +74,12 @@
 
                 <div class="card" style="margin: 0 auto;">
                     <img src="<?=get_image($row['image'])?>" class="card-img-top">
-                    <div class="card-content">
-                        <p style="color: black;">
-                            <?=esc($row['category'] ?? 'Unknown')?>
-                        </p>    
+                    <div class="card-content">  
 
                         <p>
                             <?=nl2br(esc($row['content']))?>
                         </p>
 
-                        <p>
-                            <?=date("jS M, Y",strtotime($row['date']))?>
-                        </p>
                     </div>
                 </div>
 
