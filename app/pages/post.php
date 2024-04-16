@@ -26,11 +26,24 @@
         </div>
     </div>
 </div>
+
+    <?php
+
+    $slug = $url[1] ?? null;
+
+    if($slug){
+        $query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id where posts.slug = :slug limit 1";
+        $row = query_row($query, ['slug'=>$slug]);
+    }
+
+    ?>
+
 	<div class="container ">
 		<div class="row ">
 			<div class="tiny-12 tiny-center">
-				<h1>Title</h1>
-				<p style="font-size:1.35rem;">The latest in climate tech and insightful articles on the state of climate change.</p>
+				<h1>
+                    <?=esc($row['title'])?>
+                </h1>
 			</div>
 		</div>
 	</div>
@@ -45,14 +58,7 @@
 		<div class="container">
 			<div class="row">
 
-			<?php
-
-            $slug = $url[1] ?? null;
-
-            if($slug){
-                $query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id where posts.slug = :slug limit 1";
-			    $row = query_row($query, ['slug'=>$slug]);
-            }
+            <?php
 			
 			if(!empty($row)){ ?>
 
@@ -63,10 +69,7 @@
                     <div class="card-content">
                         <p style="color: black;">
                             <?=esc($row['category'] ?? 'Unknown')?>
-                        </p>
-                        <h2 style="margin: 0px;">
-                            <?=esc($row['title'])?>
-                        </h2>
+                        </p>    
 
                         <p>
                             <?=nl2br(esc($row['content']))?>
