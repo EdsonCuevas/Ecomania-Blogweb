@@ -50,10 +50,6 @@
                 <h3>INFORMATION COLLECTED</h3>
                 <p>Our website may collect personal information, for example: Name and contact information such as your email address.
                     Ecomania is highly committed to fulfilling our commitment to keeping your information secure. We use the most advanced systems and constantly update them to ensure that there is no unauthorized access.</p>
-
-                <h3>COOKIES</h3>
-                <p>A cookie refers to a file that is sent with the purpose of requesting permission to be stored on your computer, by accepting this file is created and the cookie is then used to have information regarding web traffic, and also facilitates future visits to a recurring website. Another function that cookies have is that with them the websites can recognize you individually and therefore provide you with the best personalized service on their website.
-                    Our website uses cookies to identify the pages that are visited and their frequency. This information is used only for statistical analysis and then the information is permanently deleted. You can delete cookies at any time from your computer. However, cookies help provide a better service from websites, they do not give access to information about your computer or you, unless you choose to provide it directly. You can accept or deny the use of cookies, however, most browsers automatically accept cookies as it serves to have a better web service. You can also change the settings on your computer to decline cookies. If you decline cookies you may not be able to use some of our services.</p>
                 
                 <h3>THIRD PARTY LINKS</h3>
                 <p>This website may contain links to other sites that may be of interest to you. Once you click on these links and leave our site, we no longer have control over the site to which you are redirected and therefore we are not responsible for the terms or privacy or data protection practices of such other sites. Those sites are subject to their own privacy policies and we recommend that you check with them to confirm that you agree with them.</p>
