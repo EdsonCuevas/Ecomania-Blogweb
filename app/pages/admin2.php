@@ -1,3 +1,32 @@
+<?php
+
+  if(!logged_in()){
+    redirect('login');
+  }
+
+  $section = $url[1] ?? 'dashboard';
+  $action  = $url[2] ?? 'view';
+  $id      = $url[3] ?? 0;
+
+  $filename = "../app/pages/admin/".$section.".php";
+
+  if(!file_exists($filename)){
+    $filename = "../app/pages/admin/404.php";
+  }
+
+  if($section == 'users'){
+    require_once "../app/pages/admin/users-controller.php";
+  }
+  elseif($section == 'categories'){
+    require_once "../app/pages/admin/categories-controller.php";
+  }
+  elseif($section == 'posts'){
+    require_once "../app/pages/admin/posts-controller.php";
+  }
+
+?>
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -38,45 +67,21 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./user.html">
+                        <a class="nav-link" href="<?=ROOT?>/admin/users">
                             <i class="nc-icon nc-circle-09"></i>
-                            <p>User Profile</p>
+                            <p>Users</p>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./table.html">
+                        <a class="nav-link" href="<?=ROOT?>/admin/categories">
+                            <i class="nc-icon nc-bullet-list-67"></i>
+                            <p>Categories</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="<?=ROOT?>/admin/posts">
                             <i class="nc-icon nc-notes"></i>
-                            <p>Table List</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./typography.html">
-                            <i class="nc-icon nc-paper-2"></i>
-                            <p>Typography</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./icons.html">
-                            <i class="nc-icon nc-atom"></i>
-                            <p>Icons</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./maps.html">
-                            <i class="nc-icon nc-pin-3"></i>
-                            <p>Maps</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./notifications.html">
-                            <i class="nc-icon nc-bell-55"></i>
-                            <p>Notifications</p>
-                        </a>
-                    </li>
-                    <li class="nav-item active active-pro">
-                        <a class="nav-link active" href="upgrade.html">
-                            <i class="nc-icon nc-alien-33"></i>
-                            <p>Upgrade to PRO</p>
+                            <p>Posts</p>
                         </a>
                     </li>
                 </ul>
@@ -97,54 +102,14 @@
                         <ul class="nav navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a href="#" class="nav-link" data-toggle="dropdown">
-                                    <i class="nc-icon nc-palette"></i>
                                     <span class="d-lg-none">Dashboard</span>
                                 </a>
                             </li>
-                            <li class="dropdown nav-item">
-                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                    <i class="nc-icon nc-planet"></i>
-                                    <span class="notification">5</span>
-                                    <span class="d-lg-none">Notification</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Notification 1</a>
-                                    <a class="dropdown-item" href="#">Notification 2</a>
-                                    <a class="dropdown-item" href="#">Notification 3</a>
-                                    <a class="dropdown-item" href="#">Notification 4</a>
-                                    <a class="dropdown-item" href="#">Another notification</a>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="nc-icon nc-zoom-split"></i>
-                                    <span class="d-lg-block">&nbsp;Search</span>
-                                </a>
-                            </li>
+
                         </ul>
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#pablo">
-                                    <span class="no-icon">Account</span>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="http://example.com"
-                                    id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <span class="no-icon">Dropdown</span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <div class="divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#pablo">
+                                <a class="nav-link" href="<?=ROOT?>/logout">
                                     <span class="no-icon">Log out</span>
                                 </a>
                             </li>
