@@ -61,25 +61,25 @@
                     </a>
                 </div>
                 <ul class="nav">
-                    <li class="nav-item active">
+                    <li class="nav-item <?=$section == 'dashboard' ? 'active':''?>">
                         <a class="nav-link" href="<?=ROOT?>/admin">
                             <i class="nc-icon nc-chart-pie-35"></i>
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item <?=$section == 'users' ? 'active':''?>">
                         <a class="nav-link" href="<?=ROOT?>/admin/users">
                             <i class="nc-icon nc-circle-09"></i>
                             <p>Users</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item <?=$section == 'categories' ? 'active':''?>">
                         <a class="nav-link" href="<?=ROOT?>/admin/categories">
                             <i class="nc-icon nc-bullet-list-67"></i>
                             <p>Categories</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item <?=$section == 'posts' ? 'active':''?>">
                         <a class="nav-link" href="<?=ROOT?>/admin/posts">
                             <i class="nc-icon nc-notes"></i>
                             <p>Posts</p>
