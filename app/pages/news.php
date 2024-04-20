@@ -63,14 +63,7 @@
 			}
 
 			?>
-
-				<div class="tiny tiny-center">
-                    <br><a href="<?=ROOT?>/" class="btn normal">See more</a>
-                </div>
-				
-				
-
-
+			
 			</div>
 		</div>
 	</section>
