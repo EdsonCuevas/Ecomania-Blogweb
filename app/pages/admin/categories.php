@@ -123,7 +123,7 @@
 <?php else:?>
 <h4>Categories</h4>
 <a href="<?=ROOT?>/admin/categories/add">
-    <button class="btn btn-primary">Add New</button>
+    <button class="btn btn-primary"><i class="fa fa-plus"></i></button>
 </a>
 
 

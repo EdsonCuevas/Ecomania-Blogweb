@@ -186,7 +186,7 @@
 <?php else:?>
 <h4>Posts</h4>
 <a href="<?=ROOT?>/admin/posts/add">
-    <button class="btn btn-primary">Add New</button>
+    <button class="btn btn-primary"><i class="fa fa-plus"></i></button>
 </a>
 
 
