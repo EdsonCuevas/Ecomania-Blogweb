@@ -158,10 +158,10 @@
                 
                 <td>
                     <a href="<?=ROOT?>/admin/categories/edit/<?=$row['id']?>">
-                        <button class="btn btn-warning"><i class="nc-icon nc-notes"></i></button>
+                        <button class="btn btn-warning"><i class="fa fa-edit"></i></button>
                     </a>
                     <a href="<?=ROOT?>/admin/categories/delete/<?=$row['id']?>">
-                        <button class="btn btn-danger"><i class="nc-icon nc-simple-remove"></i></button>
+                        <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                     </a>
                 </td>
             </tr>

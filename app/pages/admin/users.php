@@ -220,7 +220,7 @@
 <h4>Users</h4>
 
 <a href="<?=ROOT?>/admin/users/add">
-    <button class="btn btn-primary">Add New</button>
+    <button class="btn btn-primary"><i class="fa fa-plus"></i></button>
 </a>
 
 
@@ -270,10 +270,10 @@
             </td>
             <td>
                 <a href="<?=ROOT?>/admin/users/edit/<?=$row['id']?>">
-                    <button class="btn btn-warning"><i class="nc-icon nc-notes"></i></button>
+                    <button class="btn btn-warning"><i class="fa fa-edit"></i></button>
                 </a>
                 <a href="<?=ROOT?>/admin/users/delete/<?=$row['id']?>">
-                    <div class="btn btn-danger"><i class="nc-icon nc-simple-remove"></i></div>
+                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                 </a>
             </td>
         </tr>
