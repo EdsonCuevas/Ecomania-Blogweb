@@ -47,6 +47,7 @@
     <link href="<?=ROOT?>/../public/assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href=".<?=ROOT?>/../public/assets/css/demo.css" rel="stylesheet" />
+    
 </head>
 
 <body>
@@ -110,6 +111,7 @@
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="<?=ROOT?>/logout">
+                                    
                                     <span class="no-icon">Log out</span>
                                 </a>
                             </li>

@@ -191,6 +191,7 @@
 
 
 <div class="table-responsive">
+    <br>
     <table class="table">
 
         <tr>
@@ -223,10 +224,10 @@
                 <td><?=date("jS M, Y",strtotime($row['date']))?></td>
                 <td>
                     <a href="<?=ROOT?>/admin/posts/edit/<?=$row['id']?>">
-                        <button class="btn btn-warning text-white btn-sm"><i class="bi bi-pencil-square"></i></button>
+                        <button class="btn btn-warning"><i class="nc-icon nc-notes"></i></button>
                     </a>
                     <a href="<?=ROOT?>/admin/posts/delete/<?=$row['id']?>">
-                        <button class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                        <button class="btn btn-danger"><i class="nc-icon nc-simple-remove"></i></button>
                     </a>
                 </td>
             </tr>
@@ -235,9 +236,6 @@
     </table>
 
     <div class="col-md-12 mb-4">
-        <a href="<?=$PAGE['first_link']?>">
-        <button class="btn btn-primary">First Page</button>
-        </a>
         <a href="<?=$PAGE['prev_link']?>">
         <button class="btn btn-primary">Prev Page</button>
         </a>
