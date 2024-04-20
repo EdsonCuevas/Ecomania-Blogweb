@@ -44,10 +44,9 @@
                 <?php endif;?>
 
                 <?php if(logged_in()):?>
-                <a href="<?=ROOT?>/admin" class="user">
-                    <img src="<?=get_image(user('image'))?>"
-                        style="object-fit: cover; border-radius:30px; position: relative; top: 15px; left: 15px;"
-                        width="42" height="42">
+                <a href="<?=ROOT?>/admin" class="user" style="position: relative;">
+                    <img src="<?=get_image(user('image'))?>" width="36" height="36"
+                        style="object-fit: cover; border-radius:30px;">
                 </a>
                 <?php endif;?>
 

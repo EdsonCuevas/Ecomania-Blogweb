@@ -26,94 +26,244 @@
 
 ?>
 
-<!doctype html>
-<html lang="en" data-bs-theme="auto">
-  <head><script src="../public/assets/js/color-modes.js"></script>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title>Ecomania  | Admin</title>
-    <link rel="shortcut icon" href="<?=ROOT?>/../public/assets/imgs/icon.png">
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Ecomania | Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="<?=ROOT?>/../public/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="<?=ROOT?>/../public/assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href=".<?=ROOT?>/../public/assets/css/demo.css" rel="stylesheet" />
     
+</head>
 
-    <link href="<?=ROOT?>/../public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?=ROOT?>/../public/assets/css/bootstrap-icons.css" rel="stylesheet">
+<body>
+    <div class="wrapper">
+        <div class="sidebar" data-image="<?=ROOT?>/../public/assets/imgs/sidebar-5.jpg" data-color="green">
 
-   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-
-  </head>
-
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="<?=ROOT?>/home">Ecomania</a>
-  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="navbar-nav">
-    <div class="nav-item text-nowrap">
-      <a class="nav-link px-3" href="<?=ROOT?>/logout">Sign out</a>
-    </div>
-  </div>
-</header>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
-      <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a href="<?=ROOT?>/home" class="simple-text">
+                        Ecomania
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item <?=$section == 'dashboard' ? 'active':''?>">
+                        <a class="nav-link" href="<?=ROOT?>/admin">
+                            <i class="nc-icon nc-chart-pie-35"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="nav-item <?=$section == 'users' ? 'active':''?>">
+                        <a class="nav-link" href="<?=ROOT?>/admin/users">
+                            <i class="nc-icon nc-circle-09"></i>
+                            <p>Users</p>
+                        </a>
+                    </li>
+                    <li class="nav-item <?=$section == 'categories' ? 'active':''?>">
+                        <a class="nav-link" href="<?=ROOT?>/admin/categories">
+                            <i class="nc-icon nc-bullet-list-67"></i>
+                            <p>Categories</p>
+                        </a>
+                    </li>
+                    <li class="nav-item <?=$section == 'posts' ? 'active':''?>">
+                        <a class="nav-link" href="<?=ROOT?>/admin/posts">
+                            <i class="nc-icon nc-notes"></i>
+                            <p>Posts</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
-          <ul class="nav flex-column">
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"> Dashboard </a>
+                    <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-toggle="dropdown">
+                                    <span class="d-lg-none">Dashboard</span>
+                                </a>
+                            </li>
 
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 <?=$section == 'dashboard' ? 'active':''?>" aria-current="page" href="<?=ROOT?>/admin">
-                <i class="bi bi-speedometer2"></i>
-                Dashboard
-              </a>
-            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?=ROOT?>/logout">
+                                    
+                                    <span class="no-icon">Log out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="content">
+                <div class="container-fluid">
 
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 <?=$section == 'users' ? 'active':''?>" aria-current="page" href="<?=ROOT?>/admin/users">
-                <i class="bi bi-person"></i>
-                Users
-              </a>
-            </li>
+                    <?php
 
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 <?=$section == 'categories' ? 'active':''?>" aria-current="page" href="<?=ROOT?>/admin/categories">
-                <i class="bi bi-tags"></i>
-                Categories
-              </a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 <?=$section == 'posts' ? 'active':''?>" aria-current="page" href="<?=ROOT?>/admin/posts">
-                <i class="bi bi-file-earmark-post"></i>
-                Posts
-              </a>
-            </li>
+                        require_once $filename;
 
-          </ul>
+                    ?>
+                    
+                            
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav>
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="<?=ROOT?>/home">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?=ROOT?>/news">
+                                    News
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?=ROOT?>/contact">
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?=ROOT?>/about">
+                                    About us
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-center">
+                            ©
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>
+                            <a href="https://github.com/EdsonCuevas/Ecomania-Blogweb/graphs/contributors">Team 4</a>, made with love
+                        </p>
+                    </nav>
+                </div>
+            </footer>
         </div>
-      </div>
     </div>
+    <!--   -->
+    <!-- <div class="fixed-plugin">
+    <div class="dropdown show-dropdown">
+        <a href="#" data-toggle="dropdown">
+            <i class="fa fa-cog fa-2x"> </i>
+        </a>
 
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard</h1>
-      </div>
-      <?php
+        <ul class="dropdown-menu">
+			<li class="header-title"> Sidebar Style</li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger">
+                    <p>Background Image</p>
+                    <label class="switch">
+                        <input type="checkbox" data-toggle="switch" checked="" data-on-color="primary" data-off-color="primary"><span class="toggle"></span>
+                    </label>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger background-color">
+                    <p>Filters</p>
+                    <div class="pull-right">
+                        <span class="badge filter badge-black" data-color="black"></span>
+                        <span class="badge filter badge-azure" data-color="azure"></span>
+                        <span class="badge filter badge-green" data-color="green"></span>
+                        <span class="badge filter badge-orange" data-color="orange"></span>
+                        <span class="badge filter badge-red" data-color="red"></span>
+                        <span class="badge filter badge-purple active" data-color="purple"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="header-title">Sidebar Images</li>
 
-          require_once $filename;
+            <li class="active">
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-1.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-3.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="..//assets/img/sidebar-4.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-5.jpg" alt="" />
+                </a>
+            </li>
 
-      ?>
-    </main>
-  </div>
+            <li class="button-container">
+                <div class="">
+                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard" target="_blank" class="btn btn-info btn-block btn-fill">Download, it's free!</a>
+                </div>
+            </li>
+
+            <li class="header-title pro-title text-center">Want more components?</li>
+
+            <li class="button-container">
+                <div class="">
+                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro" target="_blank" class="btn btn-warning btn-block btn-fill">Get The PRO Version!</a>
+                </div>
+            </li>
+
+            <li class="header-title" id="sharrreTitle">Thank you for sharing!</li>
+
+            <li class="button-container">
+				<button id="twitter" class="btn btn-social btn-outline btn-twitter btn-round sharrre"><i class="fa fa-twitter"></i> · 256</button>
+                <button id="facebook" class="btn btn-social btn-outline btn-facebook btn-round sharrre"><i class="fa fa-facebook-square"></i> · 426</button>
+            </li>
+        </ul>
+    </div>
 </div>
-<script src="<?=ROOT?>/../public/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="<?=ROOT?>/../public/assets/js/dashboard.js"></script>
+ -->
 </body>
+<!--   Core JS Files   -->
+<script src="<?=ROOT?>/../public/assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="<?=ROOT?>/../public/assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="<?=ROOT?>/../public/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="<?=ROOT?>/../public/assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!--  Chartist Plugin  -->
+<script src="<?=ROOT?>/../public/assets/js/plugins/chartist.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="<?=ROOT?>/../public/assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+<script src="<?=ROOT?>/../public/assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
+<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+<script src="<?=ROOT?>/../public/assets/js/demo.js"></script>
+
 </html>

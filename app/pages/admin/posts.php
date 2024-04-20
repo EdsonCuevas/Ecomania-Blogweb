@@ -186,11 +186,12 @@
 <?php else:?>
 <h4>Posts</h4>
 <a href="<?=ROOT?>/admin/posts/add">
-    <button class="btn btn-primary">Add New</button>
+    <button class="btn btn-primary"><i class="fa fa-plus"></i></button>
 </a>
 
 
 <div class="table-responsive">
+    <br>
     <table class="table">
 
         <tr>
@@ -223,10 +224,10 @@
                 <td><?=date("jS M, Y",strtotime($row['date']))?></td>
                 <td>
                     <a href="<?=ROOT?>/admin/posts/edit/<?=$row['id']?>">
-                        <button class="btn btn-warning text-white btn-sm"><i class="bi bi-pencil-square"></i></button>
+                        <button class="btn btn-warning"><i class="fa fa-edit"></i></button>
                     </a>
                     <a href="<?=ROOT?>/admin/posts/delete/<?=$row['id']?>">
-                        <button class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                        <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                     </a>
                 </td>
             </tr>
@@ -235,9 +236,6 @@
     </table>
 
     <div class="col-md-12 mb-4">
-        <a href="<?=$PAGE['first_link']?>">
-        <button class="btn btn-primary">First Page</button>
-        </a>
         <a href="<?=$PAGE['prev_link']?>">
         <button class="btn btn-primary">Prev Page</button>
         </a>
