@@ -29,9 +29,9 @@
             </div>
 
             <div class="form-floating">
+                <label for="floatingInput">Username</label>
                 <input value="<?= old_value('username') ?>" name="username" type="text" class="form-control mb-2"
                     id="floatingInput" placeholder="Username">
-                <label for="floatingInput">Username</label>
                 <?php if (!empty($errors['username'])): ?>
                 <div class="text-danger">
                     <?= $errors['username'] ?>
@@ -39,9 +39,9 @@
                 <?php endif; ?>
             </div>
             <div class="form-floating">
+                <label for="floatingInput">Email</label>
                 <input value="<?= old_value('email') ?>" name="email" type="email" class="form-control"
                     id="floatingInput" placeholder="Email addres">
-                <label for="floatingInput">Email</label>
                 <?php if (!empty($errors['email'])): ?>
                 <div class="text-danger">
                     <?= $errors['email'] ?>
@@ -50,11 +50,11 @@
             </div>
 
             <div class="form-floating my-3">
+                <label for="floatingInput">Role</label>
                 <select name="role" class="form-select">
                     <option value="user">User</option>
                     <option value="admin">Admin</option>
                 </select>
-                <label for="floatingInput">Role</label>
                 <?php if (!empty($errors['role'])): ?>
                 <div class="text-danger">
                     <?= $errors['role'] ?>
@@ -63,9 +63,9 @@
             </div>
 
             <div class="form-floating">
+                <label for="floatingPassword">Password</label>
                 <input value="<?= old_value('password') ?>" name="password" type="password" class="form-control"
                     id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
                 <?php if (!empty($errors['password'])): ?>
                 <div class="text-danger">
                     <?= $errors['password'] ?>
@@ -73,12 +73,12 @@
                 <?php endif; ?>
             </div>
             <div class="form-floating">
+                <label for="floatingPassword">Confirm Password</label>
                 <input value="<?= old_value('retype_password') ?>" name="retype_password" type="password"
                     class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
             </div>
             <a href="<?=ROOT?>/admin/users">
-                <button class="mt-4 btn btn-lg btn-primary" type="button">Back</button>
+                <button class="mt-4 btn btn-lg btn-danger" type="button">Back</button>
             </a>
             <button class="mt-4 btn btn-lg btn-primary float-end" type="submit">Create</button>
         </div>
@@ -111,9 +111,9 @@
             </div>
 
             <div class="form-floating">
+                <label for="floatingInput">Username</label>
                 <input value="<?= old_value('username', $row['username']) ?>" name="username" type="text"
                     class="form-control mb-2" id="floatingInput" placeholder="Username">
-                <label for="floatingInput">Username</label>
                 <?php if (!empty($errors['username'])): ?>
                 <div class="text-danger">
                     <?= $errors['username'] ?>
@@ -121,9 +121,9 @@
                 <?php endif; ?>
             </div>
             <div class="form-floating">
+                <label for="floatingInput">Email</label>
                 <input value="<?= old_value('email', $row['email']) ?>" name="email" type="email" class="form-control"
                     id="floatingInput" placeholder="Email addres">
-                <label for="floatingInput">Email</label>
                 <?php if (!empty($errors['email'])): ?>
                 <div class="text-danger">
                     <?= $errors['email'] ?>
@@ -132,11 +132,11 @@
             </div>
 
             <div class="form-floating my-3">
+                <label for="floatingInput">Role</label>
                 <select name="role" class="form-select">
                     <option <?=old_select('role', 'user' , $row['role']) ?> value="user">User</option>
                     <option <?=old_select('role', 'admin' , $row['role']) ?> value="admin">Admin</option>
                 </select>
-                <label for="floatingInput">Role</label>
                 <?php if (!empty($errors['role'])): ?>
                 <div class="text-danger">
                     <?= $errors['role'] ?>
@@ -145,9 +145,9 @@
             </div>
 
             <div class="form-floating">
+                <label for="floatingPassword">Password (Leave empty to keep old one)</label>
                 <input value="<?= old_value('password') ?>" name="password" type="password" class="form-control"
                     id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password (Leave empty to keep old one)</label>
                 <?php if (!empty($errors['password'])): ?>
                 <div class="text-danger">
                     <?= $errors['password'] ?>
@@ -155,12 +155,12 @@
                 <?php endif; ?>
             </div>
             <div class="form-floating">
+                <label for="floatingPassword">Confirm Password</label>
                 <input value="<?= old_value('retype_password') ?>" name="retype_password" type="password"
                     class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
             </div>
             <a href="<?=ROOT?>/admin/users">
-                <button class="mt-4 btn btn-lg btn-primary" type="button">Back</button>
+                <button class="mt-4 btn btn-lg btn-danger" type="button">Back</button>
             </a>
             <button class="mt-4 btn btn-lg btn-primary float-end" type="submit">Save</button>
             <?php else: ?>

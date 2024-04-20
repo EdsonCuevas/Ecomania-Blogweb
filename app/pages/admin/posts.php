@@ -28,8 +28,8 @@
             </div>
 
             <div class="form-floating">
-                <input value="<?= old_value('title') ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Username">
                 <label for="floatingInput">Title</label>
+                <input value="<?= old_value('title') ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Username">
                 <?php if (!empty($errors['title'])): ?>
                     <div class="text-danger"><?= $errors['title'] ?></div>
                 <?php endif; ?>
@@ -42,6 +42,7 @@
             </div>
 
             <div class="form-floating my-3">
+                <label for="floatingInput">Category</label>
                 <select name="category_id" class="form-select">
 
                     <?php
@@ -50,7 +51,7 @@
                         $categories = query($query);
 
                     ?>
-                    <option value="">--Select--</option>
+                    <option value="">Select</option>
                     <?php if(!empty($categories)):?>
                         <?php foreach($categories as $cat):?>
                             <option <?= old_select('category_id',$cat['id']) ?> value="<?=$cat['id']?>"><?=$cat['category']?></option>
@@ -58,14 +59,13 @@
                     <?php endif; ?>
 
                 </select>
-                <label for="floatingInput">Category</label>
                 <?php if (!empty($errors['category'])): ?>
                     <div class="text-danger"><?= $errors['category'] ?></div>
                 <?php endif; ?>
             </div>
 
             <a href="<?=ROOT?>/admin/posts">
-                <button class="mt-4 btn btn-lg btn-primary" type="button">Back</button>
+                <button class="mt-4 btn btn-lg btn-danger" type="button">Back</button>
             </a>
             <button class="mt-4 btn btn-lg btn-primary float-end" type="submit">Create</button>
         </div>
@@ -97,8 +97,8 @@
             </div>
 
             <div class="form-floating">
-                <input value="<?= old_value('title', $row['title']) ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Username">
                 <label for="floatingInput">Title</label>
+                <input value="<?= old_value('title', $row['title']) ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Username">
                 <?php if (!empty($errors['title'])): ?>
                     <div class="text-danger"><?= $errors['title'] ?></div>
                 <?php endif; ?>
@@ -112,6 +112,7 @@
             </div>
 
             <div class="form-floating my-3">
+                <label for="floatingInput">Category</label>
                 <select name="category_id" class="form-select">
 
                     <?php
@@ -120,7 +121,7 @@
                         $categories = query($query);
 
                     ?>
-                    <option value="">--Select--</option>
+                    <option value="">Select</option>
                     <?php if(!empty($categories)):?>
                         <?php foreach($categories as $cat):?>
                             <option <?= old_select('category_id',$cat['id'],$row['category_id']) ?> value="<?=$cat['id']?>"><?=$cat['category']?></option>
@@ -128,14 +129,13 @@
                     <?php endif; ?>
 
                 </select>
-                <label for="floatingInput">Category</label>
                 <?php if (!empty($errors['category'])): ?>
                     <div class="text-danger"><?= $errors['category'] ?></div>
                 <?php endif; ?>
             </div>
 
             <a href="<?=ROOT?>/admin/posts">
-                <button class="mt-4 btn btn-lg btn-primary" type="button">Back</button>
+                <button class="mt-4 btn btn-lg btn-danger" type="button">Back</button>
             </a>
             <button class="mt-4 btn btn-lg btn-primary float-end" type="submit">Save</button>
             <?php else: ?>

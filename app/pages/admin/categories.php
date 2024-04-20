@@ -10,8 +10,8 @@
 
 
             <div class="form-floating">
-                <input value="<?= old_value('category   ') ?>" name="category" type="text" class="form-control mb-2" id="floatingInput" placeholder="category">
                 <label for="floatingInput">Category</label>
+                <input value="<?= old_value('category') ?>" name="category" type="text" class="form-control mb-2" id="floatingInput" placeholder="Category name">
                 <?php if (!empty($errors['category'])): ?>
                     <div class="text-danger"><?= $errors['category'] ?></div>
                 <?php endif; ?>
@@ -20,17 +20,16 @@
     
 
             <div class="form-floating my-3">
+                <label for="floatingInput">Active</label>
                 <select name="disable" class="form-select">
                     <option value="0">Yes</option>
                     <option value="1">No</option>
                 </select>
-                <label for="floatingInput">Active</label>
-              
             </div>
 
            
             <a href="<?=ROOT?>/admin/categories">
-                <button class="mt-4 btn btn-lg btn-primary" type="button">Back</button>
+                <button class="mt-4 btn btn-lg btn-danger" type="button">Back</button>
             </a>
             <button class="mt-4 btn btn-lg btn-primary float-end" type="submit">Create</button>
         </div>
@@ -50,8 +49,8 @@
 
 
             <div class="form-floating">
+                <label for="floatingInput">Category</label>
                 <input value="<?= old_value('category', $row['category']) ?>" name="category" type="text" class="form-control mb-2" id="floatingInput" placeholder="category">
-                <label for="floatingInput">category</label>
                 <?php if (!empty($errors['category'])): ?>
                     <div class="text-danger"><?= $errors['category'] ?></div>
                 <?php endif; ?>
@@ -59,16 +58,15 @@
            
 
             <div class="form-floating my-3">
+                <label for="floatingInput">Active</label>
                 <select name="disabled" class="form-select">
                     <option <?= old_select('disabled', '0', $row['disabled']) ?> value="0">Yes</option>
                     <option <?= old_select('disabled', '1', $row['disabled']) ?> value="1">No</option>
                 </select>
-                <label for="floatingInput">Active</label>
-                    
             </div>
 
             <a href="<?=ROOT?>/admin/categories">
-                <button class="mt-4 btn btn-lg btn-primary" type="button">Back</button>
+                <button class="mt-4 btn btn-lg btn-danger" type="button">Back</button>
             </a>
             <button class="mt-4 btn btn-lg btn-primary float-end" type="submit">Save</button>
             <?php else: ?>
