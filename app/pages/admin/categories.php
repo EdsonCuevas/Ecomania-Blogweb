@@ -21,7 +21,7 @@
 
             <div class="form-floating my-3">
                 <label for="floatingInput">Active</label>
-                <select name="disable" class="form-select">
+                <select name="disabled" class="form-select">
                     <option value="0">Yes</option>
                     <option value="1">No</option>
                 </select>
@@ -60,8 +60,8 @@
             <div class="form-floating my-3">
                 <label for="floatingInput">Active</label>
                 <select name="disabled" class="form-select">
-                    <option <?= old_select('disabled', '0', $row['disabled']) ?> value="0">Yes</option>
-                    <option <?= old_select('disabled', '1', $row['disabled']) ?> value="1">No</option>
+                    <option <?=old_select('disabled', '0', $row['disabled']) ?> value="0">Yes</option>
+                    <option <?=old_select('disabled', '1', $row['disabled']) ?> value="1">No</option>
                 </select>
             </div>
 
@@ -133,7 +133,7 @@
             <th>#</th>
             <th>Category</th>
             <th>Slug</th>
-            <th>Disable</th>
+            <th>Active</th>
             <th>Action</th>
         </tr>
 
@@ -152,7 +152,7 @@
                 <td><?=$row['id']?></td>
                 <td><?=esc($row['category'])?></td>
                 <td><?=$row['slug']?></td>
-                <td><?=$row['disabled']?></td>
+                <td><?=$row['disabled'] ? 'No':'Yes'?></td>
                 
                 <td>
                     <a href="<?=ROOT?>/admin/categories/edit/<?=$row['id']?>">

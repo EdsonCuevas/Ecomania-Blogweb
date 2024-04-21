@@ -50,7 +50,7 @@
 			$limit = 100;
 			$offset = ($PAGE['page_number'] - 1) * $limit;
 
-			$query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id order by id desc limit $limit offset $offset";
+			$query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id && disabled = 0 order by id desc limit $limit offset $offset";
 			$rows = query($query);
 			if($rows){
 

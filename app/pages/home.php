@@ -142,7 +142,7 @@
                     <div class="card-container">
                     <?php
 
-                    $query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id order by id desc limit 3";
+                    $query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id && disabled = 0 order by id desc limit 3";
                     $rows = query($query);
                     if($rows){
 

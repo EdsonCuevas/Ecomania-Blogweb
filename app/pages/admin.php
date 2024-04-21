@@ -75,13 +75,13 @@
                     </li>
                     <li class="nav-item <?=$section == 'categories' ? 'active':''?>">
                         <a class="nav-link" href="<?=ROOT?>/admin/categories">
-                            <i class="nc-icon nc-bullet-list-67"></i>
+                            <i class="nc-icon nc-tag-content"></i>
                             <p>Categories</p>
                         </a>
                     </li>
                     <li class="nav-item <?=$section == 'posts' ? 'active':''?>">
                         <a class="nav-link" href="<?=ROOT?>/admin/posts">
-                            <i class="nc-icon nc-notes"></i>
+                            <i class="nc-icon nc-single-copy-04"></i>
                             <p>Posts</p>
                         </a>
                     </li>

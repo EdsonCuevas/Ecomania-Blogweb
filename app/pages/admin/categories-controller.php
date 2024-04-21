@@ -23,7 +23,7 @@ if ($action == 'add') {
             // save to database
             $data['category'] = $_POST['category'];
             $data['slug'] = $slug;
-            $data['disabled'] = $_POST['disable'];
+            $data['disabled'] = $_POST['disabled'];
             $query = "insert into categories (category,slug,disabled) values (:category,:slug,:disabled)";
             query($query, $data);
             redirect('admin/categories');
@@ -44,7 +44,7 @@ if ($action == 'add') {
             if (empty($errors)) {
                 // save to database
                 $data['category'] = $_POST['category'];
-                $data['disabled'] = $_POST['disable'];
+                $data['disabled'] = $_POST['disabled'];
                 $data['id'] = $id;
                 $query = "update categories set category = :category, disabled = :disabled where id = :id limit 1";
                 query($query, $data);
