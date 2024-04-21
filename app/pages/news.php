@@ -44,10 +44,10 @@
 	<section id="articles ">
 		<div class="container ">
 			<div class="row">
-
+		
 			<?php
 
-			$limit = 9;
+			$limit = 100;
 			$offset = ($PAGE['page_number'] - 1) * $limit;
 
 			$query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id order by id desc limit $limit offset $offset";

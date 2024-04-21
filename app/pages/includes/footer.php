@@ -1,7 +1,7 @@
 <footer class="site_footer" style="height: 100px; margin-top: 150px;">
     <div class="site_footer_inner">
         <p>
-            Designed, built, and maintained by <a href="https://github.com/EdsonCuevas" target="_blank">Edson</a> © 2024.<br>
+            Designed, built, and maintained by <a href="https://github.com/EdsonCuevas/Ecomania-Blogweb/graphs/contributors" target="_blank">Team 4</a> © 2024.<br>
             <br>
         </p>
         <p><a href="<?=ROOT?>/contact">Contact</a> | <a href="<?=ROOT?>/news">News</a> | <a href="<?=ROOT?>/privacy">Privacy & Terms</a> | <a href="<?=ROOT?>/about">About</a></p>
