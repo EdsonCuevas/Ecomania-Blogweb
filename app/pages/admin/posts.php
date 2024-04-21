@@ -29,7 +29,7 @@
 
             <div class="form-floating">
                 <label for="floatingInput">Title</label>
-                <input value="<?= old_value('title') ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Username">
+                <input value="<?= old_value('title') ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Title content">
                 <?php if (!empty($errors['title'])): ?>
                     <div class="text-danger"><?= $errors['title'] ?></div>
                 <?php endif; ?>
@@ -98,7 +98,7 @@
 
             <div class="form-floating">
                 <label for="floatingInput">Title</label>
-                <input value="<?= old_value('title', $row['title']) ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Username">
+                <input value="<?= old_value('title', $row['title']) ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Title content">
                 <?php if (!empty($errors['title'])): ?>
                     <div class="text-danger"><?= $errors['title'] ?></div>
                 <?php endif; ?>
