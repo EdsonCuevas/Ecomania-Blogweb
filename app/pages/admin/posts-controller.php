@@ -128,14 +128,26 @@
           }
 
         }
+        
       
           if(empty($errors)){
+
+            $slug = str_to_url($_POST['title']);
+
+            $query = "select id from posts where slug = :slug limit 1";
+            $slug_row = query($query, ['slug' => $slug]);
+
+            if ($slug_row) {
+                $slug .= rand(1000, 9999);
+            }
+
               //save to database
               $data = [];
               $data['title']      = $_POST['title'];
               $data['content']    = $_POST['content'];
               $data['category_id']= $_POST['category_id'];
               $data['id']         = $id;
+              $data['slug']       = $slug;
 
               $image_str        = "";
 
@@ -145,7 +157,7 @@
                   $data['image']       = $destination;
                 }
               
-                $query = "update posts set title = :title, content = :content, $image_str category_id = :category_id where id = :id limit 1";
+                $query = "update posts set title = :title, content = :content, slug = :slug, $image_str category_id = :category_id where id = :id limit 1";
 
 
               query($query, $data);
