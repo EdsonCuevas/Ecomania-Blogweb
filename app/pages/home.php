@@ -57,11 +57,10 @@
                     <div class="tiny-12 small-6 medium-4 small-last medium-first" style="z-index:2">
                         <div class="card center">
                             <header class="card-header">
-                                <h2>Heading</h2>
+                                <h2>4th</h2>
                             </header>
                             <div class="card-body">
-                                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
-                                    column.</p><br>
+                                <p>By 2025, communication tech's carbon emissions will surpass all countries except China, India, and the U.S.</p><br>
                                 <a href="https://internethealthreport.org/2018/the-internet-uses-more-electricity-than/" target="_blank">Learn more</a>
                             </div>
                         </div>
@@ -69,10 +68,10 @@
                     <div class="tiny-12 small-12 medium-4 tiny-first small-first" style="z-index:1">
                         <div class="card center highlight">
                             <header class="card-header">
-                                <h2>Recycling in México</h2>
+                                <h2>250,000</h2>
                             </header>
                             <div class="card-body">
-                                <p>Data presented by Forbes shows that 68% of companies in México use recycled materials.</p><br>
+                                <p>Anticipated climate shifts are predicted to lead to an extra 250,000 deaths annually from 2030 to 2050.</p><br>
                                 <a href="https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health" target="_blank">Learn more</a>
                             </div>
                         </div>
@@ -80,10 +79,10 @@
                     <div class="tiny-12 small-6 medium-4 small-first medium-last" style="z-index:1">
                         <div class="card center">
                             <header class="card-header">
-                                <h2>Heading</h2>
+                                <h2>14.21%</h2>
                             </header>
                             <div class="card-body">
-                                <p>And lastly this, the third column of representative placeholder content.</p><br>
+                                <p>In 2022, only 14.21% of the world's primary energy generation came from renewable sources.</p><br>
                                 <a href="https://ourworldindata.org/renewable-energy" target="_blank">Learn more</a>
                             </div>
                         </div>
