@@ -21,7 +21,7 @@
 
             <div class="form-floating my-3">
                 <label for="floatingInput">Active</label>
-                <select name="disable" class="form-select">
+                <select name="disabled" class="form-select">
                     <option value="0">Yes</option>
                     <option value="1">No</option>
                 </select>
