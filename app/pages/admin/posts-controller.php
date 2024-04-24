@@ -62,15 +62,16 @@
             $data['content']    = $_POST['content'];
             $data['category_id']= $_POST['category_id'];
             $data['slug']       = $slug;
+            $data['slugid']     = $slug;
             $data['user_id']    = user('id');
             
 
-            $query = "insert into posts (title,content,slug,category_id,user_id) values (:title,:content,:slug,:category_id,:user_id)";
+            $query = "insert into posts (title,content,slug,slugid,category_id,user_id) values (:title,:content,:slug,:slugid,:category_id,:user_id)";
             
             if(!empty($destination))
             {
               $data['image']     = $destination;
-              $query = "insert into posts (title,content,slug,category_id,user_id,image) values (:title,:content,:slug,:category_id,:user_id,:image)";
+              $query = "insert into posts (title,content,slug,slugid,category_id,user_id,image) values (:title,:content,:slug,:slugid,:category_id,:user_id,:image)";
             }
 
             query($query, $data);

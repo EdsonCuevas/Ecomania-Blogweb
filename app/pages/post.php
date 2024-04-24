@@ -102,7 +102,7 @@
         <script>
             var disqus_config = function () {
                 this.page.url = window.location.href;  // Set the page URL to the current browser URL
-                this.page.identifier = '<?= $slug ?>'; // Use PHP to dynamically output the slug
+                this.page.identifier = '<?=$row['slugid']?>'; // Use PHP to dynamically output the slug
             };
 
             (function() {

@@ -215,11 +215,13 @@ function create_tables(){
         image varchar(1024) null,
         date datetime default current_timestamp,
         slug varchar(100) not null,
+        slugid varchar(100) not null,
 
         key user_id (user_id),
         key category_id (category_id),
         key title (title),
         key slug (slug),
+        key slugid (slugid),
         key date (date)
 
     )";
