@@ -4,29 +4,6 @@
     redirect('login');
   }
 
-  if(user('role') != 'admin'){
-    redirect('userpanel');
-  }
-
-  $section = $url[1] ?? 'dashboard';
-  $action  = $url[2] ?? 'view';
-  $id      = $url[3] ?? 0;
-
-  $filename = "../app/pages/admin/".$section.".php";
-
-  if(!file_exists($filename)){
-    $filename = "../app/pages/admin/404.php";
-  }
-
-  if($section == 'users'){
-    require_once "../app/pages/admin/users-controller.php";
-  }
-  elseif($section == 'categories'){
-    require_once "../app/pages/admin/categories-controller.php";
-  }
-  elseif($section == 'posts'){
-    require_once "../app/pages/admin/posts-controller.php";
-  }
 
 ?>
 
@@ -128,12 +105,14 @@
             <div class="content">
                 <div class="container-fluid">
 
-                    <?php
-
-                        require_once $filename;
-
-                    ?>
-                    
+                    <div class="m-8 row justify-content-center">
+                        <div class="col-auto p-5 text-center">
+                            <br><br><br><br><br>
+                            <h1>You are not an administrator</h1>
+                            <h3>You do not have access.</h3>
+                        </div>
+                        
+                    </div>
                             
                 </div>
             </div>
