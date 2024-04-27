@@ -66,7 +66,9 @@
           
           }
 
-        }
+        } else {
+          $errors['image'] = "A featured image is required";
+      }
     
         if(empty($errors))
           {

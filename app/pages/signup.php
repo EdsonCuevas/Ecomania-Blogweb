@@ -34,7 +34,7 @@
 
     } else if(strlen($_POST['password']) < 8){
 
-        $errors['password'] = "Password must be 8 chracter or more";
+        $errors['password'] = "Password must be longer than 8 characters";
 
     } else if($_POST['password'] !== $_POST['retype_password']){
 
@@ -256,13 +256,18 @@
                 <i class="bx bxs-user"></i> <!-- Icono de usuario de Boxicons -->
             </div>
 
+            <?php if(!empty($errors['email'])):?>
+            <div class="errorAuth"><?=$errors['email']?></div>
+            <?php endif;?>
+
             <!-- Campo de entrada para el email de usuario -->
             <div class="input-box">
                 <input type="email" value="<?=old_value('email')?>" name="email" placeholder="Email" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-user"></i> <!-- Icono de usuario de Boxicons -->
             </div>
-            <?php if(!empty($errors['email'])):?>
-            <div class="errorAuth"><?=$errors['email']?></div>
+
+            <?php if(!empty($errors['password'])):?>
+            <div class="errorAuth"><?=$errors['password']?></div>
             <?php endif;?>
 
             <!-- Campo de entrada para la primera contraseña -->
@@ -270,14 +275,17 @@
                 <input type="password" value="<?=old_value('password')?>" name="password" placeholder="Password" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
             </div>
-            <?php if(!empty($errors['password'])):?>
-            <div class="errorAuth"><?=$errors['password']?></div>
-            <?php endif;?>
+            
 
             <!-- Campo de entrada para la segunda contraseña -->
             <div class="input-box">
                 <input type="password" value="<?=old_value('retype_password')?>" name="retype_password" placeholder="Confirm Password" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
+            </div>
+
+            <!-- Opción para recordar al usuario -->
+            <div class="olvidar-recordar">
+                <label><input type="checkbox" required>I agree to the <a href="<?=ROOT?>/privacy">Privacy and Terms.</a></label> <!-- Casilla de verificación -->
             </div>
             
             <!-- Botón de envío del formulario -->

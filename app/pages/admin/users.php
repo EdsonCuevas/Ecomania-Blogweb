@@ -9,16 +9,17 @@
             <?php endif; ?>
 
             <div class="my-2">
+                <?php if(!empty($errors['image'])):?>
+                    <div class="text-danger">
+                        <?=$errors['image']?>
+                    </div>
+                <?php endif;?>
                 <label class="d-block">
                     <img class="mx-auto d-block image-preview-edit" src="<?=get_image('')?>"
                         style="cursor: pointer;width: 150px;height: 150px;object-fit: cover;">
                     <input onchange="display_image_edit(this.files[0])" type="file" name="image" class="d-none">
                 </label>
-                <?php if(!empty($errors['image'])):?>
-                <div class="text-danger">
-                    <?=$errors['image']?>
-                </div>
-                <?php endif;?>
+                
 
                 <script>
 
@@ -30,23 +31,23 @@
 
             <div class="form-floating">
                 <label for="floatingInput">Username</label>
+                <?php if (!empty($errors['username'])): ?>
+                    <div class="text-danger">
+                        <?= $errors['username'] ?>
+                    </div>
+                <?php endif; ?>
                 <input value="<?= old_value('username') ?>" name="username" type="text" class="form-control mb-2"
                     id="floatingInput" placeholder="Username">
-                <?php if (!empty($errors['username'])): ?>
-                <div class="text-danger">
-                    <?= $errors['username'] ?>
-                </div>
-                <?php endif; ?>
             </div>
             <div class="form-floating">
                 <label for="floatingInput">Email</label>
+                <?php if (!empty($errors['email'])): ?>
+                    <div class="text-danger">
+                        <?= $errors['email'] ?>
+                    </div>
+                <?php endif; ?>
                 <input value="<?= old_value('email') ?>" name="email" type="email" class="form-control"
                     id="floatingInput" placeholder="Email addres">
-                <?php if (!empty($errors['email'])): ?>
-                <div class="text-danger">
-                    <?= $errors['email'] ?>
-                </div>
-                <?php endif; ?>
             </div>
 
             <div class="form-floating my-3">
@@ -55,22 +56,17 @@
                     <option value="user">User</option>
                     <option value="admin">Admin</option>
                 </select>
-                <?php if (!empty($errors['role'])): ?>
-                <div class="text-danger">
-                    <?= $errors['role'] ?>
-                </div>
-                <?php endif; ?>
             </div>
 
             <div class="form-floating">
                 <label for="floatingPassword">Password</label>
+                <?php if (!empty($errors['password'])): ?>
+                    <div class="text-danger">
+                        <?= $errors['password'] ?>
+                    </div>
+                <?php endif; ?>
                 <input value="<?= old_value('password') ?>" name="password" type="password" class="form-control"
                     id="floatingPassword" placeholder="Password">
-                <?php if (!empty($errors['password'])): ?>
-                <div class="text-danger">
-                    <?= $errors['password'] ?>
-                </div>
-                <?php endif; ?>
             </div>
             <div class="form-floating">
                 <label for="floatingPassword">Confirm Password</label>
@@ -112,23 +108,23 @@
 
             <div class="form-floating">
                 <label for="floatingInput">Username</label>
+                <?php if (!empty($errors['username'])): ?>
+                    <div class="text-danger">
+                        <?= $errors['username'] ?>
+                    </div>
+                <?php endif; ?>
                 <input value="<?= old_value('username', $row['username']) ?>" name="username" type="text"
                     class="form-control mb-2" id="floatingInput" placeholder="Username">
-                <?php if (!empty($errors['username'])): ?>
-                <div class="text-danger">
-                    <?= $errors['username'] ?>
-                </div>
-                <?php endif; ?>
             </div>
             <div class="form-floating">
                 <label for="floatingInput">Email</label>
+                <?php if (!empty($errors['email'])): ?>
+                    <div class="text-danger">
+                        <?= $errors['email'] ?>
+                    </div>
+                <?php endif; ?>
                 <input value="<?= old_value('email', $row['email']) ?>" name="email" type="email" class="form-control"
                     id="floatingInput" placeholder="Email addres">
-                <?php if (!empty($errors['email'])): ?>
-                <div class="text-danger">
-                    <?= $errors['email'] ?>
-                </div>
-                <?php endif; ?>
             </div>
 
             <div class="form-floating my-3">
@@ -146,13 +142,13 @@
 
             <div class="form-floating">
                 <label for="floatingPassword">Password (Leave empty to keep old one)</label>
+                <?php if (!empty($errors['password'])): ?>
+                    <div class="text-danger">
+                        <?= $errors['password'] ?>
+                    </div>
+                <?php endif; ?>
                 <input value="<?= old_value('password') ?>" name="password" type="password" class="form-control"
                     id="floatingPassword" placeholder="Password">
-                <?php if (!empty($errors['password'])): ?>
-                <div class="text-danger">
-                    <?= $errors['password'] ?>
-                </div>
-                <?php endif; ?>
             </div>
             <div class="form-floating">
                 <label for="floatingPassword">Confirm Password</label>

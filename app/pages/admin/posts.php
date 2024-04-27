@@ -8,15 +8,18 @@
                 <div class="alert alert-danger">Please fix the errors below</div>
             <?php endif; ?>
 
+            <?php if(!empty($errors['image'])):?>
+                    <div class="text-danger"><?=$errors['image']?></div>
+            <?php endif;?>
+
             <div class="my-2">
+                
                 Featured Image:<br>
                 <label class="d-block">
                     <img class="mx-auto d-block image-preview-edit" src="<?=get_image('')?>" style="cursor: pointer;width: 150px;height: 150px;object-fit: cover;">
                     <input onchange="display_image_edit(this.files[0])" type="file" name="image" class="d-none">
                 </label>
-                <?php if(!empty($errors['image'])):?>
-                <div class="text-danger"><?=$errors['image']?></div>
-                <?php endif;?>
+                
 
                 <script>
                     
@@ -29,16 +32,18 @@
 
             <div class="form-floating">
                 <label for="floatingInput">Title</label>
-                <input value="<?= old_value('title') ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Title content">
                 <?php if (!empty($errors['title'])): ?>
                     <div class="text-danger"><?= $errors['title'] ?></div>
                 <?php endif; ?>
+                <input value="<?= old_value('title') ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Title content">
+                
             </div>
-            <div class="">
-                <textarea rows="8" id="floatingInput" name="content" placeholder="Post content" type="text" class="form-control"><?= old_value('content') ?></textarea>
-                <?php if (!empty($errors['content'])): ?>
+            <?php if (!empty($errors['content'])): ?>
                     <div class="text-danger"><?= $errors['content'] ?></div>
                 <?php endif; ?>
+            <div>
+                <textarea rows="8" id="floatingInput" name="content" placeholder="Post content" type="text" class="form-control"><?= old_value('content') ?></textarea>
+                
             </div>
 
             <div class="form-floating my-3">
@@ -59,8 +64,8 @@
                     <?php endif; ?>
 
                 </select>
-                <?php if (!empty($errors['category'])): ?>
-                    <div class="text-danger"><?= $errors['category'] ?></div>
+                <?php if (!empty($errors['category_id'])): ?>
+                    <div class="text-danger"><?= $errors['category_id'] ?></div>
                 <?php endif; ?>
             </div>
 
@@ -98,17 +103,18 @@
 
             <div class="form-floating">
                 <label for="floatingInput">Title</label>
-                <input value="<?= old_value('title', $row['title']) ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Title content">
                 <?php if (!empty($errors['title'])): ?>
                     <div class="text-danger"><?= $errors['title'] ?></div>
                 <?php endif; ?>
+                <input value="<?= old_value('title', $row['title']) ?>" name="title" type="text" class="form-control mb-2" id="floatingInput" placeholder="Title content">
+                
             </div>
 
-            <div class="">
+            <?php if (!empty($errors['content'])): ?>
+                <div class="text-danger"><?= $errors['content'] ?></div>
+            <?php endif; ?>
+            <div>
                 <textarea rows="8" id="floatingInput" name="content" placeholder="Post content" type="text" class="form-control"><?= old_value('content',$row['content']) ?></textarea>
-                <?php if (!empty($errors['content'])): ?>
-                    <div class="text-danger"><?= $errors['content'] ?></div>
-                <?php endif; ?>
             </div>
 
             <div class="form-floating my-3">
@@ -129,8 +135,8 @@
                     <?php endif; ?>
 
                 </select>
-                <?php if (!empty($errors['category'])): ?>
-                    <div class="text-danger"><?= $errors['category'] ?></div>
+                <?php if (!empty($errors['category_id'])): ?>
+                    <div class="text-danger"><?= $errors['category_id'] ?></div>
                 <?php endif; ?>
             </div>
 
