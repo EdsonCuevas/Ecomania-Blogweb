@@ -97,7 +97,7 @@
 		</div>
 	</section>
 
-    <div id="disqus_thread" style="margin: 100px;"></div>
+    <div id="disqus_thread" class="comments"></div>
         <script>
             var disqus_config = function () {
                 this.page.url = window.location.href;  // Set the page URL to the current browser URL
