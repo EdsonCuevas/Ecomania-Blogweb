@@ -34,7 +34,7 @@
 
     } else if(strlen($_POST['password']) < 8){
 
-        $errors['password'] = "Password must be 8 chracter or more";
+        $errors['password'] = "Password must be longer than 8 characters";
 
     } else if($_POST['password'] !== $_POST['retype_password']){
 
