@@ -256,13 +256,18 @@
                 <i class="bx bxs-user"></i> <!-- Icono de usuario de Boxicons -->
             </div>
 
+            <?php if(!empty($errors['email'])):?>
+            <div class="errorAuth"><?=$errors['email']?></div>
+            <?php endif;?>
+
             <!-- Campo de entrada para el email de usuario -->
             <div class="input-box">
                 <input type="email" value="<?=old_value('email')?>" name="email" placeholder="Email" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-user"></i> <!-- Icono de usuario de Boxicons -->
             </div>
-            <?php if(!empty($errors['email'])):?>
-            <div class="errorAuth"><?=$errors['email']?></div>
+
+            <?php if(!empty($errors['password'])):?>
+            <div class="errorAuth"><?=$errors['password']?></div>
             <?php endif;?>
 
             <!-- Campo de entrada para la primera contraseña -->
@@ -270,9 +275,7 @@
                 <input type="password" value="<?=old_value('password')?>" name="password" placeholder="Password" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
             </div>
-            <?php if(!empty($errors['password'])):?>
-            <div class="errorAuth"><?=$errors['password']?></div>
-            <?php endif;?>
+            
 
             <!-- Campo de entrada para la segunda contraseña -->
             <div class="input-box">
