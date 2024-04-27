@@ -282,6 +282,11 @@
                 <input type="password" value="<?=old_value('retype_password')?>" name="retype_password" placeholder="Confirm Password" required> <!-- Campo obligatorio -->
                 <i class="bx bxs-lock-alt"></i> <!-- Icono de candado de Boxicons -->
             </div>
+
+            <!-- Opción para recordar al usuario -->
+            <div class="olvidar-recordar">
+                <label><input type="checkbox" required>I agree to the <a href="<?=ROOT?>/privacy">Privacy and Terms.</a></label> <!-- Casilla de verificación -->
+            </div>
             
             <!-- Botón de envío del formulario -->
             <button type="submit" class="btn">Sign up</button> <!-- Botón con clase "btn" para estilos personalizados -->
