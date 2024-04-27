@@ -9,13 +9,19 @@
     
         if(empty($_POST['title'])){
     
-            $errors['title'] = "A title is required";
+            $errors['title'] = "Title is required";
     
+        }
+
+        if(empty($_POST['content'])){
+    
+          $errors['content'] = "Content is required";
+  
         }
     
         if(empty($_POST['category_id'])){
     
-            $errors['category_id'] = "A category is required";
+            $errors['category_id'] = "Category is required";
     
         }
     
@@ -98,6 +104,12 @@
     
           $errors['title'] = "A title is required";
     
+        }
+
+        if(empty($_POST['content'])){
+    
+          $errors['content'] = "Content is required";
+  
         }
     
         if(empty($_POST['category_id'])){
