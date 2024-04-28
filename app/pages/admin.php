@@ -5,7 +5,7 @@
   }
 
   if(user('role') != 'admin'){
-    redirect('userpanel');
+    redirect('noaccess');
   }
 
   $section = $url[1] ?? 'dashboard';
