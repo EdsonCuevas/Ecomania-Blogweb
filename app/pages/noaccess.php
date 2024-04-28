@@ -4,10 +4,7 @@
     redirect('login');
   }
 
-
 ?>
-
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -17,7 +14,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Ecomania | Dashboard</title>
+    <title>Ecomania | Not Access</title>
     <link rel="shortcut icon" href="<?=ROOT?>/../public/assets/imgs/icon.png">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
         name='viewport' />
@@ -38,31 +35,31 @@
 
             <div class="sidebar-wrapper">
                 <div class="logo">
-                    <a href="<?=ROOT?>/home" class="simple-text">
+                    <a href="#" class="simple-text">
                         Ecomania
                     </a>
                 </div>
                 <ul class="nav">
                     <li class="nav-item <?=$section == 'dashboard' ? 'active':''?>">
-                        <a class="nav-link" href="<?=ROOT?>/admin">
+                        <a class="nav-link" href="#">
                             <i class="nc-icon nc-chart-pie-35"></i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li class="nav-item <?=$section == 'users' ? 'active':''?>">
-                        <a class="nav-link" href="<?=ROOT?>/admin/users">
+                        <a class="nav-link" href="#">
                             <i class="nc-icon nc-circle-09"></i>
                             <p>Users</p>
                         </a>
                     </li>
                     <li class="nav-item <?=$section == 'categories' ? 'active':''?>">
-                        <a class="nav-link" href="<?=ROOT?>/admin/categories">
+                        <a class="nav-link" href="#">
                             <i class="nc-icon nc-tag-content"></i>
                             <p>Categories</p>
                         </a>
                     </li>
                     <li class="nav-item <?=$section == 'posts' ? 'active':''?>">
-                        <a class="nav-link" href="<?=ROOT?>/admin/posts">
+                        <a class="nav-link" href="#">
                             <i class="nc-icon nc-single-copy-04"></i>
                             <p>Posts</p>
                         </a>
