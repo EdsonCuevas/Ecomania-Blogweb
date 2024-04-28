@@ -41,15 +41,14 @@
 	<div class="container ">
 		<div class="row ">
 			<div class="tiny-12 tiny-center">
-				<h1>
+				<h1 style="font-size: 50px;">
                     <?=esc($row['title'])?>
                 </h1>
-                <p style="color: black;">
+                <p style="font-size: 30px; color: black;">
                     Category: 
                     <?=esc($row['category'] ?? 'Unknown')?>
                 </p>
-                <p style="color: black;">
-                    Date release:
+                <p style="font-size: 30px; color: black;">
                     <?=date("jS M, Y",strtotime($row['date']))?>
                 </p>
 			</div>
@@ -76,7 +75,7 @@
                     <img src="<?=get_image($row['image'])?>" class="card-img-top">
                     <div class="card-content">  
 
-                        <p>
+                        <p style="margin-top: 0;">
                             <?=nl2br(esc($row['content']))?>
                         </p>
 
@@ -98,7 +97,7 @@
 		</div>
 	</section>
 
-    <div id="disqus_thread" style="margin: 100px;"></div>
+    <div id="disqus_thread" class="comments"></div>
         <script>
             var disqus_config = function () {
                 this.page.url = window.location.href;  // Set the page URL to the current browser URL

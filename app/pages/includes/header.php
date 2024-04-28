@@ -25,6 +25,18 @@
             left: 15px;
         }
     }
+
+    @media screen and (min-width: 760px) {
+        .comments {
+            margin: 100px;
+        }
+    }
+
+    @media screen and (max-width: 760px) {
+        .comments {
+            margin: 10px;
+        }
+    }
 </style>
 
 <div class="tiny-8 small-8 medium-8 tiny-end" style="position:relative;">
