@@ -53,6 +53,10 @@
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href=".<?=ROOT?>/../public/assets/css/demo.css" rel="stylesheet" />
     
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+
+    
 </head>
 
 <body>
@@ -270,5 +274,7 @@
 <script src="<?=ROOT?>/../public/assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
 <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
 <script src="<?=ROOT?>/../public/assets/js/demo.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 
 </html>
