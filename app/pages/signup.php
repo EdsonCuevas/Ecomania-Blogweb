@@ -4,6 +4,7 @@
     
     //validate
     $errors = [];
+    $sucess = "";
 
     if(empty($_POST['username'])){
 
@@ -53,7 +54,9 @@
         $query = "insert into users (username,email,password,role) values (:username,:email,:password,:role)";
         query($query, $data);
 
-        redirect('login');
+        $sucess = "Registration successfully completed";
+        header("refresh:3;url=http://localhost/Ecomania-Blogweb/public/login");
+
     }
 
   }
@@ -209,6 +212,12 @@
         font-size: 20px;
       }
 
+      .Success{
+        text-align: center;
+        color: rgb(52, 255, 52);
+        font-size: 20px;
+      }
+
       .arrow-left img{
             transform: rotate(180deg);
         }
@@ -245,6 +254,10 @@
             </div>
             
             <h1>Register</h1> <!-- Encabezado del formulario -->
+
+            <?php if(!empty($sucess)):?>
+            <div class="Success"><br><?=$sucess?></div>
+            <?php endif;?>
 
             <?php if(!empty($errors['username'])):?>
             <div class="errorAuth"><br><?=$errors['username']?></div>
