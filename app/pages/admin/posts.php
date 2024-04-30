@@ -14,9 +14,9 @@
 
             <div class="my-2">
                 
-                Featured Image:<br>
+                <center>Cover Image:<br></center>
                 <label class="d-block">
-                    <img class="mx-auto d-block image-preview-edit" src="<?=get_image('')?>" style="cursor: pointer;width: 150px;height: 150px;object-fit: cover;">
+                    <img class="mx-auto d-block image-preview-edit" src="<?=get_image('')?>" style="cursor: pointer;width: 250px;height: 250px;object-fit: cover;">
                     <input onchange="display_image_edit(this.files[0])" type="file" name="image" class="d-none">
                 </label>
                 
@@ -101,8 +101,9 @@
             <?php endif; ?>
 
             <div class="my-2">
+                <center>Cover Image:<br></center>
                 <label class="d-block">
-                    <img class="mx-auto d-block image-preview-edit" src="<?=get_image($row['image'])?>" style="cursor: pointer; width: 150px; height: 150px; object-fit: cover;">
+                    <img class="mx-auto d-block image-preview-edit" src="<?=get_image($row['image'])?>" style="cursor: pointer; width: 250px; height: 250px; object-fit: cover;">
                     <input onchange="display_image_edit(this.files[0])" type="file" name="image" class="d-none">
                 </label>
 
