@@ -114,7 +114,7 @@
                 <div class="text-danger"><?= $errors['content'] ?></div>
             <?php endif; ?>
             <div>
-                <textarea id="floatingInput" name="content" type="text" class="form-control mySummernote"><?= old_value('content',$row['content']) ?></textarea>
+                <textarea id="floatingInput" name="content" type="text" class="form-control mySummernote"><?=old_value('content',add_root_to_images($row['content']))?></textarea>
             </div>
 
             <div class="form-floating my-3">
@@ -158,7 +158,7 @@
 <script>
     $(document).ready(function() {
         $(".mySummernote").summernote({
-            height: 250,
+            height: 400,
             placeholder: "Post content"
         });
         $('.dropdown-toggle').dropdown();
