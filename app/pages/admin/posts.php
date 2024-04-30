@@ -79,11 +79,9 @@
 
 <?php elseif($action == 'edit'):?>
 
-
-<link rel="stylesheet" href="<?=ROOT?>/assets/summernote/summernote-lite.min.css">
 <div class="container">
     <form method="post" enctype="multipart/form-data">
-        <div class="col-md-6 mx-auto">
+        <div class="col-md-12 mx-auto">
             <h1 class="h3 mb-3 fw-normal">Edit post</h1>
             <?php if(!empty($row)):?>
             <?php if (!empty($errors)): ?>
@@ -160,7 +158,8 @@
 <script>
     $(document).ready(function() {
         $(".mySummernote").summernote({
-            height: 250
+            height: 250,
+            placeholder: "Post content"
         });
         $('.dropdown-toggle').dropdown();
     });

@@ -76,7 +76,7 @@
                     <div class="card-content">  
 
                         <p style="margin-top: 0;">
-                            <?=nl2br(esc($row['content']))?>
+                            <?=nl2br($row['content'])?>
                         </p>
 
                     </div>
