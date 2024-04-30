@@ -55,7 +55,7 @@
         query($query, $data);
 
         $sucess = "Registration successfully completed";
-        header("refresh:3;url=http://localhost/Ecomania-Blogweb/public/login");
+        header("refresh:2;url=http://localhost/Ecomania-Blogweb/public/login");
 
     }
 
@@ -214,7 +214,7 @@
 
       .Success{
         text-align: center;
-        color: rgb(52, 255, 52);
+        color: rgb(100, 255, 100);
         font-size: 20px;
       }
 
