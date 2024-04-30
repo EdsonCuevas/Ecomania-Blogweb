@@ -16,10 +16,6 @@
         </a>
 
         <p>
-            <?=esc(substr($row['content'], 0, 200))?>
-        </p>
-
-        <p>
             <?=date("jS M, Y",strtotime($row['date']))?>
         </p>
         <a href="<?=ROOT?>/post/<?=$row['slug']?>" class="btn normal">Read more</a>

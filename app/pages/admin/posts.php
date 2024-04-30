@@ -2,7 +2,7 @@
 
 <div class="container">
     <form method="post" enctype="multipart/form-data">
-        <div class="col-md-6 mx-auto">
+        <div class="col-md-12 mx-auto">
             <h1 class="h3 mb-3 fw-normal">Create post</h1>
             <?php if (!empty($errors)): ?>
                 <div class="alert alert-danger">Please fix the errors below</div>
@@ -42,7 +42,7 @@
                     <div class="text-danger"><?= $errors['content'] ?></div>
                 <?php endif; ?>
             <div>
-                <textarea rows="8" id="floatingInput" name="content" placeholder="Post content" type="text" class="form-control"><?= old_value('content') ?></textarea>
+                <textarea rows="8" id="floatingInput" name="content" placeholder="Post content" type="text" class="form-control mySummernote"><?=old_value('content')?></textarea>
                 
             </div>
 
@@ -77,11 +77,23 @@
     </form>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $(".mySummernote").summernote({
+            height: 400,
+            placeholder: "Post content"
+        });
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+
 <?php elseif($action == 'edit'):?>
 
 <div class="container">
     <form method="post" enctype="multipart/form-data">
-        <div class="col-md-6 mx-auto">
+        <div class="col-md-12 mx-auto">
             <h1 class="h3 mb-3 fw-normal">Edit post</h1>
             <?php if(!empty($row)):?>
             <?php if (!empty($errors)): ?>
@@ -114,7 +126,7 @@
                 <div class="text-danger"><?= $errors['content'] ?></div>
             <?php endif; ?>
             <div>
-                <textarea rows="8" id="floatingInput" name="content" placeholder="Post content" type="text" class="form-control"><?= old_value('content',$row['content']) ?></textarea>
+                <textarea id="floatingInput" name="content" type="text" class="form-control mySummernote"><?=old_value('content',add_root_to_images($row['content']))?></textarea>
             </div>
 
             <div class="form-floating my-3">
@@ -152,6 +164,18 @@
         </div>
     </form>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $(".mySummernote").summernote({
+            height: 400,
+            placeholder: "Post content"
+        });
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
 
 <?php elseif($action == 'delete'):?>
 
