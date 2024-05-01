@@ -44,14 +44,17 @@
     }
 
     if(empty($errors)){
+        $default_picture = "assets/imgs/no-image-user.png";
+        
         //save to database
         $data = [];
         $data['username'] = $_POST['username'];
         $data['email']    = $_POST['email'];
         $data['role']     = "user";
         $data['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $data['image']    = $default_picture;
 
-        $query = "insert into users (username,email,password,role) values (:username,:email,:password,:role)";
+        $query = "insert into users (username,email,password,role,image) values (:username,:email,:password,:role,:image)";
         query($query, $data);
 
         $sucess = "Registration successfully completed";
