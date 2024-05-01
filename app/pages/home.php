@@ -142,7 +142,20 @@
                     <div class="card-container">
                     <?php
 
-                    $query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id && disabled = 0 order by id desc limit 3";
+                    $query = "SELECT 
+                    posts.*, 
+                    CASE 
+                        WHEN categories.disabled = 1 THEN 'Unknown'
+                        ELSE categories.category 
+                    END AS category
+                        FROM 
+                            posts 
+                        JOIN 
+                            categories ON posts.category_id = categories.id 
+                        ORDER BY 
+                            posts.id DESC 
+                        LIMIT 3;
+                        ";
                     $rows = query($query);
                     if($rows){
 
