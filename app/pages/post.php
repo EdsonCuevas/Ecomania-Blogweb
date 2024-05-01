@@ -32,7 +32,16 @@
     $slug = $url[1] ?? null;
 
     if($slug){
-        $query = "SELECT posts.*, categories.category FROM posts LEFT JOIN categories ON posts.category_id = categories.id WHERE posts.slug = :slug LIMIT 1";
+        $query = "SELECT posts.*, 
+                 CASE 
+                    WHEN categories.disabled = 1 THEN 'Unknown' 
+                    ELSE categories.category 
+                 END AS category 
+                FROM posts 
+                LEFT JOIN categories ON posts.category_id = categories.id 
+                WHERE posts.slug = :slug 
+                LIMIT 1";
+
         $row = query_row($query, ['slug'=>$slug]);
     }
 
