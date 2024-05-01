@@ -142,7 +142,12 @@
                     <div class="card-container">
                     <?php
 
-                    $query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id && disabled = 0 order by id desc limit 3";
+                    $query = "SELECT posts.*, categories.category 
+                          FROM posts 
+                          LEFT JOIN categories ON posts.category_id = categories.id 
+                          WHERE categories.id IS NULL OR categories.disabled = 0 
+                          ORDER BY posts.id DESC 
+                          LIMIT 3";
                     $rows = query($query);
                     if($rows){
 
