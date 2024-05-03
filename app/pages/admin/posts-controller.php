@@ -67,6 +67,7 @@
           {
             //save to database
             $data = [];
+            $data['creator']    = user('username');
             $data['title']      = $_POST['title'];
             $data['content']    = $new_content;
             $data['category_id']= $_POST['category_id'];
@@ -76,12 +77,12 @@
             $data['status']     = "Approved";
             
 
-            $query = "insert into posts (title,content,slug,slugid,category_id,user_id,status) values (:title,:content,:slug,:slugid,:category_id,:user_id,:status)";
+            $query = "insert into posts (creator,title,content,slug,slugid,category_id,user_id,status) values (:creator,:title,:content,:slug,:slugid,:category_id,:user_id,:status)";
             
             if(!empty($destination))
             {
               $data['image']     = $destination;
-              $query = "insert into posts (title,content,slug,slugid,category_id,user_id,image,status) values (:title,:content,:slug,:slugid,:category_id,:user_id,:image,:status)";
+              $query = "insert into posts (creator,title,content,slug,slugid,category_id,user_id,image,status) values (:creator,:title,:content,:slug,:slugid,:category_id,:user_id,:image,:status)";
             }
 
             query($query, $data);

@@ -238,6 +238,7 @@
 
         <tr>
             <th>#</th>
+            <th>Creator</th>
             <th>Title</th>
             <th>Status</th>
             <th>Image</th>
@@ -259,6 +260,7 @@
             <?php foreach($rows as $row):?>
             <tr>
                 <td><?=$row['id']?></td>
+                <td><?=esc($row['creator'])?></td>
                 <td><?=esc($row['title'])?></td>
                 <td><?=$row['status']?></td>
                 <td>

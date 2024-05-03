@@ -238,7 +238,9 @@
             $limit = 10;
             $offset = ($PAGE['page_number'] - 1) * $limit;
 
-            $query = "select * from posts order by id desc limit $limit offset $offset";
+            $user = user('username');
+
+            $query = "SELECT * FROM posts WHERE creator = '$user' ORDER BY id DESC LIMIT $limit OFFSET $offset";
             $rows = query($query);
 
         ?>
