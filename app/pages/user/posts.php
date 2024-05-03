@@ -228,7 +228,7 @@
         <tr>
             <th>#</th>
             <th>Title</th>
-            <th>Slug</th>
+            <th>Status</th>
             <th>Image</th>
             <th>Date</th>
             <th>Action</th>
@@ -248,7 +248,7 @@
             <tr>
                 <td><?=$row['id']?></td>
                 <td><?=esc($row['title'])?></td>
-                <td><?=$row['slug']?></td>
+                <td><?=$row['status']?></td>
                 <td>
                     <img src="<?=get_image($row['image'])?>" style="width: 100px; height: 100px; object-fit: cover;">
                 </td>

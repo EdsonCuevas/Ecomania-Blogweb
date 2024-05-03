@@ -73,19 +73,20 @@
             $data['slug']       = $slug;
             $data['slugid']     = $slug;
             $data['user_id']    = user('id');
+            $data['status']     = "Pending";
             
 
-            $query = "insert into posts (title,content,slug,slugid,category_id,user_id) values (:title,:content,:slug,:slugid,:category_id,:user_id)";
+            $query = "insert into posts (title,content,slug,slugid,category_id,user_id,status) values (:title,:content,:slug,:slugid,:category_id,:user_id,:status)";
             
             if(!empty($destination))
             {
               $data['image']     = $destination;
-              $query = "insert into posts (title,content,slug,slugid,category_id,user_id,image) values (:title,:content,:slug,:slugid,:category_id,:user_id,:image)";
+              $query = "insert into posts (title,content,slug,slugid,category_id,user_id,status,image) values (:title,:content,:slug,:slugid,:category_id,:user_id,:status,:image)";
             }
 
             query($query, $data);
 
-            redirect('admin/posts');
+            redirect('user/posts');
 
           }
       }
@@ -167,6 +168,7 @@
               $data['category_id']= $_POST['category_id'];
               $data['id']         = $id;
               $data['slug']       = $slug;
+              $data['status']     = "Pending";
 
               $image_str        = "";
 
@@ -176,11 +178,11 @@
                   $data['image']       = $destination;
                 }
               
-                $query = "update posts set title = :title, content = :content, slug = :slug, $image_str category_id = :category_id where id = :id limit 1";
+                $query = "update posts set title = :title, status = :status, content = :content, slug = :slug, $image_str category_id = :category_id where id = :id limit 1";
 
 
               query($query, $data);
-              redirect('admin/posts');
+              redirect('user/posts');
 
             }
       }
@@ -213,7 +215,7 @@
               if(file_exists($row['image']))
                 unlink($row['image']);
 
-              redirect('admin/posts');
+              redirect('user/posts');
           }
       }
     }

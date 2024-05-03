@@ -153,6 +153,17 @@
                 <?php endif; ?>
             </div>
 
+            <div class="form-floating my-3">
+                <label for="floatingInput">Status</label>
+                <select name="status_id" class="form-select">
+                    <option value="Pending"<?= old_select('status_id', 'Pending', $row['status']) ?>>Pending</option>
+                    <option value="Approved"<?= old_select('status_id', 'Approved', $row['status']) ?>>Approved</option>
+                </select>
+                <?php if (!empty($errors['status_id'])): ?>
+                    <div class="text-danger"><?= $errors['status_id'] ?></div>
+                <?php endif; ?>
+            </div>
+
             <a href="<?=ROOT?>/admin/posts">
                 <button class="mt-4 btn btn-lg btn-danger" type="button">Back</button>
             </a>
@@ -228,10 +239,11 @@
         <tr>
             <th>#</th>
             <th>Title</th>
-            <th>Slug</th>
+            <th>Status</th>
             <th>Image</th>
             <th>Date</th>
             <th>Action</th>
+
         </tr>
 
         <?php
@@ -248,7 +260,7 @@
             <tr>
                 <td><?=$row['id']?></td>
                 <td><?=esc($row['title'])?></td>
-                <td><?=$row['slug']?></td>
+                <td><?=$row['status']?></td>
                 <td>
                     <img src="<?=get_image($row['image'])?>" style="width: 100px; height: 100px; object-fit: cover;">
                 </td>

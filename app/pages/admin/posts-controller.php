@@ -167,6 +167,7 @@
               $data['category_id']= $_POST['category_id'];
               $data['id']         = $id;
               $data['slug']       = $slug;
+              $data['status']     = $_POST['status_id'];
 
               $image_str        = "";
 
@@ -176,7 +177,7 @@
                   $data['image']       = $destination;
                 }
               
-                $query = "update posts set title = :title, content = :content, slug = :slug, $image_str category_id = :category_id where id = :id limit 1";
+                $query = "update posts set title = :title, status = :status, content = :content, slug = :slug, $image_str category_id = :category_id where id = :id limit 1";
 
 
               query($query, $data);
