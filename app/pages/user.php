@@ -4,28 +4,22 @@
     redirect('login');
   }
 
-  if(user('role') != 'admin'){
-    redirect('user/posts');
+  if(user('role') != 'user'){
+    redirect('noaccess');
   }
 
   $section = $url[1] ?? 'dashboard';
   $action  = $url[2] ?? 'view';
   $id      = $url[3] ?? 0;
 
-  $filename = "../app/pages/admin/".$section.".php";
+  $filename = "../app/pages/user/".$section.".php";
 
   if(!file_exists($filename)){
-    $filename = "../app/pages/admin/404.php";
+    $filename = "../app/pages/user/404.php";
   }
 
-  if($section == 'users'){
-    require_once "../app/pages/admin/users-controller.php";
-  }
-  elseif($section == 'categories'){
-    require_once "../app/pages/admin/categories-controller.php";
-  }
   elseif($section == 'posts'){
-    require_once "../app/pages/admin/posts-controller.php";
+    require_once "../app/pages/user/posts-controller.php";
   }
 
 ?>
@@ -67,26 +61,8 @@
                     </a>
                 </div>
                 <ul class="nav">
-                    <li class="nav-item <?=$section == 'dashboard' ? 'active':''?>">
-                        <a class="nav-link" href="<?=ROOT?>/admin">
-                            <i class="nc-icon nc-chart-pie-35"></i>
-                            <p>Dashboard</p>
-                        </a>
-                    </li>
-                    <li class="nav-item <?=$section == 'users' ? 'active':''?>">
-                        <a class="nav-link" href="<?=ROOT?>/admin/users">
-                            <i class="nc-icon nc-circle-09"></i>
-                            <p>Users</p>
-                        </a>
-                    </li>
-                    <li class="nav-item <?=$section == 'categories' ? 'active':''?>">
-                        <a class="nav-link" href="<?=ROOT?>/admin/categories">
-                            <i class="nc-icon nc-tag-content"></i>
-                            <p>Categories</p>
-                        </a>
-                    </li>
                     <li class="nav-item <?=$section == 'posts' ? 'active':''?>">
-                        <a class="nav-link" href="<?=ROOT?>/admin/posts">
+                        <a class="nav-link" href="<?=ROOT?>/user/posts">
                             <i class="nc-icon nc-single-copy-04"></i>
                             <p>Posts</p>
                         </a>
@@ -98,7 +74,7 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="<?=ROOT?>/admin"> Dashboard </a>
+                    <a class="navbar-brand" href="<?=ROOT?>/users/posts"> Dashboard </a>
                     <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar burger-lines"></span>
