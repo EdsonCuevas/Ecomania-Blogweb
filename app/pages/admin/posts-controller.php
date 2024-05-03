@@ -73,14 +73,15 @@
             $data['slug']       = $slug;
             $data['slugid']     = $slug;
             $data['user_id']    = user('id');
+            $data['status']     = "Approved";
             
 
-            $query = "insert into posts (title,content,slug,slugid,category_id,user_id) values (:title,:content,:slug,:slugid,:category_id,:user_id)";
+            $query = "insert into posts (title,content,slug,slugid,category_id,user_id,status) values (:title,:content,:slug,:slugid,:category_id,:user_id,:status)";
             
             if(!empty($destination))
             {
               $data['image']     = $destination;
-              $query = "insert into posts (title,content,slug,slugid,category_id,user_id,image) values (:title,:content,:slug,:slugid,:category_id,:user_id,:image)";
+              $query = "insert into posts (title,content,slug,slugid,category_id,user_id,image,status) values (:title,:content,:slug,:slugid,:category_id,:user_id,:image,:status)";
             }
 
             query($query, $data);
