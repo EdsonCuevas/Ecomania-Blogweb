@@ -69,7 +69,7 @@
                 <?php endif; ?>
             </div>
 
-            <a href="<?=ROOT?>/admin/posts">
+            <a href="<?=ROOT?>/user/posts">
                 <button class="mt-4 btn btn-lg btn-danger" type="button">Back</button>
             </a>
             <button class="mt-4 btn btn-lg btn-primary float-end" type="submit">Create</button>
@@ -153,18 +153,7 @@
                 <?php endif; ?>
             </div>
 
-            <div class="form-floating my-3">
-                <label for="floatingInput">Status</label>
-                <select name="status_id" class="form-select">
-                    <option value="Pending"<?= old_select('status_id', 'Pending', $row['status']) ?>>Pending</option>
-                    <option value="Approved"<?= old_select('status_id', 'Approved', $row['status']) ?>>Approved</option>
-                </select>
-                <?php if (!empty($errors['status_id'])): ?>
-                    <div class="text-danger"><?= $errors['status_id'] ?></div>
-                <?php endif; ?>
-            </div>
-
-            <a href="<?=ROOT?>/admin/posts">
+            <a href="<?=ROOT?>/user/posts">
                 <button class="mt-4 btn btn-lg btn-danger" type="button">Back</button>
             </a>
             <button class="mt-4 btn btn-lg btn-primary float-end" type="submit">Save</button>
@@ -212,7 +201,7 @@
                 <?php endif; ?>
             </div>
             
-            <a href="<?=ROOT?>/admin/posts">
+            <a href="<?=ROOT?>/user/posts">
                 <button class="mt-4 btn btn-lg btn-primary" type="button">Back</button>
             </a>
             <button class="mt-4 btn btn-lg btn-danger float-end" type="submit">Delete</button>
@@ -227,7 +216,7 @@
 
 <?php else:?>
 <h4>Posts</h4>
-<a href="<?=ROOT?>/admin/posts/add">
+<a href="<?=ROOT?>/user/posts/add">
     <button class="btn btn-primary"><i class="fa fa-plus"></i></button>
 </a>
 
@@ -237,21 +226,20 @@
     <table class="table">
 
         <tr>
-            <th>#</th>
-            <th>Creator</th>
             <th>Title</th>
             <th>Status</th>
             <th>Image</th>
             <th>Date</th>
             <th>Action</th>
-
         </tr>
 
         <?php
             $limit = 10;
             $offset = ($PAGE['page_number'] - 1) * $limit;
 
-            $query = "select * from posts order by id desc limit $limit offset $offset";
+            $user = user('username');
+
+            $query = "SELECT * FROM posts WHERE creator = '$user' ORDER BY id DESC LIMIT $limit OFFSET $offset";
             $rows = query($query);
 
         ?>
@@ -259,8 +247,6 @@
         <?php if(!empty($rows)):?>
             <?php foreach($rows as $row):?>
             <tr>
-                <td><?=$row['id']?></td>
-                <td><?=esc($row['creator'])?></td>
                 <td><?=esc($row['title'])?></td>
                 <td><?=$row['status']?></td>
                 <td>
@@ -268,10 +254,10 @@
                 </td>
                 <td><?=date("jS M, Y",strtotime($row['date']))?></td>
                 <td>
-                    <a href="<?=ROOT?>/admin/posts/edit/<?=$row['id']?>">
+                    <a href="<?=ROOT?>/user/posts/edit/<?=$row['id']?>">
                         <button class="btn btn-warning"><i class="fa fa-edit"></i></button>
                     </a>
-                    <a href="<?=ROOT?>/admin/posts/delete/<?=$row['id']?>">
+                    <a href="<?=ROOT?>/user/posts/delete/<?=$row['id']?>">
                         <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                     </a>
                 </td>

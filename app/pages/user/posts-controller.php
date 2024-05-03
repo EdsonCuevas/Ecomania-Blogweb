@@ -74,7 +74,7 @@
             $data['slug']       = $slug;
             $data['slugid']     = $slug;
             $data['user_id']    = user('id');
-            $data['status']     = "Approved";
+            $data['status']     = "Pending";
             
 
             $query = "insert into posts (creator,title,content,slug,slugid,category_id,user_id,status) values (:creator,:title,:content,:slug,:slugid,:category_id,:user_id,:status)";
@@ -82,12 +82,12 @@
             if(!empty($destination))
             {
               $data['image']     = $destination;
-              $query = "insert into posts (creator,title,content,slug,slugid,category_id,user_id,image,status) values (:creator,:title,:content,:slug,:slugid,:category_id,:user_id,:image,:status)";
+              $query = "insert into posts (creator,title,content,slug,slugid,category_id,user_id,status,image) values (:creator,:title,:content,:slug,:slugid,:category_id,:user_id,:status,:image)";
             }
 
             query($query, $data);
 
-            redirect('admin/posts');
+            redirect('user/posts');
 
           }
       }
@@ -169,7 +169,7 @@
               $data['category_id']= $_POST['category_id'];
               $data['id']         = $id;
               $data['slug']       = $slug;
-              $data['status']     = $_POST['status_id'];
+              $data['status']     = "Pending";
 
               $image_str        = "";
 
@@ -183,7 +183,7 @@
 
 
               query($query, $data);
-              redirect('admin/posts');
+              redirect('user/posts');
 
             }
       }
@@ -216,7 +216,7 @@
               if(file_exists($row['image']))
                 unlink($row['image']);
 
-              redirect('admin/posts');
+              redirect('user/posts');
           }
       }
     }
