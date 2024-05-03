@@ -267,10 +267,12 @@ function create_tables(){
         id int primary key auto_increment,
         user_id int,
         category_id int,
+        creator varchar(50) not null,
         title varchar(100) not null,
         content text null,
         image varchar(1024) null,
         date datetime default current_timestamp,
+        status varchar(10) null,
         slug varchar(100) not null,
         slugid varchar(100) not null,
 
