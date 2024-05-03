@@ -226,7 +226,6 @@
     <table class="table">
 
         <tr>
-            <th>#</th>
             <th>Title</th>
             <th>Status</th>
             <th>Image</th>
@@ -248,7 +247,6 @@
         <?php if(!empty($rows)):?>
             <?php foreach($rows as $row):?>
             <tr>
-                <td><?=$row['id']?></td>
                 <td><?=esc($row['title'])?></td>
                 <td><?=$row['status']?></td>
                 <td>

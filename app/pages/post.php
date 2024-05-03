@@ -54,6 +54,10 @@
                     <?=esc($row['title'])?>
                 </h1>
                 <p style="font-size: 30px; color: black;">
+                    By:
+                    <?=$row['creator']?>
+                </p>
+                <p style="font-size: 30px; color: black;">
                     Category: 
                     <?=esc($row['category'] ?? 'Unknown')?>
                 </p>

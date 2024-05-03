@@ -16,6 +16,11 @@
         </a>
 
         <p>
+            By:
+            <?=$row['creator']?>
+        </p>
+
+        <p>
             <?=date("jS M, Y",strtotime($row['date']))?>
         </p>
         <a href="<?=ROOT?>/post/<?=$row['slug']?>" class="btn normal">Read more</a>
