@@ -49,7 +49,21 @@
 		<div class="container ">
 			<div class="row ">
 				<div class="tiny ">
-					
+					<div class="card_container">
+						<div class="card_data">
+							<img src="#" alt="">
+							<div class="pro_content">
+								<h2>Alfredo</h2>
+								<p class="position">Jefe jeta</p>
+								<p>Soy jefe de equipo pero bien jeta</p>
+								<div class="social_icons">
+									<span><i></i></span>
+									<span><i></i></span>
+									<span><i></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
 
 				</div>
 			</div>
