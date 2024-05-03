@@ -50,7 +50,7 @@
         $data = [];
         $data['username'] = $_POST['username'];
         $data['email']    = $_POST['email'];
-        $data['role']     = "user";
+        $data['role']     = "editor";
         $data['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $data['image']    = $default_picture;
 

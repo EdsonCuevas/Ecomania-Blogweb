@@ -4,7 +4,7 @@
     redirect('login');
   }
 
-  if(user('role') != 'user'){
+  if(user('role') != 'editor'){
     redirect('noaccess');
   }
 

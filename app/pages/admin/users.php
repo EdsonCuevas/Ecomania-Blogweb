@@ -53,7 +53,7 @@
             <div class="form-floating my-3">
                 <label for="floatingInput">Role</label>
                 <select name="role" class="form-select">
-                    <option value="user">User</option>
+                    <option value="editor">Editor</option>
                     <option value="admin">Admin</option>
                 </select>
             </div>
@@ -130,7 +130,7 @@
             <div class="form-floating my-3">
                 <label for="floatingInput">Role</label>
                 <select name="role" class="form-select">
-                    <option <?=old_select('role', 'user' , $row['role']) ?> value="user">User</option>
+                    <option <?=old_select('role', 'editor' , $row['role']) ?> value="editor">Editor</option>
                     <option <?=old_select('role', 'admin' , $row['role']) ?> value="admin">Admin</option>
                 </select>
                 <?php if (!empty($errors['role'])): ?>

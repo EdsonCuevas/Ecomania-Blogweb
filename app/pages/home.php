@@ -52,89 +52,6 @@
 <main>
     <section class="about">
         <div class="container">
-            <div class="card-group">
-                <div class="row">
-                    <div class="tiny-12 small-6 medium-4 small-last medium-first" style="z-index:2">
-                        <div class="card center">
-                            <header class="card-header">
-                                <h2>4th</h2>
-                            </header>
-                            <div class="card-body">
-                                <p>By 2025, communication tech's carbon emissions will surpass all countries except China, India, and the U.S.</p><br>
-                                <a href="https://internethealthreport.org/2018/the-internet-uses-more-electricity-than/" target="_blank">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tiny-12 small-12 medium-4 tiny-first small-first" style="z-index:1">
-                        <div class="card center highlight">
-                            <header class="card-header">
-                                <h2>250,000</h2>
-                            </header>
-                            <div class="card-body">
-                                <p>Anticipated climate shifts are predicted to lead to an extra 250,000 deaths annually from 2030 to 2050.</p><br>
-                                <a href="https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health" target="_blank">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tiny-12 small-6 medium-4 small-first medium-last" style="z-index:1">
-                        <div class="card center">
-                            <header class="card-header">
-                                <h2>14.21%</h2>
-                            </header>
-                            <div class="card-body">
-                                <p>In 2022, only 14.21% of the world's primary energy generation came from renewable sources.</p><br>
-                                <a href="https://ourworldindata.org/renewable-energy" target="_blank">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <svg style="background-color:var(--clr-light);margin-bottom:-2rem;" width="100%" height="70px" viewBox="0 0 1440 130" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="transform-origin: 50% 50%; transform: rotateX(180deg);">
-        <path id="wave-bottom-white" fill="var(--clr-primary-7)" d="M0,56.050526 C121.352261,18.683509 262.172393,0 422.460394,0 C662.892396,0 818.88453,115.474324 1058.94661,115.474324 C1218.988,115.474324 1342.92081,94.808741 1440,56 L1440,130 L0,130 L0,56.050526 Z"></path>
-    </svg>
-
-<section id="timeline">
-
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-
-    
-    <div class="tiny-12">
-        <div class="container">
-            <div class="row tiny-middle">
-                <div class="tiny-12 medium-5 tiny-center medium-start">
-                    <h2>The problem</h2>
-                    <p>Our team is united in the cause of addressing climate change and contributing to the UN's Sustainable Development Goal 13. We work together to find effective solutions.</p>
-                    <br><br><br>
-                </div>
-                <div class="tiny-12 medium-7 tiny-center medium-start">
-                    <img src="<?=ROOT?>/../public/assets/imgs/graphic-8.svg" alt="green tech graphic">
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    </section>
-
-    <svg style="background-color:var(--clr-primary-7);margin-bottom:-2rem;" width="100%" height="70px" viewBox="0 0 1440 130" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="transform-origin: 50% 50%; transform: rotateX(180deg);">
-        <path id="wave-bottom-white" fill="var(--clr-primary-10)" d="M0,56.050526 C121.352261,18.683509 262.172393,0 422.460394,0 C662.892396,0 818.88453,115.474324 1058.94661,115.474324 C1218.988,115.474324 1342.92081,94.808741 1440,56 L1440,130 L0,130 L0,56.050526 Z"></path>
-    </svg>
-
-    <section class="featured">
-        <div class="container">
             <div class="row tiny-middle">
                 <div class="tiny">
                     <h2 class="tiny-center">Recent News</h2>
@@ -181,13 +98,73 @@
                 </div>
             </div>
         </div>
+        </div>
+    </section>
+
+    <svg style="background-color:var(--clr-light);margin-bottom:-2rem;" width="100%" height="70px" viewBox="0 0 1440 130" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="transform-origin: 50% 50%; transform: rotateX(180deg);">
+        <path id="wave-bottom-white" fill="var(--clr-primary-10)" d="M0,56.050526 C121.352261,18.683509 262.172393,0 422.460394,0 C662.892396,0 818.88453,115.474324 1058.94661,115.474324 C1218.988,115.474324 1342.92081,94.808741 1440,56 L1440,130 L0,130 L0,56.050526 Z"></path>
+    </svg>
+
+    <section class="featured">
+    <div class="container">
+        <div class="card-group">
+                <div class="row">
+                    <div class="tiny-12 small-6 medium-4 small-last medium-first" style="z-index:2">
+                        <div class="card center">
+                            <header class="card-header">
+                                <h2>4th</h2>
+                            </header>
+                            <div class="card-body">
+                                <p>By 2025, communication tech's carbon emissions will surpass all countries except China, India, and the U.S.</p><br>
+                                <a href="https://internethealthreport.org/2018/the-internet-uses-more-electricity-than/" target="_blank">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tiny-12 small-12 medium-4 tiny-first small-first" style="z-index:1">
+                        <div class="card center highlight">
+                            <header class="card-header">
+                                <h2>250,000</h2>
+                            </header>
+                            <div class="card-body">
+                                <p>Anticipated climate shifts are predicted to lead to an extra 250,000 deaths annually from 2030 to 2050.</p><br>
+                                <a href="https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health" target="_blank">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tiny-12 small-6 medium-4 small-first medium-last" style="z-index:1">
+                        <div class="card center">
+                            <header class="card-header">
+                                <h2>14.21%</h2>
+                            </header>
+                            <div class="card-body">
+                                <p>In 2022, only 14.21% of the world's primary energy generation came from renewable sources.</p><br>
+                                <a href="https://ourworldindata.org/renewable-energy" target="_blank">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
     </section>
     <svg style="background-color:var(--clr-primary-10);margin-bottom:-2rem;" width="100%" height="70px" viewBox="0 0 1440 130" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="transform-origin: 50% 50%; transform: rotateX(180deg);">
         <path id="wave-bottom-white" fill="var(--clr-primary-7)" d="M0,56.050526 C121.352261,18.683509 262.172393,0 422.460394,0 C662.892396,0 818.88453,115.474324 1058.94661,115.474324 C1218.988,115.474324 1342.92081,94.808741 1440,56 L1440,130 L0,130 L0,56.050526 Z"></path>
     </svg>
 
     <section class="problem">
-        <div class="container">
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        
+        <div id="timeline" class="container">
             <div class="row tiny-middle">
                 <div class="tiny-12 medium-5 tiny-center medium-start">
                     <h2>The problem</h2>
