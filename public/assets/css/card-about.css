@@ -8,3 +8,94 @@ img {
     display: block;
     width: 100%;
   }
+
+body {
+    background: #f3f5fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "poppins", sans-serif;
+    color: #fff;
+  }
+  .container {
+    max-width: 1100px;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-gap: 2rem;
+    padding: 2rem 0;
+    margin: 2rem 0;
+  }
+  .card_data {
+    display: flex;
+    background: #212f3d;
+    padding: 2rem;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    transition: all 0.9s ease-in-out;
+    border-radius: 10px;
+  }
+  .card_data:hover {
+    transform: translateY(-10px);
+  }
+  .card_data img {
+    border-radius: 05%;
+    width: 50%;
+    height: 100%;
+  }
+  .pro_content {
+    padding-left: 1rem;
+  }
+  .pro_content h2 {
+    font-size: 1.5rem;
+    color: #e74c3c;
+  }
+  .position {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  .position::after {
+    content: "";
+    background: #ccc;
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    top: 25px;
+    left: 0;
+  }
+  .pro_content p {
+    font-size: 0.9rem;
+  }
+  .social_icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 80%;
+  }
+  .social_icons span {
+    background: #f3f5fa;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  .social_icons span i {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    color: #212f3d;
+    transition: all 0.5s;
+  }
+  .social_icons span i:hover {
+    background: #212f3d;
+    color: #fff;
+    border-radius: 50%;
+  }
