@@ -85,9 +85,8 @@
 								<p class="position">Jefe jeta</p>
 								<p>Soy jefe de equipo pero bien jeta</p>
 								<div class="social_icons">
-									<span><i></i></span>
-									<span><i></i></span>
-									<span><i></i></span>
+									<span><i class="fa fa-brands fa-github"></i></span>
+									<span><i class="fa fa-brands fa-user"></i></span>
 								</div>
 							</div>
 						</div>
