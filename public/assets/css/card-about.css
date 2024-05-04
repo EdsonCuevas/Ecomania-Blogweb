@@ -11,6 +11,7 @@ section{
 .card_container {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* Ahora con cinco columnas */
+  width: 100%;
   grid-gap: 1rem; /* Espaciado reducido para un mejor ajuste */
   padding: 1rem 0; /* Padding reducido */
   margin: 0.5rem 0; /* Margen reducido */
@@ -75,8 +76,8 @@ section{
 
 .social_icons span {
   background: #f3f5fa;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 

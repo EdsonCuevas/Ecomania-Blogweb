@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/app.css">
 	<link rel="shortcut icon" href="<?=ROOT?>/../public/assets/imgs/icon.png">
 	<link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/card-about.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
     <meta name="theme-color " content="#ffffff ">
 </head>
 <body>
@@ -57,9 +59,8 @@
 								<p class="position">Jefe jeta</p>
 								<p>Soy jefe de equipo pero bien jeta</p>
 								<div class="social_icons">
-									<span><i></i></span>
-									<span><i></i></span>
-									<span><i></i></span>
+									<span><i class="fa fa-brands fa-github"></i></span>
+									<span><i class="fa fa-brands fa-user"></i></span>
 								</div>
 							</div>
 						</div>
