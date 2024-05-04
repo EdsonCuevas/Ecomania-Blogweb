@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/app.css">
 	<link rel="shortcut icon" href="<?=ROOT?>/../public/assets/imgs/icon.png">
 	<link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/card-about.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-
+	<link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/post-styles.css">
     <meta name="theme-color " content="#ffffff ">
 </head>
 <body>
@@ -51,72 +50,78 @@
 		<div class="container ">
 			<div class="row ">
 				<div class="tiny ">
-					<div class="card_container">
-						<div class="card_data">
-							<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" alt="" class="img-card">
-							<div class="pro_content">
-								<h2>Alfredo</h2>
-								<p class="position">Jefe jeta</p>
-								<p>Soy jefe de equipo pero bien jeta</p>
-								<div class="social_icons">
-									<span><i class="fa fa-brands fa-github"></i></span>
-									<span><i class="fa fa-brands fa-user"></i></span>
-								</div>
-							</div>
-						</div>
-					
-						<div class="card_data">
-							<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" alt="" class="img-card">
-							<div class="pro_content">
-								<h2>Alfredo</h2>
-								<p class="position">Jefe jeta</p>
-								<p>Soy jefe de equipo pero bien jeta</p>
-								<div class="social_icons">
-									<span><i class="fa fa-brands fa-github"></i></span>
-									<span><i class="fa fa-brands fa-user"></i></span>
-								</div>
-							</div>
-						</div>
-
-						<div class="card_data">
-							<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" alt="" class="img-card">
-							<div class="pro_content">
-								<h2>Alfredo</h2>
-								<p class="position">Jefe jeta</p>
-								<p>Soy jefe de equipo pero bien jeta</p>
-								<div class="social_icons">
-									<span><i class="fa fa-brands fa-github"></i></span>
-									<span><i class="fa fa-brands fa-user"></i></span>
-								</div>
-							</div>
-						</div>
-
-						<div class="card_data">
-							<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" alt="" class="img-card">
-							<div class="pro_content">
-								<h2>Alfredo</h2>
-								<p class="position">Jefe jeta</p>
-								<p>Soy jefe de equipo pero bien jeta</p>
-								<div class="social_icons">
-									<span><i class="fa fa-brands fa-github"></i></span>
-									<span><i class="fa fa-brands fa-user"></i></span>
-								</div>
-							</div>
-						</div>
-
-						<div class="card_data">
-							<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" alt="" class="img-card">
-							<div class="pro_content">
-								<h2>Alfredo</h2>
-								<p class="position">Jefe jeta</p>
-								<p>lo</p>
-								<div class="social_icons">
-									<span><i class="fa fa-brands fa-github"></i></span>
-									<span><i class="fa fa-brands fa-user"></i></span>
-								</div>
-							</div>
+				
+					<div class="card">
+						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
+						<div class="card-content">
+							<h2 style="margin: 0px;">
+								Alfredo
+							</h2>
+							<p style="color: black;">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur expedita laborum. Beatae provident expedita corporis earum cupiditate iure maxime excepturi, praesentium magnam tempore dolorem? Ab pariatur exercitationem ipsa labore.>
+							</p>
+							<br>
+							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
 						</div>
 					</div>
+
+					<div class="card">
+						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
+						<div class="card-content">
+							<h2 style="margin: 0px;">
+								Alfredo
+							</h2>
+							<p style="color: black;">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur expedita laborum. Beatae provident expedita corporis earum cupiditate iure maxime excepturi, praesentium magnam tempore dolorem? Ab pariatur exercitationem ipsa labore.>
+							</p>
+							<br>
+							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
+						<div class="card-content">
+							<h2 style="margin: 0px;">
+								Alfredo
+							</h2>
+							<p style="color: black;">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur expedita laborum. Beatae provident expedita corporis earum cupiditate iure maxime excepturi, praesentium magnam tempore dolorem? Ab pariatur exercitationem ipsa labore.>
+							</p>
+							<br>
+							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
+						<div class="card-content">
+							<h2 style="margin: 0px;">
+								Alfredo
+							</h2>
+							<p style="color: black;">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur expedita laborum. Beatae provident expedita corporis earum cupiditate iure maxime excepturi, praesentium magnam tempore dolorem? Ab pariatur exercitationem ipsa labore.>
+							</p>
+							<br>
+							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
+						<div class="card-content">
+							<h2 style="margin: 0px;">
+								Alfredo
+							</h2>
+							<p style="color: black;">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur expedita laborum. Beatae provident expedita corporis earum cupiditate iure maxime excepturi, praesentium magnam tempore dolorem? Ab pariatur exercitationem ipsa labore.>
+							</p>
+							<br>
+							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
+						</div>
+					</div>
+
+					
 
 
 				</div>
