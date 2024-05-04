@@ -5,7 +5,7 @@
   }
 
   if(user('role') != 'admin'){
-    redirect('user/posts');
+    redirect('editor/posts');
   }
 
   $section = $url[1] ?? 'dashboard';

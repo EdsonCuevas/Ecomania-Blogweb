@@ -12,14 +12,14 @@
   $action  = $url[2] ?? 'view';
   $id      = $url[3] ?? 0;
 
-  $filename = "../app/pages/user/".$section.".php";
+  $filename = "../app/pages/editor/".$section.".php";
 
   if(!file_exists($filename)){
-    $filename = "../app/pages/user/404.php";
+    $filename = "../app/pages/editor/404.php";
   }
 
   elseif($section == 'posts'){
-    require_once "../app/pages/user/posts-controller.php";
+    require_once "../app/pages/editor/posts-controller.php";
   }
 
 ?>
@@ -62,7 +62,7 @@
                 </div>
                 <ul class="nav">
                     <li class="nav-item <?=$section == 'posts' ? 'active':''?>">
-                        <a class="nav-link" href="<?=ROOT?>/user/posts">
+                        <a class="nav-link" href="<?=ROOT?>/editor/posts">
                             <i class="nc-icon nc-single-copy-04"></i>
                             <p>Posts</p>
                         </a>
@@ -74,7 +74,7 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="<?=ROOT?>/users/posts"> Dashboard </a>
+                    <a class="navbar-brand" href="<?=ROOT?>/editor/posts"> Dashboard </a>
                     <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar burger-lines"></span>

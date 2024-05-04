@@ -69,7 +69,7 @@
                 <?php endif; ?>
             </div>
 
-            <a href="<?=ROOT?>/user/posts">
+            <a href="<?=ROOT?>/editor/posts">
                 <button class="mt-4 btn btn-lg btn-danger" type="button">Back</button>
             </a>
             <button class="mt-4 btn btn-lg btn-primary float-end" type="submit">Create</button>
@@ -153,7 +153,7 @@
                 <?php endif; ?>
             </div>
 
-            <a href="<?=ROOT?>/user/posts">
+            <a href="<?=ROOT?>/editor/posts">
                 <button class="mt-4 btn btn-lg btn-danger" type="button">Back</button>
             </a>
             <button class="mt-4 btn btn-lg btn-primary float-end" type="submit">Save</button>
@@ -201,7 +201,7 @@
                 <?php endif; ?>
             </div>
             
-            <a href="<?=ROOT?>/user/posts">
+            <a href="<?=ROOT?>/editor/posts">
                 <button class="mt-4 btn btn-lg btn-primary" type="button">Back</button>
             </a>
             <button class="mt-4 btn btn-lg btn-danger float-end" type="submit">Delete</button>
@@ -216,7 +216,7 @@
 
 <?php else:?>
 <h4>Posts</h4>
-<a href="<?=ROOT?>/user/posts/add">
+<a href="<?=ROOT?>/editor/posts/add">
     <button class="btn btn-primary"><i class="fa fa-plus"></i></button>
 </a>
 
@@ -254,10 +254,10 @@
                 </td>
                 <td><?=date("jS M, Y",strtotime($row['date']))?></td>
                 <td>
-                    <a href="<?=ROOT?>/user/posts/edit/<?=$row['id']?>">
+                    <a href="<?=ROOT?>/editor/posts/edit/<?=$row['id']?>">
                         <button class="btn btn-warning"><i class="fa fa-edit"></i></button>
                     </a>
-                    <a href="<?=ROOT?>/user/posts/delete/<?=$row['id']?>">
+                    <a href="<?=ROOT?>/editor/posts/delete/<?=$row['id']?>">
                         <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                     </a>
                 </td>

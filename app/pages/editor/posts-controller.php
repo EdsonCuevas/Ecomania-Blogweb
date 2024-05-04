@@ -87,7 +87,7 @@
 
             query($query, $data);
 
-            redirect('user/posts');
+            redirect('editor/posts');
 
           }
       }
@@ -183,7 +183,7 @@
 
 
               query($query, $data);
-              redirect('user/posts');
+              redirect('editor/posts');
 
             }
       }
@@ -216,7 +216,7 @@
               if(file_exists($row['image']))
                 unlink($row['image']);
 
-              redirect('user/posts');
+              redirect('editor/posts');
           }
       }
     }
