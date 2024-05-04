@@ -111,9 +111,8 @@
 								<p class="position">Jefe jeta</p>
 								<p>lo</p>
 								<div class="social_icons">
-									<span><i></i></span>
-									<span><i></i></span>
-									<span><i></i></span>
+									<span><i class="fa fa-brands fa-github"></i></span>
+									<span><i class="fa fa-brands fa-user"></i></span>
 								</div>
 							</div>
 						</div>
