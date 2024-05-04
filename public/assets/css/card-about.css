@@ -1,4 +1,7 @@
-
+.img-card {
+    display: block;
+    width: 100%;
+  }
   .card_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

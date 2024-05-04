@@ -51,7 +51,7 @@
 				<div class="tiny ">
 					<div class="card_container">
 						<div class="card_data">
-							<img src="#" alt="">
+							<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" alt="" class="img-card">
 							<div class="pro_content">
 								<h2>Alfredo</h2>
 								<p class="position">Jefe jeta</p>
