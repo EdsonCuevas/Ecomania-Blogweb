@@ -63,9 +63,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-
-					<div class="card_container">
+					
 						<div class="card_data">
 							<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" alt="" class="img-card">
 							<div class="pro_content">
@@ -79,9 +77,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="card_container">
 						<div class="card_data">
 							<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" alt="" class="img-card">
 							<div class="pro_content">
@@ -95,9 +91,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="card_container">
 						<div class="card_data">
 							<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" alt="" class="img-card">
 							<div class="pro_content">
@@ -111,15 +105,13 @@
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="card_container">
 						<div class="card_data">
 							<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" alt="" class="img-card">
 							<div class="pro_content">
 								<h2>Alfredo</h2>
 								<p class="position">Jefe jeta</p>
-								<p>Soy jefe de equipo pero bien jeta</p>
+								<p>lo</p>
 								<div class="social_icons">
 									<span><i></i></span>
 									<span><i></i></span>
@@ -128,6 +120,7 @@
 							</div>
 						</div>
 					</div>
+
 
 				</div>
 			</div>

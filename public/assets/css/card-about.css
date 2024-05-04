@@ -1,98 +1,116 @@
 .img-card {
-    display: block;
-    width: 100%;
-  }
-  .card_container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    grid-gap: 2rem;
-    padding: 2rem 0;
-    margin: 2rem 0;
-  }
-  .card_data {
-    display: flex;
-    background: hsl(0, 4%, 95%);
-    padding: 2rem;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
-    transition: all 0.9s ease-in-out;
-    border-radius: 10px;
-  }
-  .card_data:hover {
-    transform: translateY(-10px);
-  }
-  .card_data img {
-    border-radius: 05%;
-    width: 50%;
-    height: 100%;
-  }
-  .pro_content {
-    padding-left: 1rem;
-  }
-  .pro_content h2 {
-    font-size: 1.5rem;
-    color: #e74c3c;
-  }
-  .position {
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-    position: relative;
-  }
-  .position::after {
-    content: "";
-    background: #ccc;
-    position: absolute;
-    width: 40%;
-    height: 2px;
-    top: 25px;
-    left: 0;
-  }
-  .pro_content p {
-    font-size: 0.9rem;
-  }
-  .social_icons {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
-    width: 80%;
-  }
-  .social_icons span {
-    background: #f3f5fa;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-  }
-  .social_icons span i {
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    cursor: pointer;
-    color: #212f3d;
-    transition: all 0.5s;
-  }
-  .social_icons span i:hover {
-    background: #212f3d;
-    color: #fff;
-    border-radius: 50%;
-  }
+  display: block;
+  width: 100%;
+}
 
-  @media (max-width: 1100px) {
-    .container {
-      max-width: 980px;
-      margin: 0 auto;
-    }
+section{
+  margin: 200px;
+  padding: 0px;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Ahora con cinco columnas */
+  grid-gap: 1rem; /* Espaciado reducido para un mejor ajuste */
+  padding: 1rem 0; /* Padding reducido */
+  margin: 0.5rem 0; /* Margen reducido */
+}
+
+.card_data {
+  display: flex;
+  flex-direction: column; /* Cambio para una mejor visualización */
+  align-items: center; /* Centra los elementos verticalmente */
+  background: hsl(0, 4%, 95%);
+  padding: 1rem; /* Padding reducido */
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.card_data img {
+  border-radius: 5%;
+  width: 80%; /* Ajuste del ancho de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+.card_data:hover {
+  transform: translateY(-10px);
+}
+
+.pro_content {
+  padding-left: 1rem;
+}
+
+.pro_content h2 {
+  font-size: 1.5rem;
+  color: #e74c3c;
+}
+
+.position {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.position::after {
+  content: "";
+  background: #ccc;
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  top: 25px;
+  left: 0;
+}
+
+.pro_content p {
+  font-size: 0.9rem;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 80%;
+}
+
+.social_icons span {
+  background: #f3f5fa;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.social_icons span i {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  color: #212f3d;
+  transition: all 0.5s;
+}
+
+.social_icons span i:hover {
+  background: #212f3d;
+  color: #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .card_container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas para pantallas medianas */
   }
-  @media (max-width: 962px) {
-    .container {
-      max-width: 650px;
-      margin: 0 auto;
-    }
-    .card_container {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 1rem;
-    }
+}
+
+@media (max-width: 768px) {
+  .card_container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas pequeñas */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .card_container {
+    grid-template-columns: repeat(1, 1fr); /* 1 columna para pantallas muy pequeñas */
+  }
+}
