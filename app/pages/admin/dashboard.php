@@ -18,10 +18,10 @@
         <a href="<?=ROOT?>/admin/users" style="color: black;">
             <h1><i class="nc-icon nc-single-02"></i></h1>
             <div>
-                Users
+                Editors
             </div>
             <?php
-                $query = "select count(id) as num from users where role = 'user'";
+                $query = "select count(id) as num from users where role = 'editor'";
                 $res = query_row($query);
             ?>
             <h1><?=$res['num'] ?? 0?></h1>
