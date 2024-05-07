@@ -49,7 +49,7 @@
 	<section>
 		<div class="container ">
 			<div class="row">
-					<div class="card">
+					<div class="card tiny-center">
 						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">
@@ -63,7 +63,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card tiny-center">
 						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">
@@ -77,7 +77,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card tiny-center">
 						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">
@@ -91,7 +91,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card tiny-center">
 						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">
@@ -105,7 +105,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card tiny-center">
 						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">
