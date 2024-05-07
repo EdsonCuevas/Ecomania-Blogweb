@@ -48,9 +48,7 @@
 <main>
 	<section>
 		<div class="container ">
-			<div class="row ">
-				<div class="tiny ">
-				
+			<div class="row">
 					<div class="card">
 						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
@@ -122,9 +120,6 @@
 					</div>
 
 					
-
-
-				</div>
 			</div>
 		</div>
 	</section>
