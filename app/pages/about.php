@@ -91,7 +91,7 @@
 						</div>
 					</div>
 
-					<div class="card tiny-center">
+					<div class="card tiny-center" id="move-card">
 						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">

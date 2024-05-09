@@ -42,3 +42,13 @@
     margin-top: 16px;
     color: #fff;
 }
+
+#move-card{
+    margin-left: 250px;
+}
+
+@media (max-width: 760px) {
+    #move-card {
+      margin-left: 15px;
+    }
+  }
