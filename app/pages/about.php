@@ -50,13 +50,13 @@
 		<div class="container ">
 			<div class="row">
 					<div class="card tiny-center">
-						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
+						<img src="<?=ROOT?>/../public/assets/imgs/devs/elizaldi.jpg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">
 								Alfredo
 							</h2>
 							<p style="color: black;">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur expedita laborum. Beatae provident expedita corporis earum cupiditate iure maxime excepturi, praesentium magnam tempore dolorem? Ab pariatur exercitationem ipsa labore.>
+								PROJECT MANAGER
 							</p>
 							<br>
 							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
@@ -67,10 +67,10 @@
 						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">
-								Alfredo
+								Edson
 							</h2>
 							<p style="color: black;">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur expedita laborum. Beatae provident expedita corporis earum cupiditate iure maxime excepturi, praesentium magnam tempore dolorem? Ab pariatur exercitationem ipsa labore.>
+								LEAD DEVELOPER
 							</p>
 							<br>
 							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
@@ -81,10 +81,10 @@
 						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">
-								Alfredo
+								Gustavo
 							</h2>
 							<p style="color: black;">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur expedita laborum. Beatae provident expedita corporis earum cupiditate iure maxime excepturi, praesentium magnam tempore dolorem? Ab pariatur exercitationem ipsa labore.>
+								JETA MAYOR
 							</p>
 							<br>
 							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
@@ -92,13 +92,13 @@
 					</div>
 
 					<div class="card tiny-center" id="move-card">
-						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
+						<img src="<?=ROOT?>/../public/assets/imgs/devs/lutter.jpg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">
-								Alfredo
+								Johan
 							</h2>
 							<p style="color: black;">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur expedita laborum. Beatae provident expedita corporis earum cupiditate iure maxime excepturi, praesentium magnam tempore dolorem? Ab pariatur exercitationem ipsa labore.>
+								EL DE LAS COCAS
 							</p>
 							<br>
 							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
@@ -106,13 +106,13 @@
 					</div>
 
 					<div class="card tiny-center">
-						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
+						<img src="<?=ROOT?>/../public/assets/imgs/devs/heidy.jpg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">
-								Alfredo
+								Heidy
 							</h2>
 							<p style="color: black;">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur expedita laborum. Beatae provident expedita corporis earum cupiditate iure maxime excepturi, praesentium magnam tempore dolorem? Ab pariatur exercitationem ipsa labore.>
+								JETA MENOR
 							</p>
 							<br>
 							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
