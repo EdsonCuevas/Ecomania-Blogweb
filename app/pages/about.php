@@ -64,7 +64,7 @@
 					</div>
 
 					<div class="card tiny-center">
-						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
+						<img src="<?=ROOT?>/../public/assets/imgs/devs/edson.jpg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">
 								Edson
@@ -73,12 +73,12 @@
 								LEAD DEVELOPER
 							</p>
 							<br>
-							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
+							<a href="google.com" class="a">efelix@ucol.mx</a>
 						</div>
 					</div>
 
 					<div class="card tiny-center">
-						<img src="<?=ROOT?>/../public/assets/imgs/JefeJetaMayor.jpeg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
+						<img src="<?=ROOT?>/../public/assets/imgs/devs/gus.jpg" class="card-img-top img-fluid" alt="Jefe Jeta Mayor">
 						<div class="card-content">
 							<h2 style="margin: 0px;">
 								Gustavo
@@ -87,7 +87,7 @@
 								JETA MAYOR
 							</p>
 							<br>
-							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
+							<a href="google.com" class="a">gaguilar7@ucol.mx</a>
 						</div>
 					</div>
 
