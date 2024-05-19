@@ -59,7 +59,7 @@
 								PROJECT MANAGER
 							</p>
 							<br>
-							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
+							<a href="mailto:aelizaldi@ucol.mx" class="a">aelizaldi@ucol.mx</a>
 						</div>
 					</div>
 
@@ -73,7 +73,7 @@
 								LEAD DEVELOPER
 							</p>
 							<br>
-							<a href="google.com" class="a">efelix@ucol.mx</a>
+							<a href="mailto:efelix@ucol.mx" class="a">efelix@ucol.mx</a>
 						</div>
 					</div>
 
@@ -87,7 +87,7 @@
 								JETA MAYOR
 							</p>
 							<br>
-							<a href="google.com" class="a">gaguilar7@ucol.mx</a>
+							<a href="mailto:gaguilar7@ucol.mx" class="a">gaguilar7@ucol.mx</a>
 						</div>
 					</div>
 
@@ -101,7 +101,7 @@
 								EL DE LAS COCAS
 							</p>
 							<br>
-							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
+							<a href="mailto:jlutter@ucol.mx" class="a">jlutter@ucol.mx</a>
 						</div>
 					</div>
 
@@ -115,7 +115,7 @@
 								JETA MENOR
 							</p>
 							<br>
-							<a href="google.com" class="a">aelizaldi@ucol.mx</a>
+							<a href="mailto:hguzman2@ucol.mx" class="a">hguzman2@ucol.mx</a>
 						</div>
 					</div>
 
