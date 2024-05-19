@@ -56,7 +56,7 @@
 								Alfredo
 							</h2>
 							<p style="color: black;">
-								PROJECT MANAGER
+								PROJECT MANAGER AND SECUNDARY PROGRAMMER
 							</p>
 							<br>
 							<a href="mailto:aelizaldi@ucol.mx" class="a">aelizaldi@ucol.mx</a>
@@ -84,7 +84,7 @@
 								Gustavo
 							</h2>
 							<p style="color: black;">
-								JETA MAYOR
+								SUBDEVELOPER AND DEPUTY PROMOTER
 							</p>
 							<br>
 							<a href="mailto:gaguilar7@ucol.mx" class="a">gaguilar7@ucol.mx</a>
@@ -98,7 +98,7 @@
 								Johan
 							</h2>
 							<p style="color: black;">
-								EL DE LAS COCAS
+								SUBDEVELOPER
 							</p>
 							<br>
 							<a href="mailto:jlutter@ucol.mx" class="a">jlutter@ucol.mx</a>
@@ -112,7 +112,7 @@
 								Heidy
 							</h2>
 							<p style="color: black;">
-								JETA MENOR
+								SUBDEVELOPER
 							</p>
 							<br>
 							<a href="mailto:hguzman2@ucol.mx" class="a">hguzman2@ucol.mx</a>
