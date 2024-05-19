@@ -5,8 +5,12 @@
             <br>
         </p>
         <p><a href="<?=ROOT?>/contact">Contact</a> | <a href="<?=ROOT?>/news">News</a> | <a href="<?=ROOT?>/privacy">Privacy & Terms</a> | <a href="<?=ROOT?>/about">About</a></p>
+        <br>
+        <div id="google_translate_element"></div>
         <div id="co2Badge"></div>
+
         <script src="/assets/js/badge.js"></script>
+
         <script>
         const myCo2Badge = new Badge({
             target: '#co2Badge',
@@ -14,5 +18,15 @@
         });
         myCo2Badge.init();
         </script>
+
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        } 
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </div>
 </footer>
