@@ -31,7 +31,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="tiny-12 small-6 medium-6 tiny-center small-start">
-				<h1>How does it work?</h1>
+				<h1>Who are we?</h1>
 				<p style="font-size:1.35rem;">We are a small team of university developers, software engineering students, which made this blogweb project as part of an integrative project to solve the problem number 13 of the UN.</p>
 			</div>
 			<div class="tiny-12 small-6 medium-6 tiny-center small-end">
