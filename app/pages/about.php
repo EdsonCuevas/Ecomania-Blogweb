@@ -32,7 +32,7 @@
 		<div class="row">
 			<div class="tiny-12 small-6 medium-6 tiny-center small-start">
 				<h1>How does it work?</h1>
-				<p style="font-size:1.35rem;">Calculating a website's carbon footprint is far from simple; however, we've invested numerous hours refining a method for this complex task. While our approach primarily relies on the latest data, it inevitably includes some elements of estimation. Therefore, consider the results as a general guide rather than precise science.</p>
+				<p style="font-size:1.35rem;">We are a small team of university developers, software engineering students, which made this blogweb project as part of an integrative project to solve the problem number 13 of the UN.</p>
 			</div>
 			<div class="tiny-12 small-6 medium-6 tiny-center small-end">
 				<img src="./assets/img/graphic-17.svg" alt="">
