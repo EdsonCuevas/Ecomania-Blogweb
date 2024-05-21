@@ -38,15 +38,22 @@ if ($action == 'add') {
             $errors = [];
             if (empty($_POST['category'])) {
                 $errors['category'] = "A category is required";
-            } else if (!preg_match("/^[a-zA-Z0-9   \-\ \_\&\:\.]+$/", $_POST['category'])) {
-                $errors['category'] = "category can only have letters and no spaces";
+            } else if (!preg_match("/^[a-zA-Z0-9 \-\_\ \&\:\.]+$/", $_POST['category'])) {
+                $errors['category'] = "Category can only have letters and no spaces";
             }
             if (empty($errors)) {
                 // save to database
                 $data['category'] = $_POST['category'];
+                $slug = str_to_url($_POST['category']);
+                $query = "select id from categories where slug = :slug and id != :id limit 1";
+                $slug_row = query($query, ['slug' => $slug, 'id' => $id]);
+                if ($slug_row) {
+                    $slug .= rand(1000, 9999);
+                }
+                $data['slug'] = $slug;
                 $data['disabled'] = $_POST['disabled'];
                 $data['id'] = $id;
-                $query = "update categories set category = :category, disabled = :disabled where id = :id limit 1";
+                $query = "update categories set category = :category, slug = :slug, disabled = :disabled where id = :id limit 1";
                 query($query, $data);
                 redirect('admin/categories');
             }
